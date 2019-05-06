@@ -1,5 +1,5 @@
 <template>
-  <div class="big-header">
+  <div class="big__header">
     <h1>{{ message }}</h1>
     <br />
     <router-link class="button" to="/bonjour">Go to bonjour</router-link>
@@ -10,7 +10,7 @@
 export default {
     data() {
     return {
-      message: 'Hello Carlo et Lucas'
+      message: '2'
     };
   }
 };
