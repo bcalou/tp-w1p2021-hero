@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import Home from './components/Home.vue';
 import Page from './components/Page.vue';
+import bonjour from './components/bonjour.vue';
 
 Vue.use(Router);
 
@@ -19,6 +20,11 @@ const router = new Router({
       path: '/page',
       name: 'page',
       component: Page,
+    },
+    {
+      path: '/bonjour',
+      name: 'bonjour',
+      component: bonjour,
     },
     {
       path: '*',
