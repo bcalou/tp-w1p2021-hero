@@ -4,8 +4,8 @@ URL du site : https://hero-tombuyses-donatfilliod.netlify.com/
 
 ### Groupe
 
-- Emilie & Tombuyses
-- Amandine & Donat-Filliod
+- Emilie Tombuyses
+- Amandine Donat-Filliod
 
 ## Prologue
 
