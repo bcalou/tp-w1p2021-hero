@@ -17,8 +17,8 @@ const router = new Router({
       component: Home,
     },
     {
-      path: '/Characters',
-      name: 'Characters',
+      path: '/characters',
+      name: 'characters',
       component: Characters,
     },
     {
