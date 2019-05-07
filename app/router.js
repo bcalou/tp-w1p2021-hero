@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import Home from './components/Home.vue';
 import Page from './components/Page.vue';
+import Characters from './components/Characters.vue';
 
 Vue.use(Router);
 
@@ -16,10 +17,16 @@ const router = new Router({
       component: Home,
     },
     {
+      path: '/Characters',
+      name: 'Characters',
+      component: Characters,
+    },
+    {
       path: '/page',
       name: 'page',
       component: Page,
     },
+    /*  */
     {
       path: '*',
       redirect: { name: 'home' },
