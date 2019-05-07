@@ -8,9 +8,35 @@
   </head>
   <body>
     <div id="root">
-      <router-view />
+      <transition name="black">
+        <router-view/>
+      </transition>
     </div>
 
     <script src="./app.js"></script>
   </body>
 </html>
+
+<style>
+  .black-leave-active {
+    animation: toBlack 2s;
+  }
+
+  .black-enter-active {
+    animation: toBlack 2s ease 2s reverse;
+  }
+
+  @keyframes toBlack {
+    to {
+      opacity: 0;
+    }
+  }
+
+  body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+</style>

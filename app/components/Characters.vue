@@ -1,25 +1,9 @@
 <template>
   <div class="big-header">
-    <h1>Choix du personnage</h1>
+    <h2>Choix du personnage</h2>
+    <Character v-for="character in characters" v-bind:character="character" :key="character.name"></Character>
     <br>
     <router-link class="button" to="/">Go to home</router-link>
-
-    <br>
-    <!-- <Character v-bind:character="characters[0]"></Character> -->
-    <br>
-    <br>
-    <!-- <Character v-bind:character="characters[1]"></Character> -->
-    <br>
-    <br>
-
-    <Character
-      v-for="character in characters"
-      v-bind:character="character"
-      :key="character.name"
-      >
-
-    </Character>
-
   </div>
 </template>
 
@@ -32,7 +16,8 @@ export default {
       characters: [
         {
           name: `Christina`,
-          speciality: `Master of CSS`
+          speciality: `Master of CSS`,
+          main: true
         },
         {
           name: `Jean`,
