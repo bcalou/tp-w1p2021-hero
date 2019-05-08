@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Character from "./Character";
+import Character from "./character/Character";
 
 export default {
   data: () => {

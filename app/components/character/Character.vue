@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../assets/scss/blocs/initialisation";
+@import "../../assets/scss/blocs/initialisation";
 
 .character {
   transition: transform 1s;
