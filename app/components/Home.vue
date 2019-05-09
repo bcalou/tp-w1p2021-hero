@@ -2,7 +2,7 @@
   <div class="big-header">
     <h1>{{ message }}</h1>
     <br />
-    <router-link class="button" to="/page">Go to Page</router-link>
+    <router-link class="button" to="/characters">Choix du perso</router-link>
   </div>
 </template>
 
@@ -10,8 +10,10 @@
 export default {
   data() {
     return {
-      message: 'Hello Hetic'
+      message: 'Happy Birthdead '
     };
   }
 };
+
+/* import data from '../..'  */
 </script>
