@@ -1,0 +1,146 @@
+{
+    "steps": [
+        {
+            "id":"1",
+            "title":"Aller à la soirée, Quelle tenue choisir ? "
+        },
+        {
+            "id":"2",
+            "title":"Ne pas aller à la soirée -> Fin du jeu"
+        },
+        {
+            "id":"3",
+            "title":"Tenue excentrique"
+            
+        },
+        {
+            "id":"4",
+            "title":"Tenue Discret. Comment aller à la soirée ?"
+            
+        },
+        {
+            "id":"5",
+            "title":"Aller à la soirée. Comment aller à la soirée ?"
+            
+        },
+        {
+            "id":"6",
+            "title":"J'ai pris un uber, j'arrive à la soirée. Alcool , Drogue ou Sobre ?"
+            
+        },
+        {
+            "id":"7",
+            "title":"J'ai pris les transport en fraudant, pas de chance ! Contrôleur -> Prison"
+            
+        },
+        {
+            "id":"8",
+            "title":"J'ai pris ma voiture, panne d'essence ! J'appel un uber ou un dépanneur?"
+            
+        },
+        {
+            "id":"9",
+            "title":"J'appel un dépanneur, Pas de chance ! Le dépanneur était un serial killer -> Mort"
+            
+        },
+        {
+            "id":"10",
+            "title":"J'appel un uber, j'arrive à la soirée, Alcool, Drogue ou Sobre ?"
+            
+        },
+        {
+            "id":"11",
+            "title":"Je décide de rester sobre à la soirée. Pas de chance, un mec bourré me poignarde ! -> mort"
+            
+        },
+        {
+            "id":"12",
+            "title":"Je décide de prendre de la drogue, je suis complétement défoncé:  Piscine / Regarder un film / Me promener dans les bois"
+            
+        },
+        {
+            "id":"13",
+            "title":"Je décide d'aller dans la piscine, Sois je rentre chez moi, sois je continue à fumer"
+            
+        },
+        {
+            "id":"14",
+            "title":"Je continue à fumer, Bad Trip -> mort"
+            
+        },
+        {
+            "id":"15",
+            "title":"Je décide de regarder un film: Film d'horreur ou romantique ?"
+            
+        },
+        {
+            "id":"16",
+            "title":"Je décide de regarder un film d'horreur, Pas de chance, crise cardiaque -> mort"
+            
+        },
+        {
+            "id":"17",
+            "title":"Je décide de regarder un film romantique, a la fin je décide de rentrer chez moi, Transport ou uber ?"
+            
+        },
+        {
+            "id":"18",
+            "title":"Je décide de me promener dans les bois, après plusieurs minutes de balade, je continue ou je décide de rentrer à la soirée ?"
+            
+        },
+        {
+            "id":"19",
+            "title":"Je décide de continuer de me balader, pas de chance ! un sanglier sauvage me percute -> mort"
+            
+        },
+        {
+            "id":"20",
+            "title":"Je décide de boire de l'alcool, complétement bourré, les soeurs Bergel me propose un éxilir me permettant de redevenir sobre, Je la prend ou non ?"
+            
+        },
+        {
+            "id":"21",
+            "title":"Je décide de prendre l'éxilir, pas de chance c'etait un poison -> mort"
+            
+        },
+        {
+            "id":"22",
+            "title":"Je refuse de prendre l'éxilir et continue de boire, comat ethylique -> mort"
+            
+        },
+        {
+            "id":"23",
+            "title":"Je décide de prendre un uber pour rentrer chez moi, pendant le trajet le uber met de la musique super fort et me demande si ca me dérange, Oui ou Non ?"
+            
+        },
+        {
+            "id":"24",
+            "title":"J'ai dit oui, mauvaise reponse ! -> Mort"
+            
+        },
+        {
+            "id":"25",
+            "title":"j'ai dit non , bonne réponse -> Win"
+            
+        },
+        {
+            "id":"26",
+            "title":"Je décide de prendre les transport pour rentrer, en cours de route le bus s'arrete plus tôt que prévu, le chauffeur me propose de me raccompagner jusqu'à chez moi, OUI ou NON ?"
+            
+        },
+        {
+            "id":"27",
+            "title":"Je dis non, je continue à pied et meurt percuté pas une voiture"
+            
+        },
+        {
+            "id":"28",
+            "title":"Je dit oui, coup de bol ! le chauffeur est honnête et me ramène chez moi ! WIN"
+            
+        }
+        
+    ]
+
+    
+}
+
