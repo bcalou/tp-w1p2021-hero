@@ -9,24 +9,24 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/blocs/initialisation";
+/* @import "../../assets/scss/blocs/initialisation"; */
 
-.character {
+/* .character {
   transition: transform 1s;
-}
+} */
 
 /* Always activate */
-.scale-enter-active {
+/* .scale-enter-active {
   transform: scale(0) rotate(150deg);
-}
+} */
 
 /* Enter */
-.scale-enter {
+/* .scale-enter {
   transform: scale(0) rotate(150deg);
-}
+} */
 
 /* Load when the enter animation is load */
-.scale-enter-to {
+/* .scale-enter-to {
   transform: scale(2) rotate(0deg);
 }
 
@@ -40,7 +40,7 @@
 
 .character--main {
   color: red;
-}
+} */
 </style>
 
 
