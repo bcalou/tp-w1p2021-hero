@@ -1,0 +1,3 @@
+Frame__1 : Name of character
+
+Frame__2 : Select the character's profession
