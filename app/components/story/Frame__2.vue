@@ -1,13 +1,19 @@
 <template>
-  <div class="big-header">
+  <section class="frame frame--2">
     <h1>Frame 2</h1>
-    <br />
+    
+    <Ship style="z-index: -1"></Ship>
+
     <router-link class="button" to="/">Go to Home</router-link>
-  </div>
+  </section>
 </template>
 
 <script>
+import Ship from "../characters/ship.vue";
+
 export default {
-  
+  components: {
+    Ship
+  }
 };
 </script>
