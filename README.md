@@ -4,8 +4,8 @@ URL du site : https://amazing-bill.netlify.com/
 
 ### Groupe
 
-- Bill Wilson & Yede Nka
-- Alexandre & Mary
+- Bill Wilson Yede Nka
+- Alexandre Mary
 
 ## Prologue
 
