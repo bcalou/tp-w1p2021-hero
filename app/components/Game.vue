@@ -2,9 +2,10 @@
   <div class="big-header">
     <h1>{{ message }}</h1>
     <br />
-    <router-link class="button" to="/character">Go to Page</router-link>
+    <router-link class="button" to="/win">Go to Page</router-link>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -15,4 +16,4 @@ export default {
   }
 };
 </script>
--
+
