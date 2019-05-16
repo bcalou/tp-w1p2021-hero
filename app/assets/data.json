@@ -1,0 +1,30 @@
+{ 
+  "1": {
+    "message": "Qui veux-tu voir ?",
+    "choices": [
+      {"text": "Avocat", "goto": 2},
+      {"text": "Détective", "goto": 2}
+    ]
+  },
+  "2": {
+    "message": "L'arme du crime ?",
+    "choices": [
+      {"text": "Corde", "goto": 3},
+      {"text": "Couteau", "goto": 3}
+    ]
+  },
+  "3": {
+    "message": "La tueuse ?",
+    "choices": [
+      {"text": "Fiona", "goto": 4},
+      {"text": "Christina", "goto": 4}
+    ]
+  },
+  "4": {
+    "message": "La sanction ?",
+    "choices": [
+      {"text": "La prison", "goto": 5},
+      {"text": "Le bûcher", "goto": 6}
+    ]
+  }
+}
