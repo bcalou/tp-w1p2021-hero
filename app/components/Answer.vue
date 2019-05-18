@@ -6,10 +6,9 @@
     <router-link 
       class="button" 
       to="/game/1">Valider</router-link>
-    <router-link 
-      class="button" 
-      :to="'/game/' + id">
-      Répondre</router-link>
+    <!-- <router-link 
+      class="button" :to="/game/1">
+      Répondre</router-link> -->
   </div>
 </template>
 
