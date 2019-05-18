@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Home from './components/Home.vue';
 import Character from './components/Character.vue';
 import Game from './components/Game.vue';
+import Answer from './components/Answer.vue';
 
 Vue.use(Router);
 
@@ -25,6 +26,11 @@ const router = new Router({
       path: '/game/:id',
       name: 'game',
       component: Game,
+    },
+    {
+      path: '/answer',
+      name: 'answer',
+      component: Answer,
     },
     {
       path: '*',

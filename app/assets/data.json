@@ -4,6 +4,30 @@
     "choices": [
       {"text": "Avocat", "goto": 2},
       {"text": "Détective", "goto": 2}
+    ],
+    "goto": 2,
+    "title": "L'arme",
+    "subtitle": "Déterminer l'arme du décès",
+    "suspects": [
+      {
+        "suspectId": 1,
+        "name": "Jun",
+        "goto": 2,
+        "phrases": [
+          "phrase1.1",
+          "phrase1.2"
+        ]
+      },
+      {
+        "suspectId": 2,
+        "name": "Yukio",
+        "goto": 2,
+        "phrases": [
+          "phrase1.1",
+          "phrase1.2",
+          "phrase1.3"
+        ]
+      }
     ]
   },
   "2": {
@@ -11,6 +35,28 @@
     "choices": [
       {"text": "Corde", "goto": 3},
       {"text": "Couteau", "goto": 3}
+    ],
+    "title": "La cause du décès",
+    "subtitle": "Déterminer la cause du décès",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "goto": 3,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "goto": 3,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      }
     ]
   },
   "3": {
@@ -18,6 +64,28 @@
     "choices": [
       {"text": "Fiona", "goto": 4},
       {"text": "Christina", "goto": 4}
+    ],
+    "title": "L'heure du décès'",
+    "subtitle": "Trouver la fourchette horaire du décès",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "goto": 4,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "goto": 4,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      }
     ]
   },
   "4": {
@@ -25,6 +93,57 @@
     "choices": [
       {"text": "La prison", "goto": 5},
       {"text": "Le bûcher", "goto": 6}
+    ],
+    "title": "La révélation",
+    "subtitle": "Désigner le coupable!",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "goto": 5,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "goto": 6,
+        "phrases": [
+          "phrase1",
+          "phrase2"
+        ]
+      }
     ]
   }
+  // "answer": {
+  //   "message": "La sanction ?",
+  //   "choices": [
+  //     {"text": "La prison", "goto": 5},
+  //     {"text": "Le bûcher", "goto": 6}
+  //   ],
+  //   "title": "Entrez la réponse",
+  //   "subtitle": "Désigner le coupable!",
+  //   "suspects": [
+  //     {
+  //       "suspectId": "1",
+  //       "name": "Jun",
+  //       "goto": 5,
+  //       "phrases": [
+  //         "phrase1",
+  //         "phrase2"
+  //       ]
+  //     },
+  //     {
+  //       "suspectId": "2",
+  //       "name": "Yukio",
+  //       "goto": 6,
+  //       "phrases": [
+  //         "phrase1",
+  //         "phrase2"
+  //       ]
+  //     }
+  //   ]
+  // }
 }

@@ -1,31 +1,52 @@
 <template>
   <div class="big-header">
-    <h1>Aventure {{ id }} - {{ message }}</h1>
+    <h1>Niveau {{ id }} - {{ title }}</h1>
+    <!-- <h1>{{ subtitle }}</h1> -->
     <br />
-    <router-link 
-      v-for="(choice, index) in choices" 
+    <div 
+      v-for="(suspect, index) in suspects" 
       :key="index" 
+      class="button" >
+        {{ suspect.name }} - {{ suspect.phrases.length }}
+    </div>
+    <!-- <h2 v-for="(phrase , index) in phrases"></h2> -->
+    <router-link 
       class="button" 
-      :to="'/game/' + choice.goto">
-        {{ choice.text }}
+      to="/answer">
+      Répondre
     </router-link>
   </div>
 </template>
 
 <script>
 import data from '../assets/data.json';
+import audioCount from '../services/audioCount';
+
+
 
 export default {
     computed: {
       id() {
-        return this.$route.params.id
+        return this.$route.params.id;
       },
-      message() {
-        return data[this.id].message;
+      title() {
+        return data[this.id].title;
       },
-      choices() {
-        return data[this.id].choices;
-      }
+      goto() {
+        return data[this.id].goto;
+      },
+      // choices() {
+      //   return data[this.id].choices;
+      // },
+      suspects() {
+        return data[this.id].suspects;
+      },
+
     }
+    // methods:{
+    //   eyes(){
+    //     console.log(suspects.name);
+    //   }
+    // }
 };
 </script>
