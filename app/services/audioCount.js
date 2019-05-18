@@ -1,4 +1,3 @@
-
 class AudioCount {
   constructor() {
     this.count = 10;

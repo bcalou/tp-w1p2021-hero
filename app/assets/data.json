@@ -1,20 +1,16 @@
 { 
   "1": {
-    "message": "Qui veux-tu voir ?",
-    "choices": [
-      {"text": "Avocat", "goto": 2},
-      {"text": "Détective", "goto": 2}
-    ],
     "goto": 2,
     "title": "L'arme",
     "subtitle": "Déterminer l'arme du décès",
+    "answer": "pistolet",
     "suspects": [
       {
         "suspectId": 1,
         "name": "Jun",
         "goto": 2,
         "phrases": [
-          "phrase1.1",
+          "phrase1.1jun",
           "phrase1.2"
         ]
       },
@@ -23,7 +19,7 @@
         "name": "Yukio",
         "goto": 2,
         "phrases": [
-          "phrase1.1",
+          "phrase1.1yukio",
           "phrase1.2",
           "phrase1.3"
         ]
@@ -36,6 +32,7 @@
       {"text": "Corde", "goto": 3},
       {"text": "Couteau", "goto": 3}
     ],
+    "goto": 3,
     "title": "La cause du décès",
     "subtitle": "Déterminer la cause du décès",
     "suspects": [
@@ -65,6 +62,7 @@
       {"text": "Fiona", "goto": 4},
       {"text": "Christina", "goto": 4}
     ],
+    "goto": 4,
     "title": "L'heure du décès'",
     "subtitle": "Trouver la fourchette horaire du décès",
     "suspects": [
@@ -94,6 +92,7 @@
       {"text": "La prison", "goto": 5},
       {"text": "Le bûcher", "goto": 6}
     ],
+    "goto": "win",
     "title": "La révélation",
     "subtitle": "Désigner le coupable!",
     "suspects": [
@@ -117,33 +116,4 @@
       }
     ]
   }
-  // "answer": {
-  //   "message": "La sanction ?",
-  //   "choices": [
-  //     {"text": "La prison", "goto": 5},
-  //     {"text": "Le bûcher", "goto": 6}
-  //   ],
-  //   "title": "Entrez la réponse",
-  //   "subtitle": "Désigner le coupable!",
-  //   "suspects": [
-  //     {
-  //       "suspectId": "1",
-  //       "name": "Jun",
-  //       "goto": 5,
-  //       "phrases": [
-  //         "phrase1",
-  //         "phrase2"
-  //       ]
-  //     },
-  //     {
-  //       "suspectId": "2",
-  //       "name": "Yukio",
-  //       "goto": 6,
-  //       "phrases": [
-  //         "phrase1",
-  //         "phrase2"
-  //       ]
-  //     }
-  //   ]
-  // }
 }

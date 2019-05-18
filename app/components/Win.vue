@@ -1,12 +1,13 @@
 <template>
   <div class="big-header">
-    <h1>Choisir son personnage</h1>
+    <h1>You win !</h1>
     <br />
-    <router-link class="button" to="/game/1">Jouer</router-link>
+    <router-link class="button" to="/home">Retour à l'accueil</router-link>
   </div>
 </template>
 
 <script>
+//import data from '../assets/data.json';
 import audioCount from '../services/audioCount';
 
 export default {

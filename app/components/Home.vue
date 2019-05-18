@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import audioCount from '../services/audioCount';
+
 export default {
   data() {
     return {
