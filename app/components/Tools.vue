@@ -3,8 +3,8 @@
     <h1>Tools</h1>
     
     <!-- <router-link class="button" to="/game/1"></router-link> -->
-    <p>Nombre d'audio</p>
-    <p>nombre de loupe</p>
+    <p>Nombre d'audio {{ count }}</p>
+    <p>Nombre de loupe</p>
   </div>
 </template>
 
@@ -28,9 +28,13 @@
 
 
 <script>
-//import audioCount from '../services/audioCount';
+import audioCount from '../services/audioCount';
 
 export default {
-    
+  data() {
+    return {
+      count : audioCount.value()
+    }
+  }
 };
 </script>

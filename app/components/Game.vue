@@ -15,9 +15,12 @@
       Niveau suivant
     </router-link> -->
     <router-link 
-      class="button" 
+      class="button button__answer" 
       :to="'/answer/' + id">
       Répondre</router-link>
+
+    <Suspects></Suspects>
+
     <router-link 
       class="button button__bedroom" 
       to="/bedroom">
@@ -25,7 +28,7 @@
     </router-link>
 
 
-    <p>{{count}}</p>
+    <!-- <p>{{count}}</p> -->
 
     <Tools></Tools>
   </div>
@@ -35,8 +38,12 @@
 <style scoped>
   .button__bedroom {
     position: absolute;
-    right: 0;
+    right: 60px;
     width: 70px;
+  }
+  .button__answer {
+    position: absolute;
+    bottom: 100px;
   }
 </style>
 
@@ -44,17 +51,20 @@
 import data from '../assets/data.json';
 import audioCount from '../services/audioCount';
 import Tools from '../components/Tools.vue';
+import Suspects from '../components/Suspects.vue'
 
 
 
 export default {
     data() {
       return {
-        count : audioCount.value()
+        count : audioCount.value(),
+        textCount: 0
       }
     },
     components: {
-      Tools
+      Tools,
+      Suspects
     },
     computed: {
       id() {
@@ -83,10 +93,6 @@ export default {
       // }
     },
     methods:{
-
-      initZero() {
-        return i = 0;
-      },
       
       handleAudio() {
         console.log('Compte bordel');
@@ -94,12 +100,17 @@ export default {
 
         // let i = this.id;
         // i = 0;  
-        // document.querySelector('.show-text').innerHTML = this.suspects[i]['phrases'][i];
+        document.querySelector('.show-text').innerHTML = this.suspects[this.textCount]['phrases'][this.textCount];
         // //let memo = i;
-        // i++;
+        this.textCount++;
+
+         if(this.textCount >= this.suspects[this.textCount]['phrases'].length) {
+              //document.getElementById("demo").innerHTML = phrases[0]; 
+            this.textCount = 0;
+          }
+
       },
       lostGame() {
-
         if (localStorage.getItem('audio') < 0) {
           console.log('perdu');
           $router.push({ path : 'loose'});
