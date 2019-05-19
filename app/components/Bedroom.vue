@@ -3,9 +3,9 @@
     <h1>Chambre</h1>
     <br />
     <section>
-       <img v-bind:src="selectedImage" @click="randomImage"/>
-       <img v-bind:src="selectedImage1" @click="randomImage1"/>
-       <img v-bind:src="selectedImage2" @click="randomImage2"/>
+       <img v-bind:src="selectedImage" @click.once="randomImage"/>
+       <img v-bind:src="selectedImage1" @click.once="randomImage1"/>
+       <img v-bind:src="selectedImage2" @click.once="randomImage2"/>
     </section>
     <router-link class="button" to="/game/1">Retour au salon</router-link>
   </div>
@@ -40,15 +40,27 @@ export default {
     methods: {
       randomImage() {
         const idx = Math.floor(Math.random() * this.images.length);
-        this.selectedImage = this.images[idx]
+        this.selectedImage = this.images[idx];
+
+        localStorage.setItem('image1', this.selectedImage);
       },
       randomImage1 () {
         const idx = Math.floor(Math.random() * this.images.length);
-        this.selectedImage1 = this.images[idx]
+        this.selectedImage1 = this.images[idx];
+
+        localStorage.setItem('image2', this.selectedImage1);
       },
       randomImage2 () {
         const idx = Math.floor(Math.random() * this.images.length);
         this.selectedImage2 = this.images[idx];
+
+        localStorage.setItem('image3', this.selectedImage2);
+
+        if(localStorage.getItem('image3')) {
+          this.selectedImage2 = localStorage.getItem('image3');
+        }
+
+
       }
     }
 }

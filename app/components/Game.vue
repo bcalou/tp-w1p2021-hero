@@ -7,7 +7,7 @@
       v-for="(suspect, i) in suspects" :key="i" class="button" @click="handleAudio">
         {{ suspect.name }} - {{ suspect.phrases.length }}
     </div>
-    <p class="show-text">hello</p>
+    <p class="show-text">Texte attendu</p>
     <!-- <h2 v-for="(phrase , index) in phrases"></h2> -->
     <!-- <router-link 
       class="button" 
@@ -17,12 +17,26 @@
     <router-link 
       class="button" 
       :to="'/answer/' + id">
-      Répondre
+      Répondre</router-link>
+    <router-link 
+      class="button button__bedroom" 
+      to="/bedroom">
+      Aller à la chambre
     </router-link>
+
 
     <p>{{count}}</p>
   </div>
 </template>
+
+
+<style scoped>
+  .button__bedroom {
+    position: absolute;
+    right: 0;
+    width: 70px;
+  }
+</style>
 
 <script>
 import data from '../assets/data.json';
@@ -33,9 +47,7 @@ import audioCount from '../services/audioCount';
 export default {
     data() {
       return {
-        
-        count : audioCount.value(),
-        
+        count : audioCount.value()
       }
     },
     computed: {
@@ -79,11 +91,16 @@ export default {
         // document.querySelector('.show-text').innerHTML = this.suspects[i]['phrases'][i];
         // //let memo = i;
         // i++;
-        
+      },
+      lostGame() {
 
-      
-
+        if (localStorage.getItem('audio') < 0) {
+          console.log('perdu');
+          $router.push({ path : 'loose'});
+        }
       }
+
+
     }
 }
 </script>
