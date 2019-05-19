@@ -8,6 +8,9 @@
        <img v-bind:src="selectedImage2" @click.once="randomImage2"/>
     </section>
     <router-link class="button" to="/game/1">Retour au salon</router-link>
+
+    <!-- <router-view name="tools">coucou</router-view> -->
+    <Tools></Tools>
   </div>
 </template>
 
@@ -23,6 +26,7 @@
 <script>
 import data from '../assets/data.json';
 import audioCount from '../services/audioCount';
+import Tools from '../components/Tools.vue';
 
 export default {
     data() {
@@ -36,6 +40,9 @@ export default {
          selectedImage1: 'https://static.thenounproject.com/png/393234-200.png',
          selectedImage2: 'https://static.thenounproject.com/png/393234-200.png'
       }
+    },
+    components: {
+      Tools
     },
     methods: {
       randomImage() {

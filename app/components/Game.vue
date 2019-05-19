@@ -26,6 +26,8 @@
 
 
     <p>{{count}}</p>
+
+    <Tools></Tools>
   </div>
 </template>
 
@@ -41,6 +43,7 @@
 <script>
 import data from '../assets/data.json';
 import audioCount from '../services/audioCount';
+import Tools from '../components/Tools.vue';
 
 
 
@@ -49,6 +52,9 @@ export default {
       return {
         count : audioCount.value()
       }
+    },
+    components: {
+      Tools
     },
     computed: {
       id() {
