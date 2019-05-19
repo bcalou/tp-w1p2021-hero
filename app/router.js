@@ -7,6 +7,7 @@ import Game from './components/Game.vue';
 import Answer from './components/Answer.vue';
 import Loose from './components/Loose.vue';
 import Win from './components/Win.vue';
+import Bedroom from './components/Bedroom.vue';
 
 Vue.use(Router);
 
@@ -33,6 +34,11 @@ const router = new Router({
       path: '/answer/:id',
       name: 'answer',
       component: Answer,
+    },
+    {
+      path: '/bedroom',
+      name: 'bedroom',
+      component: Bedroom,
     },
     {
       path: '/loose',

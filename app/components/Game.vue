@@ -74,12 +74,15 @@ export default {
         console.log('Compte bordel');
         audioCount.decrement();
 
-        let i = this.id;
-        i = 0;  
-        document.querySelector('.show-text').innerHTML = this.suspects[i]['phrases'][i];
-        //let memo = i;
-        i++;
+        // let i = this.id;
+        // i = 0;  
+        // document.querySelector('.show-text').innerHTML = this.suspects[i]['phrases'][i];
+        // //let memo = i;
+        // i++;
         
+
+      
+
       }
     }
 }
