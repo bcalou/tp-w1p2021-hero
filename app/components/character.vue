@@ -2,11 +2,13 @@
   <div class="big-header">
     <h1>Page</h1>
     <h1>{{ message }}</h1>
+    <h1>Previous clicks {{ course }}</h1>
     <div>
     <div/>
     <br />
     <transition name="fade">
-     <router-link class="button" to="/game/:id">Go to Page</router-link>
+     
+      <router-link class="button" to="/game/1">Go to Home</router-link>
      </transition>
   </div>
 </template>
@@ -22,10 +24,12 @@
 </style>
 
 <script>
+import countService from '../json/countServices';
+
 export default {
   data() {
     return {
-      visible: 'true'
+      course: countService.value()
     };
   }
 };
