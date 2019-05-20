@@ -1,6 +1,6 @@
 <template>
   <div class="tools">
-    <h1>Tools</h1>
+    <h1>Outils</h1>
     
     <!-- <router-link class="button" to="/game/1"></router-link> -->
     <p>Nombre d'audio {{ count }}</p>

@@ -5,7 +5,7 @@
       :key="i">
       {{  phrases }}</p> -->
 
-    <p id="demo" ></p>
+    <p class="showText" ></p>
   </div>
 </template>
 
@@ -24,17 +24,18 @@ h1 {
 
 <script>
 import audioCount from '../services/audioCount';
+import Game from './Game.vue';
 
 export default {
   data() {
     return {
       count: 0,
-      name : 'Jun',
+      name : 'Pat',
       suspectID: 0,
       phrases: [
-          "phrase1.1jun",
-          "phrase1.2jun",
-          "phrase1.3jun"
+          "phrase1.1pat",
+          "phrase1.2pat",
+          "phrase1.3pat"
         ]
     }
   },
@@ -43,12 +44,14 @@ export default {
   methods: {
     showText() {
       //var idx = 0;
-      document.getElementById("demo").innerHTML = this.phrases[this.count];
+      document.querySelector(".showText").innerHTML = this.phrases[this.count];
       this.count++;
   
       if(this.count >= this.phrases.length) {
         this.count = 0;
       }
+
+      audioCount.decrement();
     }
   }
     

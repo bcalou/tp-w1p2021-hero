@@ -19,15 +19,20 @@
       :to="'/answer/' + id">
       Répondre</router-link>
 
-    <Suspects></Suspects>
-
+  <section class="suspects">
+    <Suspect1></Suspect1>
+    <Suspect2></Suspect2>
+    <Suspect3></Suspect3>
+    <Suspect4></Suspect4>
+  </section>
+    
     <router-link 
       class="button button__bedroom" 
       to="/bedroom">
       Aller à la chambre
     </router-link>
 
-
+    <p class="showText"></p>
     <!-- <p>{{count}}</p> -->
 
     <Tools></Tools>
@@ -45,13 +50,19 @@
     position: absolute;
     bottom: 100px;
   }
+  .suspects {
+    display: flex;
+  }
 </style>
 
 <script>
 import data from '../assets/data.json';
 import audioCount from '../services/audioCount';
 import Tools from '../components/Tools.vue';
-import Suspects from '../components/Suspects.vue'
+import Suspect1 from '../components/Suspect1.vue';
+import Suspect2 from '../components/Suspect2.vue';
+import Suspect3 from '../components/Suspect3.vue';
+import Suspect4 from '../components/Suspect4.vue';
 
 
 
@@ -60,11 +71,32 @@ export default {
       return {
         count : audioCount.value(),
         textCount: 0
+        // susp: [
+        //   { suspectID: 0, 
+        //     name: "Jun", 
+        //     text: [
+        //       'phrases1.jun',
+        //       'phrases2.jun',
+        //       'phrases3.jun'
+        //     ]
+        //   },
+        //   { suspectID: 1, 
+        //     name: "Yukio", 
+        //     text: [
+        //       'phrase1.yukio',
+        //       'phrase2.yukio',
+        //     ]
+        //   },
+        // ]
       }
     },
+    props: ['suspectId','name','text'],
     components: {
       Tools,
-      Suspects
+      Suspect1,
+      Suspect2,
+      Suspect3,
+      Suspect4,
     },
     computed: {
       id() {
@@ -81,6 +113,9 @@ export default {
       // },
       suspects() {
         return data[this.id].suspects;
+      },
+      phrases() {
+        return data[this.id].suspects.phrases;
       }
       // showMessage() {
       //   //document.querySelector('.show-text').innerHTML = id; 

@@ -1,12 +1,12 @@
 class AudioCount {
   constructor() {
     //Save audio after refresh
-    // if (localStorage.getItem('audio')) {
-    //   this.count = localStorage.getItem('audio');
-    // } else {
-    //   this.count = 10;
-    // }
-    this.count = 10;
+    if (localStorage.getItem('audio')) {
+      this.count = localStorage.getItem('audio');
+    } else {
+      this.count = 10;
+    }
+    // this.count = 10;
     
   }
   decrement() {
