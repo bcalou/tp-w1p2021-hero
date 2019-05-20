@@ -146,9 +146,14 @@ export default {
 
       },
       lostGame() {
-        if (localStorage.getItem('audio') < 0) {
+        // if (localStorage.getItem('audio') < 0) {
+        //   console.log('perdu');
+        //   $router.push({ path : 'loose'});
+        // }
+
+        if (this.count < 0) {
           console.log('perdu');
-          $router.push({ path : 'loose'});
+          this.$router.push({name: 'loose'});
         }
       }
 

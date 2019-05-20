@@ -16,6 +16,7 @@
       :to="'/game/' + id">
       Retour au salon
     </router-link>
+    
     <template v-if="handleAnswer">
       <p>Bravo! Tu peux maintenant passer au niveau suivant</p>
       <router-link 
