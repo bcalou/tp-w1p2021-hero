@@ -1,7 +1,7 @@
 <template>
   <div class="big-header">
     <h1>{{ message }}</h1>
-    <br>
+    <br> 
     <!-- <img v-for="img in images" v-bind:src="background"> -->
     <img :src="background">
     <router-link class="button" :to="route1">1</router-link>
@@ -12,7 +12,7 @@
 
 <script>
 const data = require("../json/data.json");
-import countService from '../json/countServices';
+import countService from '../json/countServices.js';
 
 export default {
  computed: {
