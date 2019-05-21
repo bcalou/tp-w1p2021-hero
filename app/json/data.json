@@ -3,13 +3,13 @@
         "text": "Bill le boss",
         "choix1": "2",
         "choix2": "3",
-        "img": "./assets/blue.jpeg"
+        "img": "./../assets/blue.jpeg"
     },
     "2": {
         "text": "Here lies a square",
         "choix1": "3",
         "choix2": "4",
-        "img": "./assets/blue.jpeg"
+        "img": "./../assets/blue.jpeg"
     },
     "3": {
         "text": "a square",
