@@ -5,7 +5,7 @@
     <img class="background" :src="background">
     <router-link class="button" :to="route1">Aller à Droite</router-link>
     <router-link class="button" :to="route2"> Aller à Gauche</router-link>
-    <audio src="" autoplay ref="audio"></audio>
+    <audio src="" autoplay refs="audio"></audio>
   </div>
 </template>
 
