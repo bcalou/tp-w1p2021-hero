@@ -20,14 +20,29 @@ textarea {
     color: white;
 }
 
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.bill {
+    position: relative;
+}
+
 .button {
     color: $hetic-green;
     text-decoration: none;
     background: white;
     padding: 5px;
     border-radius: 5px;
-    display: inline-block;
+    display: flex;
     border: none;
+    position: relative;
+}
+
+h1 {
+    position: relative;
 }
 
 .menu-popover-enter {

@@ -1,18 +1,17 @@
 <template>
   <div class="big-header">
-    <h1>{{ message }}</h1>
+    <h1 class="bill">{{ message }}</h1>
     <br> 
-    <!-- <img v-for="img in images" v-bind:src="background"> -->
-    <img :src="background">
-    <router-link class="button" :to="route1">1</router-link>
-    <router-link class="button" :to="route2">2</router-link>
+    <img class="background" :src="background">
+    <router-link class="button" :to="route1">Aller à Droite</router-link>
+    <router-link class="button" :to="route2"> Aller à Gauche</router-link>
   </div>
 </template>
 
 
 <script>
 const data = require("../json/data.json");
-import countService from '../json/countServices.js';
+import countService from '../json/countServices';
 
 export default {
  computed: {
@@ -30,6 +29,6 @@ export default {
     },
   },
 };
-</script>
+</script> 
 
 

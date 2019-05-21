@@ -1,36 +1,42 @@
 <template>
   <div class="big-header">
-    <h1>Page</h1>
-    <h1>{{ message }}</h1>
-    <h1>Previous clicks {{ course }}</h1>
-    <div>
-    <div/>
-    <br />
-    <transition name="fade">
-     
-      <router-link class="button" to="/game/1">Go to Home</router-link>
-     </transition>
+    <h1>Choisir un objet</h1>
+
+      <img src="../assets/blue.jpeg" alt="">
+      <router-link class="button" to="/game/1"><button class="button" @click="boussole">Choisir</button></router-link>
+      <img src="../assets/blue.jpeg" alt="">
+      <router-link class="button" to="/game/1"> <button class="button" @click="epee">Choisir</button> </router-link>
+
   </div>
 </template>
 
 <style>
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-active {
-  opacity: 0;
-  transform: translateX(20px);
-}
+
 </style>
 
+
+
 <script>
-import countService from '../json/countServices';
+import countService from '../json/countServices.js';
+import saveBoussole from '../json/saveBoussole.js';
+import saveEpee from '../json/saveEpee.js';
 
 export default {
   data() {
     return {
-      course: countService.value()
+      show: false
     };
+  },
+  methods: {
+    boussole() {
+      saveBoussole.save();
+    },
+    epee() {
+      saveEpee.save();
+    }
   }
 };
+
+
+
 </script>
