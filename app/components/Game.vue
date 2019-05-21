@@ -5,6 +5,7 @@
     <img class="background" :src="background">
     <router-link class="button" :to="route1">Aller à Droite</router-link>
     <router-link class="button" :to="route2"> Aller à Gauche</router-link>
+    <audio src="" autoplay ref="audio"></audio>
   </div>
 </template>
 
@@ -28,6 +29,11 @@ export default {
       return `${data[this.$route.params.id].img}`;
     },
   },
+  mounted() {
+    setTimeout(() => {
+      this.$refs.audio.pause();
+    }, 1000);
+  }
 };
 </script> 
 

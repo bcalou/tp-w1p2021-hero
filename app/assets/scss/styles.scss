@@ -10,7 +10,7 @@ textarea {
 }
 
 .big-header {
-    background-color: grey;
+    background-color: #111111;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,13 +22,13 @@ textarea {
 
 .background {
     position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: 100vh;
 }
 
 .bill {
     position: relative;
+    z-index: 1;
 }
 
 .button {
