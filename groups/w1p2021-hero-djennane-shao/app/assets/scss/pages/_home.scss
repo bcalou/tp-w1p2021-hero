@@ -1,0 +1,35 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: url('/assets/images/home.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  &__text {
+    color: #1e1e1e;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 100px;
+    width: 50%;
+    line-height: .7;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

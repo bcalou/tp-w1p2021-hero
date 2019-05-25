@@ -1,0 +1,196 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+
+@font-face {
+  font-family: "who_asks_satan";
+  src: url("../fonts/who_asks_satan.ttf");
+ }
+ 
+$background: #1c1c1c;
+* {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto";
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.big-header {
+  background-color: $background;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button {
+  color: $background;
+  text-decoration: none;
+  background-image: url('../question.png');
+  color:white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  margin-bottom: 10px;
+  margin-top:10px;
+  height: auto;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.603) 0 0 6px;
+  font-family: who_asks_satan;
+  letter-spacing: .7rem;
+  font-size: 27px;
+
+}
+.pane-leave-active,
+.pane-enter-active {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: $background;
+  }
+}
+
+.pane-leave-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+
+.background__one {
+  background: url('../Background1.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.game {
+  height: 200px;
+  width: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .button-game {
+    font-size: 27px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #790000;
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-shadow: black 0 0 3px;
+    box-shadow: black 0 0 3px;
+  }
+}
+
+.choices {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: who_asks_satan;
+  letter-spacing: .7rem;
+  font-size: 27px;
+}
+
+.question {
+  background-image: url('../question.png');
+  border-radius: 10px;
+  height: auto;
+  width: 622px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: who_asks_satan;
+  color: #ffffff;
+  letter-spacing: .7rem;
+  font-size: 27px;
+}
+
+.infos {
+  width: calc(100vw - 300px);
+  height: auto;
+  margin-bottom: 30px;
+  background-image: url('../question.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: who_asks_satan;
+  letter-spacing: .7rem;
+  font-size: 27px;
+}
+
+h1 {
+  font-family: who_asks_satan;
+  letter-spacing: .7rem;
+  font-size: 27px;
+}
+
+.win {
+  font-size: 70px;
+margin-bottom: 30px;
+}
+
+.winbg {
+  background-image: url('../win.png');
+}

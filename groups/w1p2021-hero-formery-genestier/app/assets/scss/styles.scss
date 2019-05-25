@@ -1,0 +1,89 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: #0de595;
+
+* {
+  cursor: url('https://i.imgur.com/wFyTVkk.png'), auto;
+}
+
+.stop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.1);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Luckiest Guy';
+}
+
+.logo {
+  animation: float 6s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  left: -17vw;
+}
+
+.big-header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+}
+
+.button {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  background: white;
+  padding: 30px 20px 20px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  border: none;
+  position: absolute;
+  bottom: 170px;
+  transition: 0.3s;
+}
+.button:hover {
+  color: #27ae60;
+}
+button{
+  text-align :left;
+  text-decoration : none;
+  color : black ;
+  line-height: 25px;
+  font-size : 20px;
+  transition: 0.3s;
+  border: 0px;
+  background: transparent;
+}
+button:hover{
+  color : #A8A063;
+  transition: 0.3s;
+}
+.background {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px) scale(0.6) rotate(-8deg);
+	}
+	50% {
+		transform: translatey(-20px) scale(0.6) rotate(-8deg);
+	}
+	100% {
+		transform: translatey(0px) scale(0.6) rotate(-8deg);
+	}
+}

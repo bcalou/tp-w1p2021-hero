@@ -1,0 +1,40 @@
+.ziel{
+  position: absolute;
+  width:30vw;
+  height:20vw;
+  bottom:20vh;
+  .drapeau{
+    background-color: #fff;
+    width:18vw;
+    height:12vw;
+    position: absolute;
+    display: flex;
+    flex-wrap:wrap;
+    transform:rotate(-35deg) scale(0.8);
+    &--1{
+      transform:scaleX(-1) rotate(-35deg) scale(0.8);
+      left:120%;
+    }
+    &--2{
+      right:120%;
+    }
+    div{
+      background-color: #000;
+      height:4vw;
+      width:3.6vw;
+      &:nth-child(odd){
+        background-color: #fff;
+      }
+    }
+    &:after{
+      content:"";
+      height:250%;
+      position: absolute;
+      top:-5%;
+      right:-2.5%;
+      width:5%;
+      border-radius:5vw;
+      background-color: brown;
+    }
+  }
+}

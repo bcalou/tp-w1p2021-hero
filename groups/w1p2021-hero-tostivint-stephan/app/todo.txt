@@ -1,0 +1,34 @@
+4. bruits 
+
+//////////////////////////////////////////////////////
+
+Condition variable :
+////////////////////
+
+                NameVariable     Valuecomparison
+"binding": { "type": "snack", "value": "cake" },
+
+Define value variable :
+///////////////////////
+
+                    NameVariable       ValueDefine 
+"defineItems": [{ "type": "snack", "value": "cake" }]
+
+//////////////////////////////////////////////////////
+
+Page victory :
+//////////////
+
+frame : "/Victory"
+
+Page Game Over : 
+////////////////
+
+frame : "/GameOver"
+
+Page Normal :
+/////////////
+
+frame : "yourFrame"
+
+//////////////////////////////////////////////////////

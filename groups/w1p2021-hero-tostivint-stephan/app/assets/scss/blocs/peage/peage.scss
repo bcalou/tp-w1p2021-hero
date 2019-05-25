@@ -1,0 +1,57 @@
+.peage{
+  width:25%;
+  height:30%;
+  background-color: lightgrey;
+  position: absolute;
+  border-radius:2vw;
+  max-width:100px;
+  z-index: 4;
+  left:-60vw;
+  bottom: 8vw;
+  transition: left 1s;
+  .peage__window{
+    background-color: lightblue;
+    width:20%;
+    position: absolute;
+    right:-5%;
+    top:7%;
+    height:35%;
+    border:grey 1vw solid;
+    border-radius:1vw; 
+    border-right: 0 solid transparent;
+  }
+  .peage__box{
+    position: absolute;
+    left:115%;
+    width:50%;
+    bottom:0;
+    height:55%;
+    border-top-left-radius:5vw;
+    border-top-right-radius:5vw;
+    background-color: lightgrey;
+  }
+  .peage__schranke{
+    background-color: red;
+    position: absolute;
+    left:105%;
+    top:55%;
+    width:450%;
+    height:15%;
+    border-radius:5vw;
+    transform-origin:left center;
+    transition:all 1s;
+    display: flex;
+    justify-content: space-around;
+    .schranke__white{
+      width:10%;
+      height:100%;
+      background-color: #fff;  
+    }
+  }
+  .peage__schranke--up{
+    transform:rotate(-90deg);
+  }
+  &.peage--active{
+    left:20vw;
+  }
+}

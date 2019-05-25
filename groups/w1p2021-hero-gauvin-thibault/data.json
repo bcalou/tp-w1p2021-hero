@@ -1,0 +1,3120 @@
+{
+    "characters":[
+        {
+            "name": "José",
+            "description": "Je resiste aux morçures",
+            "image": "/images/coco/Bitmap.png"
+        },
+        {
+            "name": "Joséphine",
+            "description": "Je ne crains pas le poison",
+            "image": "/images/coco/Bitmap2.png"
+        }
+    ],
+    "character": {
+        "image": "/images/coco/character.gif"
+    },
+    "home": {
+        "image": "/images/coco/home.gif",
+        "music": {
+            "src": "/assets/images/sound/cladun.mp3",
+            "volume": 1,
+            "loop": true
+        }
+
+    },
+    "dead": {
+        "4": {
+                "condition" : "sword",
+                "message": "T'es mort"
+        }
+    },
+        "steps": {
+        "0": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/0.png",
+            "José": {
+                "name": "José",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "vers une bourse",
+                        "transition": "right",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "vers une bourse",
+                        "transition": "right",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "1": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/1.png",
+            "José": {
+                "name": "José",
+                "message": "super, une bourse de 10 pièces! Vers ou allez ?",
+                "answers": [
+                    {
+                        "message": "vers une rune",
+                        "transition": "top",
+                        "link": "/game/0",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 1,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message":"allez se reposer",
+                        "transition": "bottom",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "right",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "super, une bourse de 10 pièces! Vers ou allez ?",
+                "answers": [
+                    {
+                        "message": "vers une rune",
+                        "transition": "top",
+                        "link": "/game/0",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 1,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message":"allez se reposer",
+                        "transition": "bottom",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "right",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "2": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/2.png",
+            "José": {
+                "name": "José",
+                "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
+                "answers": [
+                    {
+                        "message": "vers une bourse",
+                        "transition": "top",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un mechant",
+                        "transition": "bottom",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un brigand",
+                        "transition": "right",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "Super une bonne nuit de someil, quelle direction vous allez prendre ?",
+                "answers": [
+                    {
+                        "message": "vers une bourse",
+                        "transition": "top",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un mechant",
+                        "transition": "bottom",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un brigand",
+                        "transition": "right",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "3": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/3.png",
+            "José": {
+                "name": "José",
+                "message": "oh non un méchant heuresement que vous aviez votre épée, ou aller maintenant",
+                "answers": [
+                    {
+                        "message": "aller se reposer",
+                        "transition": "top",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "vers une rune",
+                        "transition": "bottom",
+                        "link": "/game/4",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 1,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "right",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "oh non un méchant heuresement que vous aviez votre épée, ou aller maintenant",
+                "answers": [
+                    {
+                        "message": "aller se reposer",
+                        "transition": "top",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief":0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "vers une rune",
+                        "transition": "bottom",
+                        "link": "/game/4",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 1,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "right",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "4": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/4.png",
+            "José": {
+                "name": "José",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "affrtoner un mechant",
+                        "transition": "top",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre mechant",
+                        "transition": "right",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "Vous avez activé la rune ! ou voulez vous aller maintenant?",
+                "answers": [
+                    {
+                        "message": "affrtoner un mechant",
+                        "transition": "top",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre mechant",
+                        "transition": "right",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "5": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/5.png",
+            "José": {
+                "name": "José",
+                "message": "Super une bourse de 10 pièces, que voulez vous faire",
+                "answers": [
+                    {
+                        "message": "vers une rune",
+                        "transition": "left",
+                        "link": "/game/0",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 1,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "right",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "bottom",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "Super une bourse de 10 pièces, que voulez vous faire",
+                "answers": [
+                    {
+                        "message": "vers une rune",
+                        "transition": "left",
+                        "link": "/game/0",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 1,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "right",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "bottom",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "6": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/6.png",
+            "José": {
+                "name": "José",
+                "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "bottom",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller boire une potion",
+                        "transition": "right",
+                        "link": "/lose",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "vous ouvrez le coffre et vous y trouvez une épée, que desirez vous faire",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "bottom",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller boire une potion",
+                        "transition": "right",
+                        "link": "/game/11",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/1",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "7": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/7.png",
+            "José": {
+                "name": "José",
+                "message": "un acien bigand s'est joint à vous, ou voulez vous aller ?",
+                "answers": [
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "visiter une stele etrange",
+                        "transition": "right",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "se reposer",
+                        "transition": "left",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "top",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "un acien bigand s'est joint à vous, ou voulez vous aller ?",
+                "answers": [
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "visiter une stele etrange",
+                        "transition": "right",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "se reposer",
+                        "transition": "left",
+                        "link": "/game/2",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "top",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "8": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/8.png",
+            "José": {
+                "name": "José",
+                "message": "oh non encore un mandiant , vous lui donnez 5 pieces. Que faire maintenant ?",
+                "answers": [
+                    {
+                        "message": "aller voir brigand",
+                        "transition": "top",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un méchant",
+                        "transition": "bottom",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "right",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre méchant",
+                        "transition": "left",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "oh non encore un mandiant , vous lui donnez 5 pieces. Que faire maintenant ?",
+                "answers": [
+                    {
+                        "message": "aller voir brigand",
+                        "transition": "top",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un méchant",
+                        "transition": "bottom",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "right",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre méchant",
+                        "transition": "left",
+                        "link": "/game/3",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+         "9": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/9.png",
+            "José": {
+                "name": "José",
+                "message": "oh un méchant heuresement que vous aviez votre épée, quelle direction voulez vous prendre ?",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "left",
+                        "link": "/game/4",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 1,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "top",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "retourner a l'entree du donjon",
+                        "transition": "right",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "oh un méchant heuresement que vous aviez votre épée, quelle direction voulez vous prendre ?",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "left",
+                        "link": "/game/4",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 1,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "top",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "retourner a l'entree du donjon",
+                        "transition": "right",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "10": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/10.png",
+            "José": {
+                "name": "José",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "combattre un super méchant",
+                        "transition": "right",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "boire une potion",
+                        "transition": "bottom",
+                        "link": "/lose",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                "name": "Joséphine",
+                "message": "Un marchand vous propose un Bouclier contre 30 pièce , quel chance ! ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/5",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "combattre un super méchant",
+                        "transition": "right",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "boire une potion",
+                        "transition": "bottom",
+                        "link": "/game/11",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "11": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/11.png",
+            "José": {
+                "name": "José",
+                "message": "Vous trouvez une potion et vous la buvez, on vous a jamais dit de pas boire n'importe quoi ?!",
+                "answers": [
+                    {
+                        "message": "un stèle étrange",
+                        "transition": "bottom",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "right",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "top",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "un coffre",
+                        "transition": "left",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Vous trouvez une potion et vous la buvez, heuresement que vous etes imunisé !, que faire ?",
+                "answers": [
+                    {
+                        "message": "visiter une stele etrange",
+                        "transition": "bottom",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "right",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "top",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "left",
+                        "link": "/game/6",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "12": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/12.png",
+            "José": {
+                "name": "José",
+                "message": "Une bien etrange stèle, a quoi peut elle bien servir ? intrigué vous ne savez plus ou allez",
+                "answers": [
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "left",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "boire une potion",
+                        "transition": "top",
+                        "link": "/lose",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "right",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" :0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Une bien etrange stèle, a quoi peut elle bien servir ? intrigué vous ne savez plus ou allez",
+                "answers": [
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "left",
+                        "link": "/game/7",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "boire une potion",
+                        "transition": "top",
+                        "link": "/game/11",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "right",
+                        "link": "/lose",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "13": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/13.png",
+            "José": {
+                "name": "José",
+                "message": "super 10 pièces en plus dans votre bourse ! quelle direction voulez vous prendre ?",
+                "answers": [
+                    {
+                        "message": "visiter un stèle étrange",
+                        "transition": "top",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "retourner a l'entrée du donjon",
+                        "transition": "bottom",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "left",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un brigand",
+                        "transition": "right",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "super 10 pièces en plus dans votre bourse ! quelle direction voulez vous prendre ?",
+                "answers": [
+                    {
+                        "message": "visiter un stèle étrange",
+                        "transition": "top",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "retourner a l'entrée du donjon",
+                        "transition": "bottom",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "left",
+                        "link": "/game/8",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un brigand",
+                        "transition": "right",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "14": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/14.png",
+            "José": {
+                "name": "José",
+                "message": "Vous voila au début du donjon , ou Voulez vous allez",
+                "answers": [
+                    {
+                        "message": "affronter un mechant",
+                        "transition": "left",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "right",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Vous voila au début du donjon , ou Voulez vous allez",
+                "answers": [
+                    {
+                        "message": "affronter un mechant",
+                        "transition": "left",
+                        "link": "/game/9",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "right",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "15": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/15.png",
+            "José": {
+                "name": "José",
+                "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "left",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "activer une rune",
+                        "transition": "right",
+                        "link": "/game/20",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 1,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Un super mechant vous l'attaquez mais il riposte heuresement que vous aviez votre bouclier, vers ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "aller voir un marchand",
+                        "transition": "left",
+                        "link": "/game/10",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 1,
+                            "money" : -30,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "activer une rune",
+                        "transition": "right",
+                        "link": "/game/20",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 1,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "16": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/16.png",
+            "José": {
+                "name": "José",
+                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "boire une potion",
+                        "transition": "left",
+                        "link": "/lose",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un super méchant",
+                        "transition": "right",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "bottom",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre super méchant",
+                        "transition": "top",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "oh non encore un mendiant , vous lui donnez 5 piece, ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "boire une potion",
+                        "transition": "left",
+                        "link": "/game/11",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un super méchant",
+                        "transition": "right",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "bottom",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre super méchant",
+                        "transition": "top",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "17": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/17.png",
+            "José": {
+                "name": "José",
+                "message": "Un petit chien, vous le caressez mais il vous mord , heureusement que vous etes imunisé. que faire maintenant",
+                "answers": [
+                    {
+                        "message": "voir un marchand",
+                        "transition": "top",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "bottom",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "visiter une stèle étrange",
+                        "transition": " left",
+                        "link": "/game/12",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "right",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Un petit chien, vous le caressez mais il vous mord , il avait la rage...",
+                "answers": [
+                    {
+                        "message": "aller voir un mendiant",
+                        "transition": "top",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "un ancien brigand",
+                        "transition": "bottom",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "une stèle étrange",
+                        "transition": " left",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "un mendiant",
+                        "transition": "right",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "18": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/18.png",
+            "José": {
+                "name": "José",
+                "message": "un ancien brigand veut se joindre à vous , vous acceptez. Quelle direction prendre",
+                "answers": [
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "top",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une autre bourse",
+                        "transition": "right",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "bottom",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "un ancien brigand veut se joindre à vous , vous acceptez. Quelle direction prendre",
+                "answers": [
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "top",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "left",
+                        "link": "/game/13",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ramasser une autre bourse",
+                        "transition": "right",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "bottom",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "19": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/19.png",
+            "José": {
+                "name": "José",
+                "message": "Super un coffre , vous l'ouvrez et y trouvez une épée. ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "right",
+                        "link": "/game/24",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 1
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "top",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": "left",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Super un coffre , vous l'ouvrez et y trouvez une épée. ou voulez vous aller",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "right",
+                        "link": "/game/24",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 1
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "top",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "l'entrée du donjon",
+                        "transition": "left",
+                        "link": "/game/14",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "20": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/20.png",
+            "José": {
+                "name": "José",
+                "message": "Vous venez d'activer une rune ! Que faire maintenant ?",
+                "answers": [
+                    {
+                        "message": "affronter un super mechant",
+                        "transition": "left",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre super mechant",
+                        "transition": "bottom",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "Vous venez d'activer une rune ! Que faire maintenant ?",
+                "answers": [
+                    {
+                        "message": "affronter un super mechant",
+                        "transition": "left",
+                        "link": "/game/15",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un autre super mechant",
+                        "transition": "bottom",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "21": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/21.png",
+            "José": {
+                "name": "José",
+                "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier, quelle option choisissez vous ?",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "top",
+                        "link": "/game/20",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 1,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un marchand",
+                        "transition": "left",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "un super méchant, vous l'attaquez et il riposte heuresement que vous avez un bouclier, quelle option choisissez vous ?",
+                "answers": [
+                    {
+                        "message": "activer une rune",
+                        "transition": "top",
+                        "link": "/game/20",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 1,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "bottom",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "voir un marchand",
+                        "transition": "left",
+                        "link": "/game/16",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "22": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/22.png",
+            "José": {
+                "name": "José",
+                "message": "oh nan pas un mandiant , vous lui donez 5 pièces. Ou allez ?",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "left",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un super méchant",
+                        "transition": "top",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "oh nan pas un mandiant , vous lui donez 5 pièces. ou allez ?",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "bottom",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "caresser un petit chien",
+                        "transition": "left",
+                        "link": "/game/17",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "affronter un super méchant",
+                        "transition": "top",
+                        "link": "/game/21",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "23": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/23.png",
+            "José": {
+                "name": "José",
+                "message": "TADAAA encore 10 pièces pour vous , ou voules vous allez maintenant ?",
+                "answers": [
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "top",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "activer une rune",
+                        "transition": "bottom",
+                        "link": "/game/24",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 1
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "left",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "TADAAA encore 10 pièces pour vous , ou voules vous allez maintenant ?",
+                "answers": [
+                    {
+                        "message": "voir un mendiant",
+                        "transition": "top",
+                        "link": "/game/22",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : -5,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "activer une rune",
+                        "transition": "bottom",
+                        "link": "/game/24",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 1
+                        }
+                    },
+                    {
+                        "message": "aller voir un brigand",
+                        "transition": "left",
+                        "link": "/game/18",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 1,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "24": {
+            "music": {
+                "src": "",
+                "volume": 0 
+            },
+            "image": "/images/maps/24.png",
+            "José": {
+                "name": "José",
+                "message": "vous venez de trouver une rune ! quelle direction voulez vous prendre",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "left",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            },
+            "Joséphine": {
+                
+                "name": "Joséphine",
+                "message": "vous venez de trouver une rune ! quelle direction voulez vous prendre",
+                "answers": [
+                    {
+                        "message": "ramasser une bourse",
+                        "transition": "top",
+                        "link": "/game/23",
+                        "items": {
+                            "sword": 0,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 10,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    },
+                    {
+                        "message": "ouvrir un coffre",
+                        "transition": "left",
+                        "link": "/game/19",
+                        "items": {
+                            "sword": 1,
+                            "sick" : 0,
+                            "shield" : 0,
+                            "money" : 0,
+                            "thief": 0,
+                            "rune1": 0,
+                            "rune2": 0,
+                            "rune3": 0,
+                            "rune4": 0
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "tuiles" : [
+        [
+            "maps/chg.png",
+            5,
+            10,
+            15,
+            20
+        ],
+        [
+            1,
+            6,
+            11,
+            16,
+            21
+        ],
+        [
+            2,
+            7,
+            12,
+            17,
+            22
+        ],
+        [
+            3,
+            8,
+            13,
+            18,
+            23
+        ],
+        [
+            4,
+            9,
+            14,
+            19,
+            24
+        ]
+    ]
+}

@@ -1,0 +1,38 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('../fonts/stylesheet.css');
+
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Barlow', sans-serif;
+}
+
+.big-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
+.button {
+  // text-decoration: none;
+  // background: white;
+  // padding: 5px;
+  // border-radius: 5px;
+  // display: inline-block;
+  // border: none;
+  // cursor: pointer;
+  // padding: 15px;
+  // font-size: 20px;
+  // color: black;
+}

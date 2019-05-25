@@ -1,0 +1,56 @@
+/* 
+ * Vendors
+ */
+
+@import "./vendors/reset.scss";
+//
+
+/*
+ * Config 
+ */
+@import "./config/theme.scss";
+//
+
+/*
+ * Blocs 
+ */
+
+/* Planete */
+@import "./blocs/planete/planete.scss";
+
+/* Ufo */
+/* @import "./blocs/ufo/ship.scss";*/
+@import "./blocs/ufo/alian.scss";
+@import "./blocs/ufo/ufo.scss";
+@import "./blocs/ufo/bottle.scss";
+@import "./blocs/ufo/cookie.scss";
+
+/* Police */
+@import "./blocs/police/police.scss";
+
+/* Scala */
+@import "./blocs/scala/scala.scss";
+
+/* Bubbelgum */
+/* @import "./blocs/bubbelgum/bubbelgum.scss";*/
+
+
+/* Bubble */
+@import "./blocs/bubble/bubble.scss";
+
+/* Stars */
+@import "./blocs/stars/stars.scss";
+
+/* home */
+@import "./blocs/home/text.scss";
+
+@import "./blocs/peage/peage.scss";
+@import "./blocs/blockard/blockard.scss";
+@import "./blocs/coint/coint.scss";
+@import "./blocs/ziel/ziel.scss";
+@import "./blocs/waysign/waysign.scss";
+//
+
+/* Transition */
+@import "./blocs/transition/transition.scss"
+//

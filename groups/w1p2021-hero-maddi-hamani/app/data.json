@@ -1,0 +1,231 @@
+{
+  
+"steps":[
+    {
+      "id": 2,
+      "title": "Veux-tu commencer ton enquête en ...",
+      "actions": [
+        {
+          "label": "Interrogeant les témoins",
+          "to": 3,
+          "images": "../assets/img/mic.png"
+        },
+        {
+          "label": "Fouillant les lieux",
+          "to": 12,
+          "images": "../assets/img/loupe.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Veux-tu interroger",
+      "actions": [
+        {
+          "label": "L'accessoiriste",
+          "to": 4,
+          "images": "../assets/img/img13.png"
+        },
+        {
+          "label": "Le metteur en scene",
+          "to": 5,
+          "images": "../assets/img/img6.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Metteur en scene",
+          "to": 5,
+          "images": "../assets/img/img6.png"
+        },
+        {
+          "label": "Producteur",
+          "to": 7,
+          "images": "../assets/img/img10.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Doublure",
+          "to": 8,
+          "images": "../assets/img/img9.png"
+        },
+        {
+          "label": "Agent d'entretien",
+          "to": 9,
+          "images": "../assets/img/img12.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Doublure",
+          "to": 8
+        },
+        {
+          "label": "Agent d'entretien",
+          "to": 9
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Doublure",
+          "to": 8
+        },
+        {
+          "label": "Agent d'entretien",
+          "to": 9
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Agent d'entretien",
+          "to": 9,
+          "images": "../assets/img/img12.png"
+        },
+        {
+          "label": "Producteur",
+          "to": 7,
+          "images": "../assets/img/img10.png"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Veux-tu interroger...",
+      "actions": [
+        {
+          "label": "Doublure",
+          "to": 8,
+          "images": "../assets/img/img9.png"
+        },
+        {
+          "label": "Hanna",
+          "to": 10,
+          "images": "../assets/img/hanna.png"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Qui est coupable?",
+      "actions": [
+        {
+          "label": "Hanna",
+          "lose": "Game Over",
+          "images": "../assets/img/hanna.png"
+        },
+        {
+          "label": "La doublure",
+          "win": "Win",
+          "images": "../assets/img/img9.png"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Veux-tu fouiller...",
+      "actions": [
+        {
+          "label": "La loge",
+          "to": 14,
+          "images": "../assets/img/img1.png"
+        },
+        {
+          "label": "Scene",
+          "to": 17,
+          "images": "../assets/img/img2.png"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Lequel de ces deux objets souhaitez-vous analiser ?",
+      "actions": [
+        {
+          "label": "La cravate",
+          "to": 15,
+          "images": "../assets/img/img3.png"
+        },
+        {
+          "label": "Le châle",
+          "to": 16,
+          "images": "../assets/img/img4.png"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "La cravate semble appartenir ...",
+      "actions": [
+        {
+          "label": "au metteur en scene",
+          "to": 5,
+          "images": "../assets/img/img6.png"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Le châle semble appartenir ...",
+      "actions": [
+        {
+          "label": "à l'accessoiriste",
+          "to": 4,
+          "images": "../assets/img/img13.png"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Lequel de ces deux objets souhaitez-vous analiser ?",
+      "actions": [
+        {
+          "label": "La paire de lunette",
+          "to": 18,
+          "images": "../assets/img/img15.png"
+        },
+        {
+          "label": "Le châle",
+          "to": 16,
+          "images": "../assets/img/img4.png"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Les lunettes semblent appartenir ...",
+      "actions": [
+        {
+          "label": "au metteur en scene",
+          "to": 5,
+          "images": "../assets/img/img6.png"
+        },
+        {
+          "label": "à l'accessoiriste",
+          "to": 4,
+          "images": "../assets/img/img13.png"
+        }
+      ]
+    }
+  ] 
+}

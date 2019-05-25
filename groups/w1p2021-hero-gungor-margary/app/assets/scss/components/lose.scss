@@ -1,0 +1,57 @@
+.loseMain {
+  background: linear-gradient(rgb(85, 78, 7), rgb(254, 215, 89));
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; 
+  position: relative;
+  justify-content: center;
+}
+
+.loseContent{
+  width: 60vw;
+  height: 100vh; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+}
+
+.loseTitle{
+  font-size: 6.5rem;
+  transform: translateY(90px);
+  margin: 0 auto; 
+}
+
+.loseMessage {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btnRestartContainer {
+  width: 100%;
+}
+
+.btnRestart {
+  cursor: pointer; 
+  background-color: white;
+  color: rgb(225, 197, 36);
+  text-decoration-line: none;
+  border-radius: 40px;
+  font-size: 2rem;
+  width: 250px; 
+  margin: 0 auto;
+  text-align: center; 
+  margin-bottom: 100px; 
+  margin-left: calc( 50% - 7.4rem);
+  padding: 20px 30px 20px 27.5px;
+  border: solid white; 
+  transition: all 0.5s;
+
+  
+  &:hover {
+  color: white;
+  background: linear-gradient(rgb(254, 215, 89),rgb(85, 78, 7));
+  }
+}

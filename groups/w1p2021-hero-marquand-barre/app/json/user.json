@@ -1,0 +1,12 @@
+{
+  "user": {
+    "day": 1,
+    "health": 2,
+    "ressources": {
+      "waterQuantity": 12,
+      "waterProgress": 2,
+      "foodQuantity": 2,
+      "foodProgress": 2
+    }
+  }
+}

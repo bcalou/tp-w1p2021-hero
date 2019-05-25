@@ -1,0 +1,50 @@
+.frame--text {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 7em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    span{
+      font-size: 0.4em;
+      display: block;
+      color: pink;
+    }
+  }
+
+  p {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-family: sans-serif;
+  }
+
+  .frame__button {
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    background-color: #90ee90;
+    display: inline-block;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    transition:all 0.3s;
+    animation: updown 1s linear infinite alternate;
+    @keyframes updown {
+      0%{transform: translateY(0)}
+      100%{transform: translateY(10px)}
+    }
+    &:hover{
+      background-color: #76C476;
+    }
+  }
+}

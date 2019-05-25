@@ -1,0 +1,66 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: url("/assets/images/home.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  &__return {
+    background-color: #fa4002;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+  }
+
+  &__text {
+    background-color: #fa4002;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 68px;
+    text-align: center;
+
+    &:before {
+      content: "X";
+      text-transform: lowercase;
+      font-size: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &:after {
+      content: "X";
+      text-transform: lowercase;
+      font-size: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__link {
+    background-color: #fa4002;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    border: 0.5px solid white;
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(0.9);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}

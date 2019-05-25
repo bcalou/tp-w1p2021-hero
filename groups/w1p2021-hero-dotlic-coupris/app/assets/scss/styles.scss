@@ -1,0 +1,42 @@
+// ici ce sont les styles globaux 
+
+@import 'reset.scss';
+@import 'animations.scss';
+@import '../../components/Home/Home.scss';
+@import 'fonts.scss';
+@import '../../components/Loose/loose1.scss';
+@import '../../components/Loose/loose2.scss';
+@import '../../components/Loose/loose3.scss';
+@import '../../components/Loose/loose4.scss';
+@import '../../components/Loose/loose5.scss';
+@import '../../components/Loose/loose6.scss';
+@import '../../components/Loose/loose7.scss';
+@import '../../components/Loose/loose8.scss';
+@import '../../components/win.scss';
+
+
+
+
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Quattrocento regular";
+  font-size: 30px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid white;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.425);
+  display: inline;
+  flex-direction: row;
+}
+
+
+

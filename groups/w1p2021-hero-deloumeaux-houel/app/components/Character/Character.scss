@@ -1,0 +1,43 @@
+@font-face {
+  font-family:"Capture it";
+  src: url("../../assets/images/Characters.jpg") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.big-header {
+  background-image: url("../../assets/images/Characters.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  .buttons {
+    display: flex;
+    justify-content: space-around; 
+    width: 150vw;
+    margin-top: 45vw;
+    vertical-align: middle;
+
+    .button {
+      letter-spacing: 2;
+      text-align: center; 
+      color: black;
+      background: rgba(252, 252, 252, 0.5);
+      padding: 20px 20px 20px 20px;
+      border-radius: 55px;
+      cursor: pointer;
+      border: 6px solid rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      opacity: 0.8;
+    }
+    .button:hover {
+
+      background: #304040; 
+      opacity: 1; 
+      color: white; 
+
+    }
+  }
+}
+

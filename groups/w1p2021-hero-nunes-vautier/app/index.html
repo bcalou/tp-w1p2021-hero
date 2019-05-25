@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A game in which YOU are the hero ! ">
+    <link rel="icon" href="./assets/favicon_io/favicon.ico" />
+    <script type="text/javascript" src="data.json"></script>
+    <title>Kingdom in danger</title>
+  </head>
+  <body>
+    <audio class="clickSound" volume="0.7">
+        <source src="./assets/sounds/click.wav" type="audio/wav">
+    </audio>
+    <div class="settings">
+      <p> Réglages son</p>
+      <ul>
+        <li><label for="sounds">Son</label> <input id="sounds" checked type="checkbox"></li>
+        <li><label for="sound">Musique</label> <input id="sound" checked type="checkbox"></li>
+        <li><label for="volume">Volume musique</label> <input id="volume" type="range" min="0" max="1" step="0.02"></li>
+        <li><label for="volumeEvent">Volume évènements</label> <input id="volumeEvent" type="range" min="0" max="1" step="0.02"></li>
+      </ul>
+    </div>
+    <p class="button home" onclick="goHome()">Accueil</p>
+    <div id="root">
+        <transition name="slide">
+          <router-view :key="$route.name + ($route.params.id || '')"></router-view>
+        </transition>
+
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+      goHome = () => {
+        window.location.href = '/home';
+      }
+    </script>
+  </body>
+</html>

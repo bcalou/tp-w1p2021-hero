@@ -1,0 +1,88 @@
+@keyframes toilet {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes up {
+  to {
+    transform: opacity(1);
+  }
+}
+
+.toiletsContainer {
+  width: 100vw;
+  height: 35vh; 
+  transform: translateY(35%);
+  margin: 0 auto;  
+  fill: white;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+}
+
+.toilets {
+  width: 100%; 
+  height: 95%;
+  opacity: 0.3;
+  animation: toilet 2s forwards, up 2s forwards; 
+  transform: translateY(100%);
+}
+
+.winMain {
+  background: linear-gradient(#2E0244, #E56C63);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; 
+  position: relative;
+  justify-content: center;
+}
+
+.winContent{
+  width: 60vw;
+  height: 100vh; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+}
+
+.winTitle{
+  font-size: 6.5rem;
+  transform: translateY(90px);
+  margin: 0 auto; 
+}
+
+.winMessage {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btnRestartContainer {
+  width: 100%;
+}
+
+.btnWinRestart {
+  cursor: pointer; 
+  background-color: white;
+  color: #E56C63;
+  text-decoration-line: none;
+  border-radius: 40px;
+  font-size: 2rem;
+  width: 250px; 
+  margin: 0 auto;
+  text-align: center; 
+  margin-bottom: 100px; 
+  margin-left: calc( 50% - 7.4rem);
+  padding: 20px 30px 20px 27.5px;
+  border: solid white; 
+  transition: all 0.5s;
+
+  
+  &:hover {
+  color: white;
+  background: linear-gradient(#2E0244, #E56C63);
+  }
+}

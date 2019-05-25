@@ -1,0 +1,57 @@
+@import '../../assets/scss/reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$vault: #0067B1;
+$yellow: #FFEB33;
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold
+}
+
+.image{
+  display: inline;
+}
+
+.title {
+  padding: 20px;
+}
+
+.big-header {
+  background-color: $vault;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $yellow;
+  text-decoration: none;
+  background-color: $vault;
+  border: 2px solid $yellow;
+  font-size: 20px;
+  width: 20%;
+  height: 5%;
+
+  &:hover {
+    color: $vault;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    border: 2px solid $vault;
+  }
+}

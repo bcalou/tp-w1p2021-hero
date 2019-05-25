@@ -1,0 +1,127 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: #0de595;
+
+body,
+button,
+input,
+sel ect,
+textarea {
+  font-family: 'Roboto';
+}
+
+.big-header {
+  background-color: $hetic-green;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    padding: 30px;
+    background-color: black;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+/* *{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.homegif{
+  width: 940px;
+  height: 940px;
+  background-size: cover;
+  background-position: 40% 50%;
+  position: relative;
+}
+.title{
+  display: flex;
+  align-items: center;
+  width: 740px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 940px;
+  p{
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 100px;
+  }
+}
+.stat{
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
+.choose{
+  width: 740px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  left: 940px;
+}
+.characters{
+  width: 740px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    width: 260px;
+    height: 260px;
+  }
+  p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 30px;
+  }
+}
+
+.text{
+  padding: 30px;
+  line-height: 250%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 740px;
+  height: 340px;
+  position: absolute;
+  top: 600px;
+  left: 940px;
+  p{
+    text-align: center;
+    font-family: "Rubber Biscuit";
+    font-weight: bold;
+    color: gold;
+    font-size: 30px;
+  }
+} */

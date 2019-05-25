@@ -1,0 +1,62 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: #0de595;
+$color-button: #02C39A;
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+.autor{
+  color: #FF1654;
+}
+
+.credit{
+  position: relative;
+  top: 25%;
+}
+.big-header {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  transition: background-color 1s ease-in-out;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background: $color-button;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 362px;
+  height: 55px;
+}
+
+.buttons{
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%
+}
+
+.btn-container{
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%
+}

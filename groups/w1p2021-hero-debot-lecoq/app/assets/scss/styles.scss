@@ -1,0 +1,213 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900&display=swap');
+
+$hetic-green: #0de595;
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.big-header {
+  background-image: url(/assets/images/Background.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  #target{
+    position: absolute;
+    font-size:30px;
+    font-family: 'Work Sans', sans-serif;
+    bottom: -350px;
+    left: 13em;
+    color: yellow;
+    width: 35%;
+    text-align: center;
+    height: 80%;
+    transform-origin:50% 100%;
+    transform:perspective(300px) rotateX(20deg);
+    animation: TextStarWars 20s forwards;
+    
+
+    @keyframes TextStarWars {
+      0%{
+        bottom: -350px;
+        opacity: 1;
+      }
+      100%{
+        bottom: 30px;
+        opacity: 0.75;
+      }
+    }
+  }
+  .button-pos{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+  }
+
+  h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  color: white;
+
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 500px;
+    margin-top: 20%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+  }
+}
+.button-pos{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  background:none; 
+  height: 50px;
+  width: 80px;
+  line-height: 50px;
+  color: white; 
+  border: 2px solid #4179BE;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button {
+
+  
+  background:none; 
+  height: 50px;
+  width: 80px;
+  line-height: 50px;
+  color: white; 
+  border: 2px solid #4179BE;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover{
+    background-color: #384977;
+  }
+}
+.title{
+  position: absolute;
+  top: 20%;
+}
+.block-1{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  animation: moveBlock1 5s infinite;
+
+  @keyframes moveBlock1 {
+    0%{
+      top: 0%;
+      right: 0%;
+    }
+    15%{
+      top: 35%;
+    }
+    75%{
+      top: 10%
+    }
+    100%{
+      right: 100%;
+    }
+  }
+}
+.block-2{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: moveBlock2 10s infinite;
+
+  @keyframes moveBlock2 {
+    0%{
+      top: 0%;
+      left: 0%;
+      transform: rotate(0deg)
+    }
+    15%{
+      top: 35%;
+    }
+    75%{
+      top: 10%
+    }
+    100%{
+      left: 100%;
+      transform: rotate(360deg);
+    }
+  }
+}
+.block-3{
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: moveBlock3 5s infinite;
+
+  @keyframes moveBlock3 {
+    0%{
+      left: 0%;
+    }
+    100%{
+      left: 100%;
+    }
+  }
+}
+.spaceship-move{
+  position: absolute;
+  top: 75%;
+  right: 0%;
+  transform: rotate(180deg);
+  animation: moveSpace 8s infinite;
+
+  @keyframes moveSpace {
+    0%{
+      right: 0%;
+    }
+    100%{
+      right: 100%;
+    }
+  }
+}
+.pizza-4{
+  position: absolute;
+  top: 80%;
+  right: 0%;
+  transform: rotate(180deg);
+  animation: pizza 8s infinite;
+
+  @keyframes pizza {
+    0%{
+      right: 0%;
+      top: 10%;
+    }
+    100%{
+      right: 100%;
+      top: 80%;
+    }
+  }
+}

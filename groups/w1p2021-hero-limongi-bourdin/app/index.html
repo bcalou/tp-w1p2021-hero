@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Hero</title>
+  </head>
+  <body>
+    <div id="root">
+      <transition name="pane">
+          <router-view />
+      </transition>
+    </div>
+    
+    <audio src="./assets/music/mysterious.m4r" preload="metada" loop id="sound"></audio>
+<style>      
+
+  body {
+    background-color: #181818;
+  }
+
+  .black-leave-active {
+    animation: toblack 1s ;
+  }
+
+  .black-enter-active {
+    animation: toblack 1s reverse;
+  }
+
+  @keyframes toblack {
+    to {
+      opacity: 0;
+    }
+  }
+</style>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

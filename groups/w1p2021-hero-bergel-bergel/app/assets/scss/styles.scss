@@ -1,0 +1,139 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rosario:400,400i,700,700i&display=swap');
+
+body,
+button,
+input,
+select,
+textarea, 
+h1 {
+  font-family: 'Rosario', sans-serif;
+  font-weight: 700;
+  color: white
+}
+
+.big-header {
+  background: url('/assets/images/homebg.png') no-repeat center; 
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+
+.home-button {
+  position: absolute;
+  left: 50%;
+  margin: 200px 0 100px -100px;
+}
+  
+.button {
+  width: 220px;
+  height: 50px;
+  line-height: 50px;	
+  background-color: #839267;
+  border-radius: 8px;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-size: 22px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transform: translateY(-6px);
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &:before{
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      transition-duration: 0.3s;
+      transition-property: transform, opacity;
+      opacity: .4;
+      transform: translateY(8px);
+      animation-name: hover-shadow;
+      animation-duration: 1.5s;
+      animation-delay: .3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    &:hover{
+      background-color: white;
+      color: #839267;
+    }
+  }
+  
+  @keyframes hover {
+    50% {
+      transform: translateY(-3px);
+    }
+  
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  @keyframes hover-shadow {
+    0% {
+      transform: translateY(6px);
+      opacity: .4;
+    }
+  
+    50% {
+      transform: translateY(3px);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(6px);
+      opacity: .4;
+    }
+  }
+
+
+.homeLink {
+  display: flex;
+  flex-direction: column;
+  background-color: #0F141F;
+}
+
+.btnWin {
+  text-shadow:  -2px 0 #F3DE68, 0 2px #F3DE68, 2px 0 #F3DE68, 0 -2px #F3DE68;
+  text-decoration: none;
+  color: #0F141F;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.arrow {
+  width: 5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+}

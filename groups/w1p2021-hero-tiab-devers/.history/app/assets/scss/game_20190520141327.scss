@@ -1,0 +1,70 @@
+.game {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__screen {
+  background-color: white;
+  width: 625px;
+  height: 625px;
+  border-radius: 50%;
+}
+
+.inventory {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 275px;
+  left: 250px;
+}
+
+.inventory__title {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(-40px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.game__arrows {
+  position: absolute;
+  background: url('../img/arrow.png') no-repeat center;
+  background-size: contain;
+  width: 530px;
+  height: 270px;
+}
+
+.game__arrows--left {
+  top: 335px;
+  left: 500px;
+}
+
+.game__arrows--right {
+  top: 335px;
+  right: 500px;
+}
+
+.game__arrows--top {
+  top: 80px;
+}
+
+.game__arrows--bottom {
+  bottom: 80px;
+}

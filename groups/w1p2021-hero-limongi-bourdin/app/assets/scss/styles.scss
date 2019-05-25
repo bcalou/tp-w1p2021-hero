@@ -1,0 +1,221 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: white;
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+.pane-leave-active,
+.pane-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+  }
+}
+
+.pane-leave-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+
+.big-header {
+  background-color: $hetic-green;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
+.button {
+  color: $hetic-green;
+  text-decoration: none;
+  background: rgb(122, 12, 12);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.image1 {
+  background: url('../images/hall.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image2 {
+  background: url('../images/banquets.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image3 {
+  background: url('../images/Porte-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image4 {
+  background: url('../images/salon-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image5 {
+  background: url('../images/porte-lumiere.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image6 {
+  background: url('../images/porte.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image7 {
+  background: url('../images/bibliothèque-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image8 {
+  background: url('../images/petite-salle-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image9 {
+  background: url('../images/manoir.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image10 {
+  background: url('../images/jardin-re.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image11 {
+  background: url('../images/jardin-re-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .image12 {
+  background: url('../images/re-cabane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image13 {
+  background: url('../images/fenetre-vide.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image15 {
+  background: url('../images/escalier.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image16 {
+  background: url('../images/cuisine.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image17 {
+  background: url('../images/doubleDoor-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image18 {
+  background: url('../images/gameover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image19 {
+  background: url('../images/persos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image20 {
+  background: url('../images/salon-pz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image21 {
+  background: url('../images/cuisine-rz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image22 {
+  background: url('../images/bibliothèque-pp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image23 {
+  background: url('../images/banquets-pz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image24 {
+  background: url('../images/bibliothèque-rz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

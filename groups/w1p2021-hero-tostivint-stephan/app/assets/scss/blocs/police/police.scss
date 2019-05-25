@@ -1,0 +1,24 @@
+
+.prison{
+  bottom:100vh;
+  position: absolute;
+  opacity: 0;
+  width: 30vw;
+  box-sizing: content-box;
+  height:20vw;
+  border:solid 1vw darkgrey;
+  border-radius: 2vw;
+  display: flex;
+  z-index: 12;
+  justify-content: space-around;
+  transition: bottom 1s;
+  .prison__arm{
+    height:100%;
+    width:5%;
+    background-color: darkgrey;
+  }
+  &.prison--active{
+    opacity: 1;
+    bottom:24vh;
+  }
+}

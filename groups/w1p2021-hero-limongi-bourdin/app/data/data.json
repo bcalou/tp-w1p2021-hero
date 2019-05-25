@@ -1,0 +1,400 @@
+{
+  "1": {
+    "message": "Vous vous trouvez dans la salle d'entrée",
+    "messageA": "Aller voir la porte de gauche",
+    "messageB": "Aller voir la porte du haut",
+    "messageD": "Sortir du manoir",
+    "actionA": "/game/2",
+    "actionB": "/game/3",
+    "actionD": "",
+    "cle": "false",
+    "image": "image1"
+  },
+  "2": {
+    "message": "Vous vous trouvez dans un salon et un zombie est face à vous",
+    "messageA": "Attaquer avec le pistolet",
+    "messageB": "faire demi-tour",
+    "actionA": "/game/4",
+    "actionB": "/game/1",
+    "image": "image23"
+  },
+  "3": {
+    "message": "Vous entendez du bruit derrière la porte",
+    "messageA": "ouvrir",
+    "messageB": "faire demi-tour",
+    "actionA": "",
+    "actionB": "/game/1",
+    "actionD": "/game/14",
+    "subtitle": "La porte est fermée",
+    "key": "false",
+    "combat": "false",
+    "image": "image3"
+  },
+  "4": {
+    "message": "Vous dégainez votre pistolet et tirez sur le zombie. Il tombe à terre et ne semble pas se relever.",
+    "messageA": "Fouiller le cadavre",
+    "messageB": "Fouiller la salle",
+    "actionA": "/game/9",
+    "actionB": "/game/8",
+    "image": "image23"
+  },
+  "win": {
+    "message": "Vous avez gagné",
+    "subtitle": "Vous avez réussi a sortir du manoir avec la disparue",
+    "actionA": "/game/1",
+    "messageA": "Recommencer",
+    "image": "image9"
+  },
+  "lose": {
+    "message": "Vous avez perdu",
+    "subtitle": "",
+    "actionA": "/game/1",
+    "messageA": "Recommencer",
+    "image": "image18"
+    
+  },
+  "7": {
+    "message": "En entrant vous vous faites attraper par un zombie",
+    "actionA": "/game/12",
+    "messageA": "Le faire tomber",
+    "actionB": "/game/13",
+    "messageB": "Prendre la statuette sur le meuble à côté",
+    "image": "image20"
+  },
+  "8": {
+    "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
+    "actionA": "/game/11",
+    "messageA": "Fouillez le cadavre",
+    "image": "image2"
+  },
+  "9": {
+    "message": "Vous avez trouvé une clé sur le cadavre",
+    "actionA": "/game/10",
+    "messageA": "Fouiller la salle",
+    "image": "image2"
+  },
+  "10": {
+    "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
+    "actionA": "/game/1",
+    "messageA": "Faire demi-tour",
+    "image": "image2"
+  },
+  "11": {
+    "message": "Vous avez trouvé une clé sur le cadavre",
+    "actionA": "/game/1",
+    "messageA": "Faire demi-tour",
+    "image": "image2"
+  },
+  "12": {
+    "message": "Vous arrivez à faire tomber le Zombie, mais dans sa chute il vous mord",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image4"
+  },
+  "13": {
+    "message": "Vous prenez la statuette et frappez le zombie avec. Il s'écroule et ne se relève pas",
+    "actionA": "/game/14",
+    "messageA": "Suivant",
+    "image": "image4"
+  },
+  "14": {
+    "message": "Vous êtes dans une petite salle, que voulez vous faire ?",
+    "actionA": "/game/15",
+    "messageA": "Porte délabrée",
+    "actionB": "/game/16",
+    "messageB": "Porte sur votre droite",
+    "actionC": "/game/1",
+    "messageC": "Faire demi-tour",
+    "passage": "false",
+    "image": "image4"
+  },
+  "15": {
+    "message": "Vous êtes face à la porte délabrée, vous pouvez voir a travers les trous de la porte ce qui semble avoir été un jardin",
+    "actionA": "",
+    "messageA": "ouvrir",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour",
+    "subtitle": "La porte est coincée",
+    "image": "image6"
+  },
+  "16": {
+    "message": "Sur la porte est inscrit bibliothèque",
+    "actionA": "/game/17",
+    "messageA": "Ouvrir",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour",
+    "image": "image5"
+  },
+  "17": {
+    "message": "Vous voyez 2 zombies près d'une étagère",
+    "actionA": "/game/18",
+    "messageA": "Faire tomber l'étagère sur les zombies",
+    "actionB": "/game/19",
+    "messageB": "Tuer les 2 zombies discrètement",
+    "actionC": "/game/14",
+    "messageC": "Faire demi-tour",
+    "image": "image7"
+  },
+  "18": {
+    "message": "Vous faites tomber l'étagère qui s'écrase violemment sur les 2 zombies dans un vacarme assourdissant",
+    "subtitle": "Le bruit que vous avez provoqué a rameuté tous les zombies du manoir, vous êtes maintenant encerclé",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image7"
+  },
+  "19": {
+    "message": "Vous tuez les zombies sans aucun bruit. Plus loin vous voyez un homme gémissant",
+    "actionA": "/game/20",
+    "messageA": "S'approcher de l'homme",
+    "actionB": "/game/21",
+    "messageB": "Contourner l'homme",
+    "actionC": "/game/14",
+    "messageC": "Faire demi-tour",
+    "image": "image7"
+  },
+  "20": {
+    "message": "L'homme devant vous est en train de mourrir, il a des morsures partout. A côté de lui gît un chien et une hache",
+    "actionA": "/game/21",
+    "messageA": "Passer votre chemin",
+    "actionB": "/game/27",
+    "messageB": "Achever l'homme",
+    "actionC": "/game/22",
+    "messageC": "Ramasser la hache",
+    "actionD": "/game/14",
+    "messageD": "Faire demi-tour",
+    "image": "image7"
+  },
+  "21": {
+    "message": "Vous êtes de l'autre côté de la bibliothèque devant une porte en sale état, des pleurs peuvent être entendus derrière la porte",
+    "subtitle": "Elle est bloquée, il vous faut quelque chose pour l'enfoncer",
+    "actionA": "",
+    "messageA": "Ouvrir",
+    "actionB": "/game/20",
+    "messageB": "Faire demi-tour",
+    "hache": "false",
+    "image": "image7"
+  },
+  "22": {
+    "message": "Vous avez ramassé la hache, que voulez vous faire ?",
+    "actionA": "/game/21",
+    "messageA": "Passer votre chemin",
+    "actionB": "/game/23",
+    "messageB": "Achever l'homme",
+    "image": "image7"
+  },
+  "23": {
+    "message": "Vous achevez l'homme en lui mettant un coup de hache dans le crâne",
+    "actionA": "/game/21",
+    "messageA": "Continuer votre chemin",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour",
+    "mort": "false",
+    "image": "image7"
+  },
+  "24": {
+    "message": "Dans la salle se trouve la femme disparue que vous recherchiez ",
+    "actionA": "",
+    "messageA": "La rassurer et partir avec elle",
+    "fille": "false",
+    "image": "image8"
+  },
+  "25": {
+    "message": "L'homme gémissant est mort et s'est transformé en Zombie",
+    "actionA": "/game/26",
+    "messageA": "Attaquer avec votre hache",
+    "image": "image22"
+  },
+  "26": {
+    "message": "Votre hache reste coincé dans son épaule. Il vous mord",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image22"
+  },
+  "27": {
+    "message": "Vous avez utilisé le peu de balle que vous aviez pour achever l'homme",
+    "actionA": "/game/20",
+    "messageA": "Suivant",
+    "mort": "false",
+    "image": "image7"
+  },
+  "28": {
+    "message": "Vous entrez dans un jardin à l'arrière du manoir",
+    "actionA": "/game/33",
+    "messageA": "aller vers la porte",
+    "actionB": "/game/29",
+    "messageB": "aller à droite",
+    "image": "image10"
+  },
+  "29": {
+    "message": "Vous avancez à travers la végétation abondante du jardin",
+    "actionA": "/game/30",
+    "messageA": "Essayer d'ouvrir une fenêtre du manoir",
+    "actionB": "/game/31",
+    "messageB": "Aller vers le cabanon",
+    "actionC" : "/game/28",
+    "messageC": "Faire demi-tour",
+    "image": "image11"
+  },
+  "30": {
+    "message": "La fenêtre du manoir est vieille et usée",
+    "subtitle": "La fenêtre est bloquée",
+    "messageA": "Faire demi-tour",
+    "actionA": "/game/29",
+    "image": "image13"
+  },
+  "31": {
+    "message": "Vous entrez dans un vieux cabanon où plein d'outils sont entreposés",
+    "messageA": "Fouillez le cabanon",
+    "actionA": "/game/32",
+    "messageB": "Faire demi-tour",
+    "actionB": "/game/29",
+    "image": "image12"
+  },
+  "32": {
+    "message": "Vous avez trouvé une vieille hache",
+    "messageA": "Faire demi-tour",
+    "actionA": "/game/29",
+    "image": "image12",
+    "hache": "false"
+  },
+  "33": {
+    "message": "Face à vous une porte délabrée qui tombe en morceaux",
+    "subtitle": "Vous pouvez peut-être l'enfoncer avec un objet",
+    "messageA": "Ouvrir",
+    "actionA": "",
+    "messageB": "Faire demi-tour",
+    "actionB": "/game/28",
+    "image": "image17"
+  },
+  "34": {
+    "message": "Vous entrez dans la manoir et vous arrivez dans une cuisine où se trouve un Zombie",
+    "actionA": "/game/35",
+    "messageA": "Le tuer avec la hache",
+    "actionB": "/game/36",
+    "messageB": "Passer la salle discrètement",
+    "image": "image21"
+  },
+  "35": {
+    "message": "Vous lui assenez un coup de hache. il arrive à vous mordre le bras",
+    "actionA": "/game/lose",
+    "messageA": "Continuer",
+    "image": "image21"
+  },
+  "36": {
+    "message": "Vous arrivez à passer la salle discrètement et vous finissez par arriver devant des escaliers avec une porte en haut",
+    "actionA": "/game/37",
+    "messageA": "Monter",
+    "image": "image15"
+  },
+  "37": {
+    "message": "Vous arrivez dans une bibliothèque ou se trouve deux zombies",
+    "actionA": "/game/18",
+    "messageA": "Faire tomber l'étagère sur les zombies",
+    "actionB": "/game/38",
+    "messageB": "Tuer les deux zombies discrétement",
+    "image": "image7"
+  },
+  "38": {
+    "message": "Vous avez réussi à tuer les deux zombies discrètement",
+    "actionA": "/game/39",
+    "messageA": "Avancer plus loin dans la bibliothèque",
+    "image": "image7"
+  },
+  "39": {
+    "message": "Vous rencontrez de nouveau un zombie",
+    "actionA": "/game/40",
+    "messageA": "Passer discrétement",
+    "actionB": "/game/42",
+    "messageB": "Tuer le Zombie à la hache",
+    "image": "image24"
+  },
+  "40": {
+    "message": "Vous êtes passé sans vous faire remarquer",
+    "actionA": "/game/41",
+    "messageA": "Continuer à avancer",
+    "image": "image24"
+  },
+  "41": {
+    "message": "Vous arrivez devant une porte fermée",
+    "subtitle": "Vous entendez des pleurs derrière la porte",
+    "actionA": "/game/43",
+    "messageA": "Enfoncer avec la hache",
+    "image": "image5"
+  },
+  "42": {
+    "message": "Vous avez tué le zombie avec votre hache sans difficulté",
+    "actionA": "/game/41",
+    "messageA": "Continuer à avancer",
+    "image": "image24"
+  },
+  "43": {
+    "message": "En enfoncant la porte votre hache s'est brisée. Vous voyez dans la salle une femme recroquevillée sur elle même dans un coin de la pièce",
+    "actionA": "/game/44",
+    "messageA": "Avancer vers elle",
+    "image": "image8"
+  },
+  "44": {
+    "message": "La jeune femme vous a vu et semble soulagée. Vous lui demandez de vous suivre",
+    "actionA": "",
+    "messageA": "Faire demi-tour",
+    "image": "image8"
+  },
+  "45": {
+    "message": "Vous êtes face au Zombie que vous aviez évité, mais vous n'avez plus rien pour vous défendre",
+    "actionA": "/game/46",
+    "messageA": "Lui lancer des livres",
+    "actionB": "/game/47",
+    "messageB": "le frapper avec une lampe de la bibliothèque",
+    "image": "image24"
+  },
+  "46": {
+    "message": "Les livres n'ont pas l'air de lui faire mal. Il vous attrape peu après et vous mord",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image24"
+  }, 
+  "47": {
+    "message": "En le frappant la lampe se brise et n'a eu aucun effet. Il vous mord peu après.",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image24"
+  },
+  "48": {
+    "message": "Vous repassez par la bibliothèque",
+    "actionA": "/game/49",
+    "messageA": "Suivant",
+    "image": "image7"
+  },
+  "49": {
+    "message": "Vous repassez par les escaliers pour enfin arriver dans la cuisine",
+    "actionA": "/game/50",
+    "messageA": "Suivant",
+    "image": "image15"
+  },
+  "50": {
+    "message": "Dans la cuisine vous retrouvez le zombie que vous aviez évité discrétement",
+    "actionA": "/game/51",
+    "messageA": "Faire diversion avec un objet",
+    "actionB": "/game/52",
+    "messageB": "passer derrière un meuble",
+    "image": "image21"
+  },
+  "51": {
+    "message": "Vous lui lancez le premier objet qui vous tombe sous la main. Vous arrivez à passer.",
+    "actionA": "/game/win",
+    "messageA": "Sortir",
+    "image": "image21"
+  },
+  "52": {
+    "message": "En passant derrière le meuble vous faites tomber un objet, le bruit attire le zombie vers vous",
+    "actionA": "/game/53",
+    "messageA": "Suivant",
+    "image": "image21"
+  },
+  "53": {
+    "message": "Vous n'avez plus d'arme pour vous défendre. Le zombie fini par vous mordre",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image21"
+  }
+}

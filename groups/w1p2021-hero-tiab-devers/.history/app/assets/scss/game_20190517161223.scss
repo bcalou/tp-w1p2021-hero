@@ -1,0 +1,44 @@
+.game {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__screen {
+  background-color: white;
+  width: 625px;
+  height: 625px;
+  border-radius: 50%;
+}
+
+.inventory {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 275px;
+  left: 250px;
+}
+
+.inventory__title {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(-40px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  top: 350px;
+  right: 50px;
+}

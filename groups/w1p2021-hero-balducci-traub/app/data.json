@@ -1,0 +1,1088 @@
+{
+	"steps": [
+		{
+			"id": "1",
+			"place": "Tente",
+			"text": "Poursuivie par les gardes pendant la nuit vous avez été separé pendant la fuite. Vous vous reveillez au point de rendez-vous prévue seul. Vous entendez des cries au loin. Que fait vous ?",
+			"class": "one",
+			"image": "tente.jpg",
+			"actions": [
+				{
+					"label": "Rester",
+					"to": "2"
+				},
+				{
+					"label": "Sortir",
+					"to": "3"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"place": "Tente",
+			"text": "Vous decidez d’attendre que les cris se dissipent pour de partir pour la ville.",
+			"image": "tente.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Vous allez en ville",
+					"to": "4"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"place": "Tente",
+			"text": "Vous sortez de la tente : voyez un attroupement. Vous vous approchez et entendez un crieur de journal qui annonce le vol des bijoux de la reine et l’arrestation d’un des voleurs. L’autre est encore en cavale. ",
+			"class":"three",
+			"actions": [
+				{
+					"label": "Vous allez en ville",
+					"to": "4"
+				}
+			]
+		},
+		{
+			"id": "4",
+			"place": "City",
+			"text": "Discrètement vous arrivez à l’entrée de la ville. Vous apercevez un groupe de mendiant et des gardes. Un mendiant chuchote quelque chose.",
+			"image": "image8.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Allez vers la porte",
+					"to": "6"
+				},
+				{
+					"label": "Répondre au mendiant",
+					"to": "5"
+				}
+			]
+		},
+		{
+			"id": "5",
+			"place": "City",
+			"text": "Auriez-vous 1 piece d’or mon bon monsieur, je sais me montrer reconaissant, je vous l'échange contre quelque chose.",
+			"image": "image8.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Accepter",
+					"to": "8",
+					"effects":{
+						"money": -1,
+						"allies": "homeless"
+					},
+					"need": {
+						"money": 1
+					}
+				},
+				{
+					"label": "Refuser ",
+					"to": "8"
+				}
+			]
+		},
+		{
+			"id": "6",
+			"place": "City",
+			"text": "Les gardes vous interpelle et vous demande de payer 3 pieces. Le garde vous arrete brusquement : Est-ce que vous êtes ...?",
+			"image": "image8.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Prier qu'il ne vous aie pas reconnu",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.95,
+						"caracName": "charisma",
+						"true": {
+							"to": "111"
+						},
+						"false": {
+							"to": "../lose/1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "111",
+			"place": "City",
+			"text": "\"Vous n'êtes pas le cousin de rodolphe?\" Vous lui répondez que non, vous le connaissez pas. Déçu, il vous demande de payer les 3 pièces d'or pour entrer dans la ville",
+			"image": "image8.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Payer et entrer",
+					"to": "10",
+					"effects": {
+						"money": -3
+					},
+					"need": {
+						"money": 3
+					}
+				}
+			]
+		},
+		{
+			"id": "7",
+			"place": "City",
+			"text": "Vous obervez des marchands et leurs calèche et vous decidez de vous infilter dans une calèche pour entrer discretement dans la ville.",
+			"image": "image12",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "9"
+				}
+			]
+		},
+		{
+			"id": "8",
+			"place": "City",
+			"text": "Le mendiant s’enfuit en courant avec un rire sadique",
+			"image": "image8.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Vous diriger vers la porte",
+					"to": "6"
+				}
+			]
+		},
+		{
+			"id": "9",
+			"place": "City",
+			"text": "Vous retournez dans cette ville. Cette ville que vous et votre frére vous vous etiez juré qu’après un tel larcin jamais vous ne revienderiez. Vous avez besoin de reflechir et de trouver un plan pour sortir son frère de la prison",
+			"class": "one",
+			"image": "image6.jpg",
+			"actions": [
+				{
+					"label": "Aller dans l’auberge",
+					"to": "10"
+				}
+			]
+		},
+		{
+			"id": "10",
+			"place": "Auberge",
+			"text": "Vous marchez vers l'auberge tête baissé, en esperant ne pas etre reconnu. Vous est prêt à tout pour retrouver votre frère. Vous prennez des risques en vous exposant de la sorte dans une auberge. ",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Parler au tavernier pour prendre un chambre et dormir jusqu’à la nuit",
+					"to": "12",
+					"effects": {
+						"money": -2
+					},
+					"need": {
+						"money": 2
+					}
+				},
+				{
+					"label": "S’installer et prend une cervoise. Parle à un vielle homme visiblement ivre",
+					"to": "11",
+					"effects": {
+						"money": -1
+					},
+					"need": {
+						"money": 1
+					}
+				}
+			]
+		},
+		{
+			"id": "11",
+			"place": "Auberge",
+			"text": "Le viel homme vous parle d’une carte (une carte de la ville à cette époque est très rare) et vous propose de vous la vendre pour 3 pièces d'or ou de jouer pour la gagner. Il parie qu'il peut finir sa bière avant vous!",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Accepter de jouer",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.5,
+						"caracName": "chance",
+						"true": {
+							"to": "15",
+							"effects": {
+								"inventory": "citymap"
+							}
+						},
+						"false": {
+							"to": "16"
+						}
+					}
+				},
+				{
+					"label": "Acheter la carte",
+					"to": "13"
+				}
+			]
+		},
+		{
+			"id": "12",
+			"place": "Auberge",
+			"text": "Vous montez à votre chambre.",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Dormir",
+					"to": "17"
+				}
+			]
+		},
+		{
+			"id": "13",
+			"place": "Auberge",
+			"text": "Le viel homme prend votre argent et vous donne la carte",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"item": "carte",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "15",
+					"effects": {
+						"inventory": "citymap",
+						"money": -3
+					}
+				}
+			]
+		},
+		{
+			"id": "15",
+			"place": "Auberge",
+			"text": "Vous et le veil homme avez passé une bonne partie de votre soirée à boire.",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Sortir de l'auberge",
+					"to": "17"
+				}
+			]
+		},
+		{
+			"id": "16",
+			"place": "Auberge",
+			"text": "Vous avez perdez et vous devez payez l’adoise du vieux homme qui est de 5 pièces d’or",
+			"image": "interieur.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Payer",
+					"effects": {
+						"money": -5
+					},
+					"need": {
+						"money": 5
+					},
+					"to": "17"		
+				}
+			]
+		},
+		{
+			"id": "17",
+			"place": "Auberge",
+			"text": "Vous sortez de l'auberge",
+			"image": "imageNuit04.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Vous rendre à la prison",
+					"to": "18",
+					"need": {
+						"inventory": "citymap"
+					}
+				},
+				{
+					"label": "Partir en quête d'information",
+					"to": "19"
+				}
+			]
+		},
+		{
+			"id": "18",
+			"place": "Au abord de la prison",
+			"text": "Vous vous rendez à la prison pour préparer un plan. Vous observez la prison et vous entendez des cris. Vous decidez de vous approcher et de vous voyez votre frère se faire toturer a travers le vasistas",
+			"image": "imageNuit06.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "36"
+				}
+			]
+		},
+		{
+			"id": "19",
+			"place": "Perdu en ville",
+			"text": "Vous vous perdez dans la ville et vous arrivez dans une ruelle sombre. Vous tombez sur une bande de truand malicieux. L'un d'eux vous bouscule et vous barre la route. Ils vous attaquent",
+			"image": "imageNuit05.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Vous défendre",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.3,
+						"caracName": "strength",
+						"true": {
+							"to": "21",
+							"effects": {
+								"money": 5
+							}
+						},
+						"false": {
+							"to": "20",
+							"effects": {
+								"money": -200
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "20",
+			"place": "Grange",
+			"text": "Vous êtes salement amoché... Les voleurs vous ont pris tout votre argent. Vous vous refugiez dans une grange et vous trouvez des vetements de paysan.",
+			"image": "image5.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "23",
+					"effects": {
+						"inventory": "disguise"
+					}
+				}
+			]
+		},
+		{
+			"id": "21",
+			"place": "Perdu dans la ville",
+			"text": "Vous réussisez à battre les brigands et c'est vous qui leur prenez 5 pièces d'or. Vous continuez à chercher votre chemin jusqu’au levé du soleil",
+			"image": "image9.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "22"
+				}
+			]
+		},
+		{
+			"id": "22",
+			"place": "Perdu dans la ville",
+			"text": "Vous partez errer dans les rues en cherchant une idée. Vous arrivez par hasard sur un marché et vous décidez de demander à un marchand la direction de la prison. Il vous propose d’acheter l’info (5 pieces) ou de repondre à une énigme.",
+			"image": "market1.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Lui acheter",
+					"to": "32",
+					"need": {
+						"money": 5
+					},
+					"effects": {
+						"money": -5
+					}
+				},
+				{
+					"label": "Tenter de répondre à l'énigme",
+					"to": "113"
+				}
+			]
+		},
+		{
+			"id": "23",
+			"place": "Perdu dans la ville",
+			"text": "Vous partez errer dans les rues en cherchant une idée. Vous arrivez par hasard sur un marché et vous décidez de demander à un marchand la direction de la prison. Il vous propose d’acheter l’info (5 pieces) ou de repondre à une énigme.",
+			"image": "market1.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Lui acheter",
+					"to": "32",
+					"need": {
+						"money": 5
+					},
+					"effects": {
+						"money": -5
+					}
+				},
+				{
+					"label": "Tenter de répondre à l'énigme",
+					"to": "113"
+				}
+			]
+		},
+		{
+			"id": "113",
+			"place": "Perdu dans la ville",
+			"enigma": true,
+			"text": "\"Bien gardé, difficile à trouver, je cesse dès lors que je suis découvert... Je suis?\"",
+			"image": "market1.jpg",
+			"class": "fullscreen",
+			"enigmaDetails": {
+				"answers": "[\"un secret\", \"secret\", \"des secrets\"]",
+				"true": {
+					"to": "114",
+					"effects": {
+						"milestones": "foundPrison"
+					}
+				},
+				"false": {
+					"to": "112"
+				}
+			}
+		},
+		{
+			"id": "114",
+			"place": "Perdu dans la ville",
+			"text": "\"Bien joué ! Vous êtes malin. La prison se trouve plus loin sur votre gauche. suivez le clocher, vous ne pouvez pas la rater.\" Vous reprenez votre chemin.",
+			"image": "market1.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "32"
+				}
+			]
+		},
+		{
+			"id": "112",
+			"place": "Perdu dans la ville",
+			"text": "\"La réponse était... Un secret ! Les énigmes ça n'a pas l'air d'être votre fort...\" Vous reprenez votre chemin. Vous aperçevez un mandiant ",
+			"image": "market1.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Aller lui parler",
+					"need": {
+						"allies": "homeless"
+					},
+					"to": "24"
+				},
+				{
+					"label": "Continuer",
+					"to": "28"
+				}
+				
+			]
+		},
+		{
+			"id": "24",
+			"place": "Perdu dans la ville",
+			"text": "C'est le mendiant à qui vous avez parlé à l'extérieur de la ville. Il met quelques secondes à vous reconnaitre dans cet acoutrement et vous parle. Il dit que comme promi il va vous rendre la pareille : il vous parle d’une porte cachée au fin-fond de la ville , derrière laquelle se cacherait un trésor. Il vous guide jusqu’à elle puis s’en va. Elle est fermement vérouillée.",
+			"image": "market.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "essayer de la casser",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.05,
+						"caracName": "strength",
+						"true": {
+							"to": "26"
+						},
+						"false": {
+							"to": "27"
+						}
+					}
+				},
+				{
+					"label": "l’observer de plus près",
+					"to": "27"
+				}
+			]
+		},
+		{
+			"id": "26",
+			"place": "Perdu dans la ville",
+			"text": "La porte s’ouvre, devant vous un tas de pièces d’or et un enfant qui vous regarde interloqué. Il vous demande si vous êtes un amis de son père et vous répondez que oui ! C’est lui qui vous a demander de passer. Vous prenez les pièces d’or et partez, avant que l’enfant n’ai le temps de comprendre ce qu’il se passe.",
+			"image": "market.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Prendre l'or et s'en aller",
+					"to": "28",
+					"effects": {
+						"money": 100
+					}
+				}
+			]
+		},
+		{
+			"id": "27",
+			"place": "Perdu dans la ville",
+			"enigma": true,
+			"text": "Une voix aigue parle à travers et vous demande le code (indice : des symboles étranges sont gravés dans la porte)",
+			"enigmaDetails": {
+				"answers": "[\"quatre\", 4]" ,
+				"true": {
+					"to": "26"
+				},
+				"false": {
+					"to": "28"
+				}
+			},
+			"image": "porte.png",
+			"class":  "two"
+		},
+		{
+			"id": "28",
+			"place": "Perdu dans la ville",
+			"text": "Vous continuez à déambuler et tombez sur un poste de garde. Vous demandez le chemin de la prison.",
+			"image": "image10.jpg",
+			"class":"two",
+			"actions": [
+				{
+					"label": "Essayer de soudoyer le garde (100 pièces d'or)",
+					"need": {
+						"money": 100
+					},
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.7,
+						"caracName": "intelligence",
+						"true": {
+							"to": "30",
+							"effects": {
+								"money": -100
+							}
+						},
+						"false": {
+							"to": "../lose/1"
+						}
+					}
+				},
+				{
+					"label": "Parler",
+					"to": "29"
+				}
+			]
+		},
+		{
+			"id": "29",
+			"place": "Perdu dans la ville",
+			"text": "Le garde ne se méfie pas d’un paysan et vous indique le chemin. Vous décidez d’attendre la nuit et d’aller libérer votre frère.",
+			"image": "image7bis.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "30",
+			"place": "Perdu dans la ville",
+			"text": "Le garde accepte de vous aider, vous partez ensemble en direction de la prison.",
+			"image": "image10.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "31",
+			"place": "Perdu dans la ville",
+			"text": "Vous pensez avoir ce qu’il faut pour libérer son frère.",
+			"image": "image10.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Partir pour la prison",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "32",
+			"place": "Perdu dans la ville",
+			"text": "Sur le chemin de la prison un paysan vous interpelle et vous demande le chemin de la prison, il vous explique qu’il s’appelle Lancelot et qu’il va voir son fils, il vous montre son bon de visite.",
+			"image": "image6.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "L’emmener dans une ruelle sombre et l’assommer pour voler son bon et prendre sa place ",
+					"to": "31"
+				},
+				{
+					"label": "L’emmener à la prison",
+					"to": "33",
+					"effects":{
+						"money": 2
+					}
+				}
+			]
+		},
+		{
+			"id": "33",
+			"place": "Perdu dans la ville",
+			"text": "Vous décider de rentrer dans une boutique à l’aspect étrange pour dépenser vos pièces d’or fraichement acquises. Il vous dit qu’il a un kit de crochetage, il est à vous pour 2 pieces.",
+			"image": "image15.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "L'acheter",
+					"to": "34",
+					"effects": {
+						"money": -2,
+						"inventory": "lockpick"
+					}
+				},
+				{
+					"label": "Ne pas l'acheter",
+					"to": "35"
+				}
+			]
+		},
+		{
+			"id": "34",
+			"place": "Perdu dans la ville",
+			"text": "Vous pensez avoir ce qu’il faut pour libérer votre frère.",
+			"image": "image15.jpg",
+			"class": "fullscreen",
+			"actions": [
+				{
+					"label": "Attendre la nuit et partir pour la prison",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "35",
+			"place": "Perdu dans la ville",
+			"text": "Après 2 jours passés dans le ville vous décider d’attendre la nuit et d’aller libéré votre frère. Vous trouverez un moyen d’ouvrir ca cellule une fois dans la prison",
+			"image": "image6bis.jpg",
+			"actions": [
+				{
+					"label": "Passer a l'action !",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "36",
+			"place": "Perdu dans la ville",
+			"text": "“Halte là” Deux gardes s’approchent de vous.",
+			"image": "imageNuit06.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "S'enfuir",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.6,
+						"caracName": "dexterity",
+						"true": {
+							"to": "44"
+						},
+						"false": {
+						"to": "../lose/1"
+						}
+					}
+				},
+				{
+					"label": "Rester",
+					"to": "37"
+				}
+			]
+		},
+		{
+			"id": "37",
+			"place": "A coté de la prison",
+			"text": "Les gardes vous demandent ce que vous faites devant la prison à cette heure tardive",
+			"image": "imageNuit06.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Combattre",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.2,
+						"caracName": "strength",
+						"true": {
+							"to": "44"
+						},
+						"false": {
+						"to": "../lose/2"
+						}
+					}
+				},
+				{
+					"label": "Mentir",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.8,
+						"caracName": "intelligence",
+						"true": {
+							"to": "40"
+						},
+						"false": {
+						"to": "../lose/1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "40",
+			"place": "A coté de la prison",
+			"text": "Vous apercevez une femme au loin, et vous décidez de raconter au gardes que vous êtes à la recherche de votre femme. Ceux-ci vous indiquent la femme au loin que vous aviez fait mine de ne pas voir.",
+			"image": "imageNuit02.jpg",
+			"class": "one",
+			"game": "lancé de dés 50% de chance de sympathiser",
+			"actions": [
+				{
+					"label": "Aller à sa rencontre",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.5,
+						"caracName": "charisma",
+						"true": {
+							"to": "42"
+						},
+						"false": {
+						"to": "41"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "41",
+			"place": "A coté de la prison",
+			"text": "La femme vous regarde avec méfiance et pars dans la direction opposée ; en voyant le comportement de la femme les gardes deviennent suspicieux et marchent vers vous ; mais vous avez beaucoup d’avance et vous les semez",
+			"image": "imageNuit02.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "44"
+				}
+			]
+		},
+		{
+			"id": "42",
+			"place": "A coté de la prison",
+			"text": "En discutant, la femme vous apprend qu’elle est archiviste de la ville et qu’elle profitais du calme de la nuit pour prendre les dimensions des batiments.",
+			"image": "imageNuit02.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer à lui parler",
+					"to": "43"
+				},
+				{
+					"label": "La remercier et s’en aller",
+					"to": "44"
+				}
+			]
+		},
+		{
+			"id": "43",
+			"place": "A coté de la prison",
+			"text": "Elle voit la carte que vous avez dans la main et vous apprend que c’est une de celles qu’elle a dessiné. Elle vous explique qu’elle en a dessiné plein et vous en vous voyant intéressé, elle vous amène à la bibliothèque de la ville.",
+			"image": "image14.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Chercher un plan de la prison",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.8,
+						"caracName": "chance",
+						"true": {
+							"to": "44",
+							"effects" : {
+								"inventory" : "prisonmap"
+							}
+						},
+						"false": {
+						"to": "44"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "44",
+			"place": "A coté de la prison",
+			"text": "Vous n'avez pas dormi de la nuit, vous decidez de dormir dans l’auberge la journée. Le soir venu : ",
+			"image": "image3.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Partir pour la prison",
+					"to": "48",
+					"need":{
+						"inventory":"prisonmap"
+					}
+				},
+				{
+					"label": "Continuer à chercher un moyen d'entrer dans la prison",
+					"to": "47"
+				}
+			]
+		},
+		{
+			"id": "45",
+			"place": "A coté de la prison",
+			"text": "Vous attendez la nuit et vous préparez votre entrée dans la prison. Sur le plan figure une petite entrée par les égouts de la ville. Vous decidez donc de vous infilter durant la nuit.",
+			"image": "image1.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "48"
+				}
+			]
+		},
+		{
+			"id": "47",
+			"place": "Perdu dans la ville",
+			"text": "A force de trainer dans la ville, vous finissez dans un endroit mal famé de la ville. Un groupe de mercenaire vous approche, vous leur expliquer votre situation, ils proposent de vous aider en échange de la moitié du butin du vol avec votre frère",
+			"image": "image2.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Accepter",
+					"to": "48",
+					"effects": {
+						"allies": "mercenaries"
+					}
+				},
+				{
+					"label": "Refuser",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.4,
+						"caracName": "chance",
+						"true": {
+							"to": "48"
+						},
+						"false": {
+						"to": "../lose/2"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "48",
+			"place": "Devant la prison",
+			"text": "Vous arrivez devant la prison et avancez vers la porte.",
+			"image": "imageNuit06.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer",
+					"to": "49"
+				}
+			]
+		},
+		{
+			"id": "49",
+			"place": "A l'interieur de la prison",
+			"text": "Vous entrez dans la prison , vous attendez que les gardes du poste principal part en ronde pour voler les clefs de la cellules de votre frère. Problème quel jeux de clefs prendre. Plusieurs sont accroché. Vous ne pouvez pas toute les prendrent sous peine d’eveiller les soupcons. Vous en attraper une pair de clef au hasard et vous prenez une tenu de garde pour vous deguiser. Vous prenez votre tour de garde et regardez discretement dans chaque cellules pour trouver votre frère. Mais vous ne parvenez a le trouver.",
+			"image": "prison.png",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Vous continuez votre ronde en espérant le trouver",
+					"to": "50"
+				},
+				{
+					"label": "Vous decidez de chercher la salle des archives.",
+					"to": "51"
+				}
+			]
+		},
+		{
+			"id": "50",
+			"place": "A l'interieur de la prison",
+			"text": "Vous repartez quand soudain un autre garde arrive dans votre direction. \"Il vont me reconnaitre, reflechis\"",
+			"image": "prison.png",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Le saluer",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.6,
+						"caracName": "charisme",
+						"true": {
+							"to": "120"
+						},
+						"false": {
+						"to": "../lose/1"
+						}
+					}
+				},
+				{
+					"label": "Se cacher",
+					"to": "52"
+				},
+				{
+					"label": "Ignorer",
+					"to": "53"
+				}
+			]
+		},
+		{
+			"id": "51",
+			"place": "A l'interieur de la prison",
+			"text": "Vous trouvez la salle des archives ouverte et vide. \"Parfait !!!\". Vous chercher le registre dans lequel se trouve le numero de cellule de votre frère.",
+			"image": "image4.jpg",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer à chercher",
+					"to": "54"
+				}
+			]
+		},
+		{
+			"id": "52",
+			"place": "A l'interieur de la prison",
+			"text": "Vous vous cachez dans une cellule vide et la porte claque derrière vous. Vous attendez que le garde reparte...",
+			"image": "image4.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Essayer d'ouvrir la porte",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.4,
+						"caracName": "chance",
+						"true": {
+							"to": "54"
+						},
+						"false": {
+						"to": "../lose/1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "53",
+			"place": "A l'interieur de la prison",
+			"text": "Vous passez à coté du garde en baissant la tète et en esperant ne pas etre demasqué.",
+			"image": "prison.png",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer",
+					"game": true,
+					"gameDetails": {
+						"percentage": 0.8,
+						"caracName": "chance",
+						"true": {
+							"to": "54"
+						},
+						"false": {
+						"to": "../lose/1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "120",
+			"place": "A l'interieur de la prison",
+			"text": "\"Hey bonsoir l’amis ton tour de garde se passe bien?\" Il vous repond \"Trés bien les detenus sont calme ce soir. Mais dit moi tu es nouveau au poste de garde ?\" \"Oui je suis nouveau j’ai pris mon poste ce soir\" \"ok fait attantion au bout du couloir un detenu s’amuse a faire peur au petit nouveau\"",
+			"image": "prison.png",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Continuer sa ronde",
+					"to": "54"
+				}
+			]
+		},
+		{
+			"id": "54",
+			"place": "A l'interieur de la prison",
+			"text": "Vous trouvez enfin la celule de votre frère. Vous testez les differente clefs une à une mais aucune n’ouvre la porte.",
+			"image": "prison.png",
+			"class": "one",
+			"actions": [
+				{
+					"label": "Vous aller chercher discrétement une autre paire de clefs",
+					"to": "58"
+				},
+				{
+					"label": "Vous forcez la porte avec une barre de fer.",
+					"to": "57"
+				}
+			]
+		},
+		{
+			"id": "57",
+			"place": "A l'interieur de la prison",
+			"text": "Vous essayer de forcer la porte avec la barre de fer que vous avez trouvé par terre. Un craquement de metal sourd retenti dans les couloirs de la prison. Les gardes arrivent et vous surprennent. Vous essayez de prendre la fuite.",
+			"image": "image4.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Courrir",
+					"to": "../lose/1"
+				}
+			]
+		},
+		{
+			"id": "58",
+			"place": "A l'interieur de la prison",
+			"text": "Par miracle aucun garde ne c’est rendu compte de vos allés et venues. Vous arrivez enfin à trouver la clef de la cellule. Discrètement vous arrivez à faire sortir votre frère de la prison. Vous vous dépéchez de vous enfuir et vous allez récupérer le trésor que votre frère avait caché avant son arrestation.",
+			"image": "image4.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Enfin!",
+					"to": "../win"
+				}
+			]
+		},
+		{
+			"id": "59",
+			"place": "A l'interieur de la prison",
+			"text": "Vous courrez mais on vous bloque le chemin. Vous vous battez contre les gardes mais ils sont bien trop nombreux. Vous vous faites tuer",
+			"image": "image4.jpg",
+			"class": "two",
+			"actions": [
+				{
+					"label": "Perdu...",
+					"to": "../lose/2"
+				}
+			]
+		}
+	],
+	"lose": [
+		{
+			"id": "1",
+			"title": "Game Over",
+			"text": "Vous avez été arreté",
+			"image": "image"
+		},
+		{
+			"id": "2",
+			"title": "Game Over",
+			"text": "Vous avez été tué",
+			"image": "image"
+		}
+	]
+}

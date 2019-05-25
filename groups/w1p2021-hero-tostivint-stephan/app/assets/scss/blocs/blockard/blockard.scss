@@ -1,0 +1,86 @@
+.blockard{
+  font-family: sans-serif;
+  position: absolute;
+  width:40vw;
+  height:12vw;
+  z-index: 4;
+  bottom:-50vh;
+  transition: bottom 1s;
+  .blockard__sign{
+    background-color: #efefef;
+    width:30%;
+    opacity:0;
+    text-align: center;
+    display: block;
+    border-radius:1vw;
+    position: absolute;
+    left:calc(40% - 20px);
+    padding:20px;
+    top:calc(40% - 5px);
+    font-weight:bold;
+    letter-spacing:0.5px;
+    &:before, &:after{
+      background-color: grey;
+      position: absolute;
+      content:"";
+      top:10%;
+      width:1vw;
+      height:1vw;
+      border-radius:50%;
+    }
+    &:after{
+      right:5%;
+    }
+    &:before{
+      left:5%;
+    } 
+  }
+  .blockard__wood{
+    position: absolute;
+    width:100%;
+    height:30%;
+    &:before, &:after{
+      background-color: grey;
+      position: absolute;
+      content:"";
+      top:45%;
+      width:1vw;
+      height:1vw;
+      border-radius:50%;
+    }
+    &:after{
+      right:5%;
+    }
+    &:before{
+      left:5%;
+    }
+    
+    &.blockard__wood--1{
+      top:0;
+      border-radius:2vw;
+      transform-origin:top right;
+      transform:rotate(-12deg);
+      background-color: #8D6937;
+    }
+    &.blockard__wood--2{
+      top:0;
+      border-radius:2vw;
+      transform-origin:bottom left;
+      transform:rotate(12deg);
+      background-color: #7C5E34;
+    }
+  }
+  &.blockard--stop{
+    .blockard__sign--stop{
+      opacity:1;
+    }
+  }
+  &.blockard--danger{
+    .blockard__sign--danger{
+      opacity:1;
+    }
+  }
+  &.blockard--active{
+    bottom:10vh;
+  }
+}

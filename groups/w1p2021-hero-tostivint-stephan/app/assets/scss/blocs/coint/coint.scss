@@ -1,0 +1,27 @@
+.coint{
+  position:absolute;
+  z-index: 1;
+  bottom:-5vw;
+  z-index: 6;
+  right:5%;
+  height:3vw;
+  line-height: 2vw;
+  width:3vw;
+  max-width:40px;
+  max-height:40px;
+  background-color: #D0B070;
+  border-radius:50%;
+  border: 0.5vw solid ;
+  color:#8E6A23;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  font-family: sans-serif;
+  transition:all 1s;
+  &.coint--found{
+    bottom:10%;
+  }
+  &.coint--spend{
+    bottom:100%;
+  }
+}

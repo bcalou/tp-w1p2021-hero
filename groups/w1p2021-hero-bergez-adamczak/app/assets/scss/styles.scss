@@ -1,0 +1,134 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: #0de595;
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+.big-header {
+  background-color: black;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
+.button {
+  width: 15vw;
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  border: none;
+  color: red;
+}
+
+
+/* animation entre pages
+
+.pane-enter-active,
+.pane-leave-active {
+  animation: fake 5s;
+
+  &::before{
+    content: '';
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100vw);
+    transition: transform 2.5s;
+  }
+}
+
+.pane-leave-to {
+  &::before {
+    transform: translateX(0)
+  }
+}
+
+.pane-enter {
+  &::before {
+    transform: translateX(0)
+  }
+}
+
+.pane-enter-to {
+  &::before {
+    transform: translateX(-100vw)
+  }
+}
+*/
+
+html {
+  background-color: black;
+}
+.gameTitle {
+  font-size: 100px;
+  margin-top: 20vh;
+}
+
+.buttons {
+  margin-top: 20vh;
+}
+
+.choicesBox {
+  margin-left: 20vw;
+  width: 60vw;
+  height: 20vh;
+  background-color: rgb(219, 218, 218);
+  border-radius: 30px;
+  margin-top: 77vh;
+}
+
+.choicesList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4vh;
+  height: 45%;
+}
+
+.choices {
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 23px;
+  border: black solid;
+  background-color: #2a2929;
+}
+
+.screenText {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.backgroundImage {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill; 
+}
+
+.choices:hover {
+  color: green;
+  border: green solid;
+}
+

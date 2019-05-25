@@ -1,0 +1,65 @@
+
+.ufo--bubbelgum--active {
+  .bubblegum--trache {
+    background-color: rgb(129, 55, 129);
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    top: 38%;
+    right: 8%;
+    border-radius: 2vw;
+    opacity: 0;
+    animation: fadeIn 0.1s 1.4s forwards;
+    transform: rotate(-80deg);
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    &:after,
+    &:before {
+      transform-origin: bottom;
+      content: "";
+      background-color:  rgb(129, 55, 129);
+      height: 5vw;
+      width: 5vw;
+      position: absolute;
+      border-radius: 50%;
+      top: -180%;
+      left: -50%;
+    }
+    &:after {
+      transform: rotate(80deg);
+    }
+    &:before {
+      transform: rotate(60deg);
+      width: 2vw;
+      height: 2vw;
+    }
+  }
+  .bubblegum--bigbubble {
+    background-color:  rgb(129, 55, 129);
+    position: absolute;
+    z-index: 6;
+    bottom: 10%;
+    right: 28%;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: bubblegum 1.5s ease-in;
+    @keyframes bubblegum {
+      0% {
+        height: 0vw;
+        width: 0vw;
+      }
+      100% {
+        height: 15vw;
+        width: 15vw;
+        bottom: 0%;
+        right: 0%;
+      }
+    }
+  }
+}

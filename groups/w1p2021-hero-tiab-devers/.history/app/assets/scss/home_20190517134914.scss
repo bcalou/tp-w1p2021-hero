@@ -1,0 +1,43 @@
+.home {
+  background: url('../img/backgroundHome.jpg') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+
+  .home__title {
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
+    font-size: 80px;
+    color: red;
+  }
+
+  .home__subtitle {
+    position: fixed;
+    top: 100px;
+    margin-top: 20px;
+    font-size: 80px;
+    color: red;
+  }
+}
+
+.button {
+  color: red;
+  text-decoration: none;
+  background: gold;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  font-size: 30px;
+
+  &:hover {
+    border: solid 1.5px black;
+    cursor: pointer;
+  }
+}

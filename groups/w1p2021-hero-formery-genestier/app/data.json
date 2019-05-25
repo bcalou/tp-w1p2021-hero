@@ -1,0 +1,470 @@
+{
+    "characters": [{
+        "name": "Reine"
+    },
+    {
+        "name": "Roi"
+    }
+],
+
+
+"victory": [
+    {
+        "image": "/assets/32.jpg",
+        "message": "Victoire ! Vous retrouvez votre trône et pour vous remercier le roi carotte promet de livrer ses pires criminels au royaume Lapin, sauvant ainsi une partie de son peuple d'un massacre et le votre de la famine.",
+        "answers": [{
+            "text": "Retourner au menu",
+            "goto": "/home"
+            }]
+        }
+    ],
+    
+    
+    "loose":[
+        
+        {
+            "lose": 0,
+            "image": "/assets/lose.jpg",
+            "message": "Le chevalier Loup sauve bien la princesse des mains du seigneur Renard mais aussitôt fait, il la dévore",
+            "answers": [{
+                "text": "Retourner au menu",
+                "goto": "/home"
+                }]
+            },
+            
+            {
+                "lose": 1,
+                "image": "/assets/lose.jpg",
+                "message": "Le valet se venge et donne des informations sur vos positions aux carottes",
+                "answers": [{
+                    "text": "Retourner au menu",
+                    "goto": "/home"
+                    }]
+                },
+                
+                {
+                    "lose": 2,
+                    "image": "/assets/lose.jpg",
+                    "message": "Vous avez perdu ! La chouette attaque votre armée qui prend des dégâts trop importants. ",
+                    "answers": [{
+                        "text": "Retourner au menu",
+                        "goto": "home"
+                        }]
+                    }
+                    
+                ],
+                
+                "steps": [{
+                    "step": 0,
+                    
+                    "image": "/assets/0.jpg",          
+                    "message": "Votre royaume est victime d'une famine. Désespéré, un de vos sujets attaque et mange un sujet du royaume des carottes. Vous devez agir, que faites vous ?",
+                    "answers": [
+                        {
+                            "text": "Condamner le lapin à l'exil",
+                            "goto": "1"
+                        },
+                        {
+                            "text": "Laisser les lapins manger les carottes pour sauver votre peuple",
+                            "goto": "2"
+                        }
+                    ]
+                },
+                {
+                    "step": 1,
+                    
+                    "image": "/assets/1.jpg",          
+                    "message": "Les carottes se vengent et un lapin est attaqué. Les relations avec le peuple carotte se dégradent et vous rentrez en guerre. Vous devez choisir un allié :",
+                    "answers": [{
+                        "text": "Les Sangliers",
+                        "goto": "3"
+                    },
+                    {
+                        "text": "Les Lions",
+                        "goto": "4"
+                    }
+                ]
+            },
+            {
+                "step": 2,
+                
+                "image": "/assets/2.jpg",          
+                "message": "Vous avez l'amour de votre peuple mais le roi Carotte vous déclare la guerre. Vous devez choisir un allié :",
+                "life": 1,
+                "answers": [{
+                    "text": "Les Sangliers",
+                    "goto": "3"
+                },
+                {
+                    "text": "Les Lions",
+                    "goto": "4"
+                }
+            ]
+        },
+        {
+            "step": 3,
+            
+            "image": "/assets/3.jpg",          
+            "message": "Vos fidèles alliés sont redoutables sur le champs de bataille. Vous écrasez vos ennemis pour ce premier affrontement.",
+            "answers": [{
+                "text": "Continuer",
+                "goto": "34"
+            }
+        ]
+    },
+    {
+        "step": 4,
+        
+        "image": "/assets/4.jpg",          
+        "message": "Les Carottes promettent de livrer tous les lapins au peuple Lion et réussissent à retourner vos alliés contre vous. Les sangliers souhaitent toujours devenir vos alliés, vous acceptez.",
+        "answers": [{
+            "text": "Continuer",
+            "goto": "34"
+        }
+    ]
+},
+
+{
+    "step": 34,
+    
+    "image": "/assets/34.jpg",          
+    "message": "Le roi Carotte fait enlever votre fille, la princesse et demande votre château comme rançon. Acceptez-vous de l'échanger ?",
+    "answers": [{
+        "text": "Oui",
+        "goto": "5"
+    },
+    {
+        "text": "Non",
+        "goto": "6"
+    }
+]
+},
+
+{
+    "step": 5,
+    
+    "image": "/assets/5.jpg",          
+    "message": "Votre fille est sauvée et vous récupérez de précieuses informations : le roi Carotte se balade avec ses soldats tous les matins en forêt, laissant le château sans protection. Que voulez-vous faire ?",
+    "answers": [{
+        "text": "Attaquer l'ennemi dans la forêt et le capturer",
+        "goto": "7"
+    },
+    {
+        "text": "Récuperer le château pendant son absence",
+        "goto": "8"
+    }
+]
+},
+{
+    "step": 6,
+    
+    "image": "/assets/6.jpg",          
+    "message": "La princesse est alors mariée de force à votre ennemi ancestral, le seigneur Renard. Vous devez choisir entre : ",
+    "answers": [{
+        "text": "Sauver votre fille bien-aimée des mains du terrible Seigneur Renard ",
+        "goto": "9"
+    },
+    {
+        "text": "Sauver votre fille plus tard et régler les affaires de la cour",
+        "goto": "10"
+    }
+]
+},
+{
+    "step": 7,
+    
+    "image": "/assets/7.jpg",         
+    "message": "Les informations données étaient fausses et vous tombez dans un guet-apens. Les sangliers sont capturés",
+    "life": -1,
+    "answers": [{
+        "text": "Continuer",
+        "goto": "14"
+        }]
+    },
+    {
+        "step": 8,
+        
+        "image": "/assets/8.jpg",         
+        "message": "Vous récupérez votre chateau. Vous pouvez résister de nouveau aux attaques de vos ennemis.",
+        "life": 1,
+        "answers": [{
+            "text": "Continuer",
+            "goto": "14"
+            }]
+        },
+        {
+            "step": 9,
+            
+            "image": "/assets/9.jpg",         
+            "message": "Deux options pour récupérer votre fille s'offre à vous :",
+            "answers": [{
+                "text": "Le magicien Blaireau vient de créer un nouveau sortilège et vous propose de l'essayer pour la sauver",
+                "goto": "12"
+            },
+            {
+                "text": "Le chevalier Loup est venu vous prêter son épée. L'envoyer sauver la princesse.",
+                "goto": "/lose/0"
+            }
+        ]
+    },
+    {
+        "step": 10,
+        "image": "/assets/10.jpg",
+        "message": "La guerre est au centre de toutes les attentions sauf de votre cour ! vos devoirs royaux vous imposent de régler un de ces faits divers pour faire règner de nouveau le calme",
+        "answers": [{
+            "text": "Juger votre bouffon  qui a été surpris en train de voler votre or",
+            "goto": "15"
+        },
+        
+        {
+            "text": "Participer au tournoi organisé par le roi Cerf",
+            "goto": "16"
+        }
+    ]
+},
+
+{
+    "step": 12,
+    "image": "/assets/12.jpg",
+    "message": "Le seigneur Renard est transformé en poule",
+    "answers": [{
+        "text": "Le magicien Blaireau vient de créer un nouveau sortilège et vous propose de l'essayer pour la sauver",
+        "goto": "13"
+        }]
+    },
+    {
+        "step": 13,
+        "image": "/assets/13.jpg",
+        "message": "La guerre continue et les lapins gagnent du terrain, vous devez former une alliance avec les cerfs",
+        "answers": [{
+            "text": "Marier votre fille au prince Cerf",
+            "goto": "14"
+        },
+        {
+            "text": "Leur verser une compensation financière",
+            "goto": "14"
+        }
+    ]
+},
+{
+    "step": 14,
+    "image": "/assets/14.jpg",
+    "message": "Vous remportez de nouveau une bataille, mais vos ennemis décident d'attaquer le château; comment voulez- vous préparer ?",
+    "answers": [{
+        "text": "Renforcer le château",
+        "goto": "21"
+    },
+    {
+        "text": "Investir dans de nouvelles armes",
+        "goto": "22"
+    },
+    {
+        "text": "Demander conseil au sorcier",
+        "goto": "23"
+    }
+]
+},
+{
+    "step": 15,
+    "image": "/assets/15.jpg",
+    "message": "Votre bouffon est pris en flagrant délit de vol dans votre trésorerie, il implore votre pardon",
+    "answers": [{
+        "text": "Le chasser du royaume",
+        "goto": "/lose/1"
+    },
+    {
+        "text": "L'envoyer combattre sur le champs de bataille",
+        "goto": "18"
+    },
+    {
+        "text": "L'emprisonner dans le donjon",
+        "goto": "9"
+    }
+]
+},
+{
+    "step": 16,
+    "image": "/assets/16.jpg",
+    "message": "Pour participer, vous devez choisir votre champion :",
+    "answers": [{
+        "text": "Le chevalier Grenouille",
+        "goto": "19"
+    },
+    {
+        "text": "Le chevalier Raton",
+        "goto": "20"
+    }
+]
+},
+
+{
+    "step": 18,
+    "image": "/assets/18.jpg",
+    "message": "Votre bouffon revient en héros et remporte une bataille",
+    "life": 1,
+    "answers": [{
+        "text": "Récupérer votre fille",
+        "goto": "9"
+        }]
+    },
+    
+    {
+        "step": 19,
+        "image": "/assets/19.jpg",
+        "message": "Votre champion perd le tournoi...",
+        "life": -1,
+        "answers": [{
+            "text": "Récuperer votre fille",
+            "goto": "9"
+            }]
+        },
+        {
+            "step": 20,
+            "image": "/assets/20.jpg",
+            "message": "Votre champion remporte le tournoi et vous gagnez l'épée légendaire du bois des cerfs, elle vous permet de remporter plusieurs batailles face aux carottes",
+            "life": 1,
+            "answers": [{
+                "text": "Récuperer votre fille",
+                "goto": "9"
+                }]
+            },
+            {
+                "step": 21,
+                "image": "/assets/21.jpg",
+                "message": "Vous êtes épargnés mais vous devez faire reculer les carottes",
+                "answers": [{
+                    "text": "Envoyer les cerfs",
+                    "goto": "24"
+                },
+                {
+                    "text": "Envoyer les sangliers",
+                    "goto": "25"
+                }
+            ]
+        },
+        
+        {
+            "step": 22,
+            "image": "/assets/22.jpg",
+            "message": " Deux nouvelles armes à la pointe de la technologie s'offrent à vous, laquelle choisissez vous pour votre armée ?",
+            "answers": [{
+                "text": "L'arbalète",
+                "goto": "26"
+            },
+            {
+                "text": "Le canon à poudre",
+                "goto": "27"
+            }
+        ]
+    },
+    
+    {
+        "step": 23,
+        "image": "/assets/23.jpg",
+        "message": "Le sorcier utilise un sort de localisation et trouve le repère des carottes",
+        "answers": [{
+            "text": "Aller à leur repère",
+            "goto": "28"
+            }]
+        },
+        
+        {
+            "step": 24,
+            "image": "/assets/24.jpg",
+            "message": " Votre armée a pris des dégats mais les cerfs écrasent les lions et a fait reculer vos ennemis",
+            "life": 1,
+            "answers": [{
+                "text": "Poursuiver l'ennemi !",
+                "goto": "28"
+                }]
+            },
+            {
+                "step": 25,
+                "image": "/assets/24.jpg",
+                "message": " Votre armée a pris des dégats et les sangliers se font écraser mais ont fait reculer vos ennemis",
+                "life": -1,
+                "answers": [{
+                    "text": "Poursuiver l'ennemi !",
+                    "goto": "28"
+                    }]
+                },
+                
+                {
+                    "step": 26,
+                    "image": "/assets/26.jpg",
+                    "message": "Vos soldats se montrent particulièrement habiles à l’arbalète, ils réussissent à écraser l’armée des lions. Le château a pris des dégats mais vous avez réussi à protéger votre royaume et celui de vos vassaux",
+                    "life": 1,
+                    "answers": [{
+                        "text": "Poursuiver l'ennemi !",
+                        "goto": "28"
+                        }]
+                    },
+                    {
+                        "step": 27,
+                        "image": "/assets/27.jpg",
+                        "message": "Vos canons sont intastables et certains causent des dégats dans votre propre armée. Le château a pris des dégats mais vous avez réussi à protéger votre royaume et celui de vos vassaux",
+                        "life": -1,
+                        "answers": [{
+                            "text": "Poursuivez l'ennemi !",
+                            "goto": "28"
+                            }]
+                        },
+                        {
+                            "step": 28,
+                            "image": "/assets/28.jpg",
+                            "message": "Sur votre chemin, vous rencontrez la terrible chouette, vous devez répondre juste à son énigme au risque qu'elle s'en prenne à votre armée. Celle-ci vous demande : 3 lapins mangent 3 carottes en 3 minutes. Combien de carottes, mangent 6 lapins en 9 minutes ? ",
+                            "answers": [
+                                {
+                                    "text": "Entendre l'égnime",
+                                    "goto": "33"
+                                }
+                            ]
+                        },
+                        {
+                            "step": 33,
+                            "image": "/assets/28.jpg",
+                            "message": "Celle-ci vous demande : 3 lapins mangent 3 carottes en 3 minutes. Combien de carottes, mangent 6 lapins en 9 minutes ? ",
+                            "answers": [{
+                                "text": "18",
+                                "goto": "29"
+                            },
+                            {
+                                "text": "12",
+                                "goto": "/lose/2"
+                            }
+                        ]
+                    },
+                    
+                    
+                    
+                    {
+                        "step": 29,
+                        "image": "/assets/29.jpg",
+                        "message": " Vous avez trouvé la bonne réponse, vous trouvez le repère sans embuche. Vos soldats se battent et défont l'armée carotte. Que décidez vous de faire du roi Carotte ?",
+                        "answers": [{
+                            "text": "Continuez",
+                            "goto": "31"
+                            }]
+                        },
+                        
+                        
+                        
+                        
+                        {
+                            "step": 31,
+                            "image": "/assets/31.jpg",
+                            "message": "  Vous arrivez jusqu'au repère des carottes. Vos soldats se battent et défont l'armée carotte. Que décidez vous de faire du roi Carotte ?",
+                            "answers": [{
+                                "text": "Le manger",
+                                "goto": "/lose/2"
+                            },
+                            {
+                                "text": "Lui laisser la vie sauve",
+                                "goto": "/win"
+                            }
+                        ]
+                    }
+                    
+                    
+                ]
+            }

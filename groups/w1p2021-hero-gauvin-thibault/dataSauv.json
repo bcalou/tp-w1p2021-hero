@@ -1,0 +1,865 @@
+{
+    "steps": {
+        "0": {
+            "message": "Bienvenue voyageurpd",
+            "background": "assets/images/maps/0.png",
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "1":{
+            "message": "Bienvenue la meuf",
+            "background": "maps/1.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à gauche",
+                    "to": 3,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez en haut",
+                    "to": 4,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez en bas",
+                    "to": 5,
+                    "money": 10
+                }
+            ]
+        },
+        "2":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/2.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "3":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/3.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "4":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/4.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "5":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/5.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "6":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/6.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "7":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/7.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "8":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/8.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "9":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/9.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "10":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/10.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "11":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/11.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "12":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/12.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "13":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/13.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "14":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/14.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "15":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/15.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "16":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/16.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "17":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/17.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "18":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/18.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "19":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/19.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "20":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/20.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "21":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/21.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "22":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/22.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "23":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/23.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        },
+        "24":{
+            "message": "Bienvenue voyageur",
+            "background": "maps/24.png" ,
+            "actions": [
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                },
+                {
+                    "id": "by-horse",
+                    "label": "Allez à droite",
+                    "to": 2,
+                    "money": 10
+                }
+            ]
+        }
+    }
+    ,
+    "test": {
+        "1": {
+            "name" : "niveau 1",
+            "map" : "green,"
+        },
+        "2": {
+            "name" : "niveau 2",
+            "map" : "yellow"
+        },
+        "3": {
+            "name" : "niveau 1",
+            "map" : "red"
+        },
+        "4": {
+            "name" : "niveau 1",
+            "map" : "blue"
+        },
+        "tuiles" : [
+            [
+                "maps/chg.png",
+                5,
+                10,
+                15,
+                20
+            ],
+            [
+                1,
+                6,
+                11,
+                16,
+                21
+            ],
+            [
+                2,
+                7,
+                12,
+                17,
+                22
+            ],
+            [
+                3,
+                8,
+                13,
+                18,
+                23
+            ],
+            [
+                4,
+                9,
+                14,
+                19,
+                24
+            ]
+        ]
+    },
+    "map": {
+        "1": {
+
+        }
+    },
+    "levels": {
+        "1": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        },
+        "2": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        },
+        "3": {
+            "message": " ",
+            "responce": [2, 3],
+            "link": " "
+        }
+    },
+
+    "characters": {
+        "1": {
+            "name" : "KABOOM",
+            "attack": "facial",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "2": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "3": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        },
+        "4": {
+            "name" : " ",
+            "attack": " ",
+            "strengh" : " ",
+            "defence" : " ",
+            "life" : " "
+        }
+
+
+    }
+}

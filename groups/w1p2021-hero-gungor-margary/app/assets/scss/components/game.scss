@@ -1,0 +1,164 @@
+$hetic-green: rgb(255, 255, 255);
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  font-weight: bold; 
+  font-size: 1.5rem; 
+}
+
+.gameMain {
+  background: url('/assets/img/bg.svg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; 
+}
+
+
+.svgContainer {
+
+  svg {
+    justify-content: center;
+  }
+  
+}
+
+.logo {
+  position: absolute; 
+  top: 40px;
+  left: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  width: 60vw;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.button {
+  color: $hetic-green;
+  text-decoration: none;
+  background: rgb(173, 133, 133);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.choicesList {
+  height: 50%;
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+  margin: 200px auto;
+
+  .choiceItem { 
+    font-size: 2.0rem;
+    color: white;
+    margin: 40px 20px;
+    border-radius: 90px;
+    justify-content: space-around;
+  }
+}
+
+li {
+  animation: fadeIn 0.5s linear;
+}
+
+
+.labelAction {
+  width: 100%;
+  justify-content: space-around;
+  display: none;
+  margin-top: 90px;
+}
+
+.iconAction:hover .labelAction {
+  display: block;  
+}
+
+.iconAction {
+  background-color: rgba(255, 255, 255, 0.61);
+  width: 220px;
+  height: 220px;
+  border-radius: 90px;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  font-size: 1.9rem; 
+  padding: 5px;
+  &:hover {
+    background-color: rgb(30, 8, 95, 0.66);
+    height: 460px;
+  }
+}
+
+.actionIcon:hover {
+  background-color: rgba(255, 255, 177, 0.66);
+}
+
+.labelContainer {
+  position: absolute;
+}
+
+.urinupContainer {
+  position: absolute;
+}
+  
+.titleContainer {
+  width: 100vw;
+  height: 100px;
+  padding-top: 50px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.soundContainer {
+  width: 200px; 
+  position: absolute; 
+  right: 40px; 
+  top: 40px; 
+}
+
+audio {
+  width: 100%; 
+  cursor: pointer;
+  align-self: center; 
+}  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <title>Hero</title>
+  </head>
+  <body>
+    <div id="root">
+      <audio src="assets/music/music.mp3" autoplay loop></audio>
+      <transition name="black">
+        <router-view />
+      </transition>
+    </div>
+    <style>
+    .black-leave-active
+    {
+      animation: toBlack 0.5s;
+    }
+    .black-enter-active
+    {
+      animation: toBlack 0.5s ease 0.5s reverse;
+    }
+    @keyframes toBlack
+    {
+      to
+      {
+        opacity: 0;
+      }
+    }
+    body
+    {
+      background: black;
+      overflow: hidden;
+      height: 100vh;
+    }
+    </style>
+    <script src="./app.js"></script>
+  </body>
+</html>

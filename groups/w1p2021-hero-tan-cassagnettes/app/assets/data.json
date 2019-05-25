@@ -1,0 +1,178 @@
+{ 
+  "1": {
+    "goto": 2,
+    "title": "L'arme",
+    "subtitle": "Déterminer l’objet ayant entraîner la mort de Yumi",
+    "answer": "pistolet",
+    "suspects": [
+      {
+        "suspectId": 1,
+        "name": "Jun",
+        "goto": 2,
+        "phrases": [
+          "Voir le cadavre de Yumi dans le chambre... c’est atroce!",
+          "Après une absence remarqué de Yumi durant la soirée nous sommes tous montés dans sa chambre"
+        ]
+      },
+      {
+        "suspectId": 2,
+        "name": "Yukio",
+        "goto": 2,
+        "phrases": [
+          "Elle a toujours eu un caractère emporté...",
+          "C’était une grande inspectrice des impôts, une fille brillante, qui avait une grande carrière devant elle... aaaah.....Pourquoi a tu fais ca Yumi, pourquoi?!",
+          "Magré son caractère de chien... Elle va me manqué"
+        ]
+      },
+      {
+        "suspectId": 3,
+        "name": "Noriko",
+        "goto": 2,
+        "phrases": [
+          "Tout cela est très triste...",
+          "Fuyons mon amour, le malheur s’abat à cet endroit. Je ne veux pas prendre le risque de perdre ta beauté en restant ici !"
+        ]
+      },
+      {
+        "suspectId": 4,
+        "name": "Pat",
+        "goto": 2,
+        "phrases": [
+          "Vers 22h on a trouvé son corps inaminé dans sa chambre",
+          "Je suis lieutenant policier depuis plus de 25 ans à la préfecture de Nabuya... J'apporterai mon aide à l'enquête!",
+          "C’est moi qui ais pris les devants et appelé la police à la découverte de son corps inanimé "
+        ]
+      }
+    ]
+  },
+  "2": {
+    "goto": 3,
+    "title": "La cause du décès",
+    "subtitle": "Déterminer la cause du décès",
+    "answer": "assassinat",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "goto": 3,
+        "phrases": [
+          "Depuis quelque mois, elle semblait redouter de nous retrouver... Elle avait l’air embarrassée. Quelquechose de triste lui ait certainement arrivée...",
+          "Je suis docteur, mais, mon rêve, c'est d'être majorette!... Je pense sérieusement à me reconvertir."
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "goto": 3,
+        "phrases": [
+          "En y réfléchissant, Yumi a dit :  'Il y a des situations qui vous m’êtes mal à l’aise... Et lorsque ca m’arrive je n’ai qu’une envie, c’est de mourir'. ",
+          "Elle était certainement beaucoup trop déprimée. Et c’est la raison de son geste."
+        ]
+      },
+      {
+        "suspectId": "3",
+        "name": "Noriko",
+        "goto": 3,
+        "phrases": [
+          "Pas besoin d’être son amie pour comprendre qu’elle était très pudique et gardait tout pour elle... comme si elle vivait avec un secret en permanence. J’ai vite arrêté de chercher à la comprendre moi...",
+          "Yumi était amoureuse de Yukio, c’est certain... Elle l’a toujours été depuis leur tendre enfance... C’est la raison de son suicide, le chagrin d’amour"
+        ]
+      },
+      {
+        "suspectId": 4,
+        "name": "Pat",
+        "goto": 3,
+        "phrases": [
+          "Yumi, c’était un femme qui n’avait pas froid aux yeux. Elle aimait relever les défis! Elle ne disait jamais non à un partie de ping pong supplémentaire.",
+          "On sait bien qu’elle avait des problèmes avec la fidélité haha en amour, comme en amitié !" 
+        ]
+      }
+    ]
+  },
+  "3": {
+    "goto": 4,
+    "title": "L'heure du décès",
+    "subtitle": "Trouver l'heure du décès",
+    "answer": "18",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "goto": 4,
+        "phrases": [
+          "Après évaluation de la rigidité cadavérique du corps de Yumi, l’heure de son décès est estimé aux alentours de 15h.",
+          "Il existe des exception, en autre lorsqu’une personne meurt en accomplissant un effort physique.",
+          "Oui... C’est Yumi que j’ai vu dans marchands dans les couloirs pendant qu’on jouait au ping pong. Ai-je rêvé ? Oui j’ai rêvé, je vais prendre mes médocs."
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "goto": 4,
+        "phrases": [
+          "Elle était encore avec nous pour le déjeuner ... Puis vers 15h, Pat propose d’aller faire du ping pong dans la grande salle mais Yumi décline l’offre, l’ai blasée...",
+          "Raah Pat... Quel pingre celui-là! Toujours à vouloir trouver la magouille pour ne pas payer..."
+        ]
+      },
+      {
+        "suspectId": 3,
+        "name": "Noriko",
+        "goto": 4,
+        "phrases": [
+          "Cette partie de ping pong s’est bien finie jusqu’à 18h ! Eh ouai, sacrée partie! Il a bien fallut que je revienne à l’auberge pour prendre un bon bain avant d’aller voir le feu d’artifice",
+          "Jun dit l’avoir dans les couloirs vers 17h ! C’était un fantôme! C'est certain! ",
+          "Yumi yo, Yumi mi, yuyulu..."
+        ]
+      },
+      {
+        "suspectId": 4,
+        "name": "Pat",
+        "goto": 4,
+        "phrases": [
+          "J’ai mesuré, avec l’aide de Jun, la rigidité cadavérique du coprs de Yumi... La mort de Yumi remonte à 7h...",
+          "il faut être dans le métier pour savoir ces choses là... Savoir comment fausser l’heure d’un décès, c’est pas à la porté de tous!"
+        ]
+      }
+    ]
+  },
+  "4": {
+    "title": "La révélation",
+    "subtitle": "Désigner le coupable!",
+    "answer": "Pat",
+    "suspects": [
+      {
+        "suspectId": "1",
+        "name": "Jun",
+        "phrases": [
+          "Maman! Maman! Au secours, sauve moi de là ouin ouin ouin",
+          "Maman dit que je suis un sociopathe, et que pour ça, je ne peux pas rester avec une personne seule dans une pièce. (glup)"
+        ]
+      },
+      {
+        "suspectId": "2",
+        "name": "Yukio",
+        "phrases": [
+          "Oui, nous avons vécu une histoire d'amour ave Yumi... Et alors?!",
+          "Les filles ne me résistent pas... pas pour longtemps en tout cas."
+        ]
+      },
+      {
+        "suspectId": 3,
+        "name": "Noriko",
+        "phrases": [
+          "Vous voulez savoir la vérité?! Alors, je détestais Yumi, je la haïssais même... Toujours parfaitement apprêtée  et élégante, juste dans ses convictions, toujours la bonne phrases blabla... ",
+          "Mais jamais... Jamais, je n'aurais commis un tel acte..."
+        ]
+      },
+      {
+        "suspectId": 4,
+        "name": "Pat",
+        "phrases": [
+          "Je suis un lieutenant de police renommé! Je ne permets qu'on remettre en cause ma probité! ",
+          "Mais comme tout homme, certes, j'ai des failles... ",
+          "Je serai prêt à croiser le fer contre quiconque salirait mon honneur! On ne dénigre pas impunément Pat Balykan!"
+        ]
+      }
+    ]
+  }
+}

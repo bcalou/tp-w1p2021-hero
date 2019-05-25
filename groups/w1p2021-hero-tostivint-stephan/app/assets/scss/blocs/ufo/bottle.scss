@@ -1,0 +1,82 @@
+.bottle{
+  left:2%;
+  overflow:hidden;
+  height:7.5vw;
+  width:2.5vw;
+  position: absolute;
+  bottom:0;
+  z-index: 2;
+  .bottle__top{
+    background-color: brown;
+    height:10%;
+    position: absolute;
+    border-radius:1vw;
+    z-index: 2;
+  }
+  .bottle__glass{
+    position: absolute;
+    &--top{
+      width: 0;
+      height: 0;
+    }
+    &--bottom{
+      bottom:0;
+      width:100%;
+      &:after{
+        background-color: darkorange;
+        height:50%;
+        top:20%;
+      }
+    }
+  }
+  &.bottle--orange{
+    .bottle__top{
+      width:80%;
+      height:10%;
+      left:10%;
+    }
+    .bottle__glass{
+      &--top{
+        top: -34%;
+        left: -30%;
+        border-left: 2vw solid transparent;
+        border-right: 2vw solid transparent;
+        border-bottom: 10vw solid orange;
+      }
+      &--bottom{
+        background-color: orange;
+        height:56%;
+        border-radius:1vw;
+        &:after{
+          background-color: darkorange;
+          height:50%;
+          top:20%;
+        }
+      }
+    }
+  }
+  &.bottle--alk{
+    .bottle__top{
+      width:60%;
+      left:20%;
+    }
+    .bottle__glass{
+      &--top{
+        left:0.3vw;
+        top:-60%;
+        border-left: 1vw solid transparent;
+        border-right: 1vw solid transparent;
+        border-bottom: 10vw solid green;
+      }
+      &--bottom{
+        height:65%;
+        border-radius:5vw;
+        background-color: green;
+        &:after{
+          top:30%;
+          background-color: darkgreen;
+        }
+      }
+    }
+  }
+}

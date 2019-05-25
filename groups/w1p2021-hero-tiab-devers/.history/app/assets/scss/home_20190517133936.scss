@@ -1,0 +1,29 @@
+.home {
+  background: url('../img/backgroundHome.jpg') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+
+  .home__title {
+    position: relative;
+    top: 0;
+    font-size: 50px;
+    color: red;
+  }
+}
+
+.button {
+  color: gold;
+  text-decoration: none;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}

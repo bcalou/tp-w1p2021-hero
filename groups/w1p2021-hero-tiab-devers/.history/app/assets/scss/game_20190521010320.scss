@@ -1,0 +1,140 @@
+.game {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__screen {
+  background: white;
+  width: 625px;
+  height: 625px;
+  border-radius: 50%;
+}
+
+.inventory {
+  // background-color: red;
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inventory__list {
+  display: none;
+  width: 240px;
+  height: 200px;
+  background-color: black;
+  border: solid 1px white;
+}
+
+.inventory__list.is-open {
+  display: block;
+}
+
+.inventory__top {
+  background: url('../img/inventory-top.png') no-repeat center;
+  background-size: contain;
+  width: 202px;
+  height: 154px;
+}
+
+.inventory__bottom {
+  background: url('../img/inventory-bottom.png') no-repeat center;
+  background-size: contain;
+  width: 202px;
+  height: 66px;
+}
+
+.inventory__title {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  // transform: translateY(250px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.game__arrows {
+  position: absolute;
+  background: url('../img/arrow.png') no-repeat center;
+  background-size: contain;
+  width: 100px;
+  height: 70px;
+}
+
+.game__arrows--left {
+  top: 315px;
+  left: 460px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.game__arrows--right {
+  top: 315px;
+  right: 460px;
+}
+
+.game__arrows--top {
+  top: 70px;
+  left: 720px;
+  transform: rotate(-90deg);
+}
+
+.game__arrows--bottom {
+  bottom: 70px;
+  left: 720px;
+  transform: rotate(90deg);
+}
+
+.firstStep {
+  background: url('../img/step-one-bg.png') no-repeat center center fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.firstStep__title {
+  font-size: 50px;
+  color: red;
+}
+
+.firstStep__title--paradis {
+  position: absolute;
+  top: 268px;
+  right: 205px;
+}
+
+.firstStep__title--enfer {
+  position: absolute;
+  top: 268px;
+  left: 310px;
+}
+
+
+.conversation {
+  position: absolute;
+  left: 550px;
+  bottom: 250px;
+  width: 400px;
+  height: 300px;
+}

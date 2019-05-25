@@ -1,0 +1,32 @@
+.bottle {
+  left: 2%;
+  overflow: hidden;
+  height: 7.5vw;
+  width: 3vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  .bottle__top {
+    background-color: brown;
+    height: 10%;
+    position: absolute;
+    border-radius: 0.75vw;
+    z-index: 2;
+  }
+  .bottle__glass {
+    position: absolute;
+    &--top {
+      width: 0;
+      height: 0;
+    }
+    &--bottom {
+      bottom: 0;
+      width: 100%;
+      &:after {
+        background-color: darkorange;
+        height: 50%;
+        top: 20%;
+      }
+    }
+  }
+}

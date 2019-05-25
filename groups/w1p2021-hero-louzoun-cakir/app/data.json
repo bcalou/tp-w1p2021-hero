@@ -1,0 +1,496 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "title": "Vous aussi devenez un hunter",
+      "background": "",
+      "description": "Animaux monstrueux, espèces rares…<br/>Richesses enfouies, trésors cachés…<br/>Monde des démons, terres inexplorées…<br/>Le mot “INCONNU” dégage quelque chose de magique…<br/>Et certains hommes sont attirés par cette force.<br/>On les appelles les “hunters”.<br/>Vous aussi devenez un Hunter!",
+      "actions": [
+        {
+          "label": "Participer à l'examen",
+          "to": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Vous arrivez sur l'ile",
+      "background": "../images/background.jpg",
+      "description": "Vous vous apprêtez à prendre le bateau pour arriver sur la fameuse ile<br>où se passe l'examen hunter<br>Vous êtes arrivé mais qu'est-ce que vous réserve cette ile ?",
+      "actions": [
+        {
+          "label": "Suivant",
+          "to": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Une question théorique",
+      "background": "../images/exam0.jpg",
+      "description": "Vous ne connaissez même pas encore le lieu de l'examen qu'une vieille dame qui semble être une examinatrice vous pose une question, si vous répondez juste vous allez pouvoir continuer : votre fille et votre fils sont enlevés. Lequel choisissez-vous de sauver ?",
+      "actions": [
+        {
+          "label": "Ma fille",
+          "to": "/lose"
+        },
+        {
+          "label": "Mon fils",
+          "to": "/lose"
+        },
+        {
+          "label": "Ne pas répondre",
+          "to": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Une bonne réponse pas évidente",
+      "background": "../images/exam0.jpg",
+      "description": "Vous avez répondu correctement à la question qui était le silence car il n'existe aucune réponse correcte à cette question. Vous pouvez maintenant continuer votre route",
+      "actions": [
+        {
+          "label": "Continuer votre chemin",
+          "to": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Qui sont-ils ?",
+      "background": "../images/monstres-aide.jpg",
+      "description": "Sur votre chemin vous croisez un homme qui vous dit que sa femme a été emporté par des monstres, vous avez aperçu le monstre que décidez-vous de faire ?",
+      "actions": [
+        {
+          "label": "Le tuer",
+          "to": "/lose"
+        },
+        {
+          "label": "Négocier avec lui",
+          "to": 6
+        },
+        {
+          "label": "Négocier avec un peu plus de force",
+          "to": 7
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Le monstre vous attaque",
+      "background": "../images/monstres-attack.jpg",
+      "description": "Il s'avère que le monstre est plus fort que vous",
+      "actions": [
+        {
+          "label": "Faire marche arrière",
+          "to": 5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Le monstre est démasqué",
+      "background": "../images/monstres-habitants.jpg",
+      "description": "Il s'avère que le monstre était complice avec le couple, vous avez réussi leurs tests et ils vous donnent le lieu de l'examen",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 8
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Le lieu de l'examen",
+      "background": "../images/exam-place.jpg",
+      "description": "Vous arrivez vers un restaurant où vous rentrez puis prenez un ascenseur qui vous amène vers ce qui semble être un bunker où il y a une centaine de personnes....",
+      "actions": [
+        {
+          "label": "Revenir en arrière",
+          "to": 2
+        },
+        {
+          "label": "En découvrir plus sur cette tour",
+          "to": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Mais qui est ce type ?!",
+      "background": "../images/weird-dude.jpg",
+      "description": "Après avoir marché deux trois minutes, une personne semblant bien aimable vous propose une boisson pour vous rafraîchir, que faire ?",
+      "actions": [
+        {
+          "label": "L'ignorer et ne pas prendre sa boisson",
+          "to": 11
+        },
+        {
+          "label": "Prendre et boire sa boisson",
+          "to": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Vous avez mal au ventre",
+      "background": "../images/weird-dude.jpg",
+      "description": "Sa boisson était remplie de laxatif, vous avez mal au ventre et vous ratez la première épreuve",
+      "actions": [
+        {
+          "label": "Recommencer",
+          "to": 9
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Vous êtes malin !",
+      "background": "../images/weird-looser.jpg",
+      "description": "Vous n'avez pas pris sa boisson, sage décision car il y avait introduit des laxatifs afin que vous ratiez l'épreuve",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "La première épreuve va commencer !",
+      "background": "../images/exam1.jpg",
+      "description": "Un homme assez grand et maigre s'approche il s'agit de M. Satotsu et la première épreuve va commencer, elle consiste à monter des escaliers....",
+      "actions": [
+        {
+          "label": "Abandonner",
+          "to": "/lose"
+        },
+        {
+          "label": "Commencer l'épreuve",
+          "to": 13
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Cela fait maintenant quelques kilomètres...",
+      "background": "../images/exam1.jpg",
+      "description": "Vous montez les escaliers qui semblent être sans fin, les gens autour de vous abandonnent déjà, que décidez-vous de faire ?",
+      "actions": [
+        {
+          "label": "Abandonner",
+          "to": "/lose"
+        },
+        {
+          "label": "Continuer malgré tout",
+          "to": 14
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Enfin ?",
+      "background": "../images/exam1.jpg",
+      "description": "Après plusieurs kilomètres supplémentaires vous apercevez enfin une lumière, vous arrivez dans la forêt de Biska où aura lieu la 2eme épreuve",
+      "actions": [
+        {
+          "label": "En savoir plus sur la seconde épreuve",
+          "to": 15
+        },
+        {
+          "label": "Vous êtes mort de fatigue vos jambes ne peuvent plus bouger",
+          "to": "/lose"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "La 2eme épreuve",
+      "background": "../images/exam2.jpg",
+      "description": "Cette épreuve est divisée en deux, avec les hunters Menchi et Buhara, la première partie consistait à faire du rôti de porc grillé et la seconde à faire des sushis pour Menchi",
+      "actions": [
+        {
+          "label": "Commencer l'épreuve",
+          "to": 16
+        },
+        {
+          "label": "Quoi ? c'est un examen de cuisine ?",
+          "to": 34
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "A quoi pensez vous ?",
+      "background": "../images/exam2-part2.jpg",
+      "description": "Un hunter ne doit pas savoir uniquement se battre, il doit être bon dans plusieurs domaines même si cela vous déplaît",
+      "actions": [
+        {
+          "label": "Vous remettre les idées en place et commencer l'épreuve",
+          "to": 16
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Première partie de l'épreuve",
+      "background": "../images/exam2.jpg",
+      "description": "Comment décidez-vous de cuire le rôti de porc ?",
+      "actions": [
+        {
+          "label": "Feu doux",
+          "to": 17
+        },
+        {
+          "label": "Moyen",
+          "to": 18
+        },
+        {
+          "label": "Fort",
+          "to": 17
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "La cuisson ne lui plaît pas",
+      "background": "../images/buhara-lose.jpg",
+      "description": "Malheureusement ce type de cuisson ne lui plaît pas",
+      "actions": [
+        {
+          "label": "Recommencer",
+          "to": 15
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Bien joué",
+      "background": "../images/exam2.jpg",
+      "description": "Ce type de cuisson lui plaît vous pouvez continuer vers la seconde partie de l'épreuve",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 19
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Seconde partie de l'épreuve",
+      "background": "../images/exam2-part2.jpg",
+      "description": "Comment décidez-vous de préparer les sushis ?",
+      "actions": [
+        {
+          "label": "Vous n'êtes pas doué pour la cuisine",
+          "to": 20
+        },
+        {
+          "label": "Vous faites du mieux que vous pouvez",
+          "to": 20
+        },
+        {
+          "label": "Vous êtes habitué à préparer des sushis",
+          "to": 20
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Sérieusement ?",
+      "background": "../images/menchi.jpg",
+      "description": "Peu importe ce que vous faites Menchi n'est pas satisfaite, le président de l'examen intervient afin de créer une autre épreuve qui consiste à chercher des oeufs d'un monstre dans le creux d'une falaise.",
+      "actions": [
+        {
+          "label": "...",
+          "to": 21
+        },
+        {
+          "label": "Sauter",
+          "to": "/lose"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "...",
+      "background": "../images/exam2-part3.jpg",
+      "description": "Comme vous avez été patient vous avez pu comprendre comment remonter du creux en récupérant l'oeuf, vous pouvez accéder à la 3eme épreuve",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 22
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Troisième épreuve",
+      "background": "../images/exam3.jpg",
+      "description": "La tour aux astuces, le but est d'arriver vivant en bas de la tour dans un délai de 72 heures. Remplie de pièges, quiz et de prisonniers chargé de faire perdre un maximum de temps aux participants en échange d'une année de remise de peine contre une heure volée aux participants.",
+      "actions": [
+        {
+          "label": "Ne pas rentrer",
+          "to": "/lose"
+        },
+        {
+          "label": "Rentrer dans la tour",
+          "to": 23
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Une formalité ...",
+      "background": "../images/exam3.jpg",
+      "description": "Les prisonniers étant une formalité pour vous, vous vous retrouvez dans une salle sans aucune sortie à quelques minutes de la fin de l'examen, qu'allez-vous faire ?",
+      "actions": [
+        {
+          "label": "Vous créez votre propre chemin en détruisant le mur",
+          "to": 24
+        },
+        {
+          "label": "Vous trouvez un petit détail dans un coin de la salle",
+          "to": "/lose"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Esprit shonen",
+      "background": "../images/wall.jpg",
+      "description": "Vous arrivez à l'avance à la fin de l'épreuve, on vous indique que vous avez rendez-vous à l'ile Zebiru pour la 4eme épreuve",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 25
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "L'île Zebiru",
+      "background": "../images/exam4.jpg",
+      "description": "Cette épreuve consiste à attraper le badge d'une personne qui vous est assignée, il n'y a aucune règle",
+      "actions": [
+        {
+          "label": "Se cacher dans la forêt",
+          "to": 27
+        },
+        {
+          "label": "Foncer dans le tas",
+          "to": 26
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Mauvaise stratégie",
+      "background": "../images/bad-choice-exam4.jpg",
+      "description": "Cette stratégie n'est pas la bonne, les participants encore présents sont aussi forts que vous...",
+      "actions": [
+        {
+          "label": "Recommencer",
+          "to": 24
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Un ennemi ?!",
+      "background": "../images/choice-exam4.jpg",
+      "description": "Vous voyez un ennemi au loin que décidez-vous de faire ?",
+      "actions": [
+        {
+          "label": "L'attaquer",
+          "to": 26
+        },
+        {
+          "label": "Utiliser un des objets que vous possédez",
+          "to": 28
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Sage décision",
+      "background": "../images/best-choice.jpg",
+      "description": "À ce stade de l'examen vous ne pouvez plus vous permettre de prendre de risque, vous avez réussi à attraper le badge de votre ennemie",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 29
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Épreuve finale",
+      "background": "../images/exam5.jpg",
+      "description": "Vous faites maintenant partis des 9 derniers participants et vous allez connaitre le lieu et les règles de la dernière épreuve",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 30
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Épreuve finale",
+      "background": "../images/exam5.jpg",
+      "description": "La dernière épreuve est un tournoi, vous devez affronter les participants, pour gagner vous devez forcer l'adversaire à abandonner, mais le tuer vous disqualifie",
+      "actions": [
+        {
+          "label": "Commencer l'épreuve",
+          "to": 31
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Que faire ?",
+      "background": "../images/exam5-part2.jpg",
+      "description": "Votre adversaire ne semble pas être commode...",
+      "actions": [
+        {
+          "label": "L'attaquer en forçant à l'abandonner",
+          "to": 32
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Que faire ?",
+      "background": "../images/exam5-part3.jpg",
+      "description": "Votre adversaire est vraiment pas commode... Il résiste aux coups",
+      "actions": [
+        {
+          "label": "Mettre un peu plus de force",
+          "to": 33
+        },
+        {
+          "label": "L'attaquer en forçant à l'abandonner",
+          "to": 33
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Que faire ?",
+      "background": "../images/exam5-part3.jpg",
+      "description": "Allez vous réussir à le vaincre ?",
+      "actions": [
+        {
+          "label": "En finir avec lui !",
+          "to": "/lose"
+        },
+        {
+          "label": "Être aussi têtu que lui",
+          "to": "/win"
+        }
+      ]
+    }
+  ]
+}

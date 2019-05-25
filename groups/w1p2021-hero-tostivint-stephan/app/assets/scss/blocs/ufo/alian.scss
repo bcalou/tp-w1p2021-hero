@@ -1,0 +1,368 @@
+.alian{
+  --alian--primary-color: lightgreen;
+  --alian--secondary-color: #76C476;
+  position: absolute;
+  width:43%;
+  height:43%;
+  bottom:0;
+  transform-origin: bottom;
+  &--left{
+    left:9%;
+  }
+  &--right{
+    right:9%;
+    width:35%;
+    height:35%;
+  }
+  .alian__head{
+    background-color: var(--alian--primary-color);
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+    position: absolute;
+    overflow:hidden;
+    z-index:2;
+    .alian__trache{
+      position: absolute;
+      background-color: var(--alian--secondary-color);
+      border-radius:50%;
+      &--1{
+        top:-10%;
+        left:0;
+        width:50%;
+        height:45%;
+      }
+      &--2{
+        bottom:-25%;
+        right:10%;
+        width:30%;
+        height:45%;
+      }
+    } 
+  }
+  .alian__mouth{
+    overflow:hidden;
+    width:50%;
+    position: absolute;
+    left:25%;
+    height:30%;
+    background-color: #000;
+    bottom:25%;
+    border-radius:50% 50% 50% 50% / 50% 50% 30px 30px; 
+    animation:mouth--parler .2s ease-in-out infinite alternate;
+    animation-play-state:paused;
+    transform-origin:top;
+    @keyframes mouth--parler{
+      0%{transform:sclaeY(1);}
+      100%{transform:scaleY(0.6);}
+    } 
+    &--speaking{
+      animation-play-state:running;
+    }
+    &--closing{
+      height:14%;
+      width:20%;
+      left:40%;
+      border-radius:50%;
+      &:after,&:before{
+        height:100%;
+      }
+    }
+
+    &:after{
+      position: absolute;
+      background-color: #fff;
+      width:20%;
+      height:45%;
+      top:0%;
+      left:25%;
+      content:"";
+      border-radius:0 0 50% 50% / 0 50% 50% 50%; 
+    }
+    &:before{
+      position: absolute;
+      background-color: #fff;
+      width:20%;
+      height:30%;
+      top:0%;
+      right:25%;
+      content:"";
+      border-radius:0 0 50% 50% / 0 50% 50% 50%; 
+    }
+    &.alian__mouth--fear{
+      height:50%;
+      border-radius:50%;  
+    }
+
+    &.alian__mouth--sleeping{
+      animation:mouthSleeping 1s ease-in-out infinite alternate;
+      transform-origin:center;
+      @keyframes mouthSleeping{
+        0%{transform:scale(0.5)}
+        100%{transform:scale(1.2)}
+      }
+    }
+  }
+  .alian__eye{
+    z-index: 2;
+    top:-50%;
+    position: absolute;
+    background-color:var(--alian--primary-color);
+    height:40%;
+    width:40%;
+    border-radius:50%;
+    &--right{
+      right:0;
+    }
+    &::after{
+      position: absolute;
+      background-color: #000;
+      width:30%;
+      height:30%;
+      top:35%;
+      left:25%;
+      content:"";
+      border-radius:50%; 
+      animation:eye--normal .7s ease-in-out infinite alternate;
+      transform-origin:center center;
+      animation-play-state:paused;
+      @keyframes eye--normal{
+        0%{transform:translateX(0);}
+        100%{transform:translateX(10px);}
+      }
+    }
+    &--moving{
+      &::after{
+        animation-play-state:running;
+      }
+    }
+    &::before{
+      position: absolute;
+      background-color: #fff;
+      width:50%;
+      height:50%;
+      top:25%;
+      left:25%;
+      content:"";
+      border-radius:50%;
+    }
+    &.alian__eye--sleeping{
+      &::after{
+        width:90%;
+        height:10%;
+        left:5%;
+        top:50%;
+        border-radius:5vw;
+      }
+
+      &::before{
+        background-color: transparent;
+      }
+    }
+
+    &.alian__eye--fear{
+      transform:scale(1.3);
+    }
+  }
+  .alian__eye__connection{
+    z-index:1;
+    width:14%;
+    left:20%;
+    height:40%;
+    background-color:var(--alian--secondary-color);
+    border-bottom-right-radius:30vw;
+    border-bottom-left-radius:30vw;
+    position: absolute;
+    top:-20%;
+    &--right{
+      left:auto;
+      right:20%;
+    }
+  }
+  &.alian--bureau{
+    .alian__glasses{
+      position: absolute;
+      //background-color: #000;
+      height:120%;
+      width:120%;
+      border-radius:2vw;
+      top:-0.4vw;
+      left:-0.5vw;
+      border:solid 0.5vw #343434;
+       &__connection{
+        &:after{
+          position: absolute;
+          background-color: #343434;
+          height:20%;
+          width:100%;
+          top:43%;
+          content:"";
+          left:-100%;
+        }
+      }
+    }
+    .alian__hair{
+      position: absolute;
+      background-color: #000;
+      width:0.5vw;
+      height:10%;
+      top:-10%;
+      left:50%;
+      &:after{
+        content:"";
+        position: absolute;
+        background-color: #000;
+        height:100%;
+        width:100%;
+        left:-0.8vw;
+      }
+    }
+  }
+  &.alian--punk{
+    transform-origin:bottom center;
+
+    &:nth-of-type(1){
+      animation-delay:-1s;
+    }
+    .alian__hair{
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      top:-8vw;
+      left:calc(50% - 2.5vw);
+      border-left: 2.5vw solid transparent;
+      border-right: 2.5vw solid transparent;
+      border-top: 15vw solid violet;
+      background-color: transparent;
+      &:after{
+        content:"";
+        position: absolute;
+        width: 0; 
+        height: 0; 
+        top:-15vw;
+        left:calc(50% - 0vw);
+        background-color: transparent;
+        border-left: 0vw solid transparent;
+        border-right: 2.5vw solid transparent;
+        border-top: 15vw solid pink;
+      }
+    }
+
+    .alian__ear{
+      position: absolute;
+      background-color: gold;
+      width:10%;
+      height:25%;
+      right:-5%;
+      z-index: 6;
+      top:45%;
+      border-radius:1vw;
+      animation:ear .5s ease-out infinite alternate;
+      transform-origin:top center;
+      @keyframes ear {
+        0%{transform:rotate(10deg)}
+        100%{transform:rotate(-10deg)}
+      }
+    }
+  }
+  &.alian--right{
+    .alian__mouth--speaking{
+      animation:mouth--parler .2s ease-in-out -.1s infinite alternate;
+    }
+  }
+
+  /*Pop, Metall, Punk*/
+  &.alian--music{
+    animation:punkmusic .2s ease-out infinite alternate;
+    @keyframes punkmusic {
+      0%{transform:scaleY(1)}
+      100%{transform:scaleY(0.9)}
+    }
+  }
+  &.alian--block{
+    --alian--primary-color: grey;
+    --alian--secondary-color: lightgrey;
+    left:17vw;
+    width:8vw;
+    height:8vw;
+    bottom:100vw;
+    margin-top: -6%;
+    transition: bottom 1s;
+    .alian__head{
+      border-bottom-right-radius:2vw;
+      border-bottom-left-radius:2vw;
+    }
+    .alian__mouth{
+      transform:scaleY(-2) translateY(-50px);
+    }
+    .augenbind{
+      width:180%;
+      height:20%;
+      background-color: #3E3E3D;
+      position: absolute;
+      transform:rotate(30deg);
+      top:-40%;
+      right:-75%;
+      z-index: 5;
+      border-radius:5vw;
+    }
+    .glass{
+      z-index: 3;
+      opacity: 0.2;
+      width:16vw;
+      height:16vw;
+      background-color: #fff;
+      position: absolute;
+      border-radius:50%;
+      bottom:-2vw;
+      left:-4vw;
+    }
+    .glass__button{
+      position: absolute;
+      width:12vw;
+      height:3vw;
+      background-color: darkgrey;
+      bottom:-2vw;
+      border-radius:0.5vw;
+      left:-2vw;
+      z-index: 4;
+      &:after, &:before{
+        position: absolute;
+        content:"";
+        border-radius:50%;
+        height:0.8vw;
+        width:0.8vw;
+        background-color: red;
+        top:43%;
+      }
+      &:after{
+        right:10%;
+      }
+      &:before{
+        right:20%;
+        animation: blink 1s linear infinite alternate;
+        @keyframes blink{
+          0%{background-color: red}
+          100%{background-color: green}
+        }
+      }
+    }
+    .alian__eye--right{
+      background-color: black;
+      &:before{
+        background-color: black;
+      }
+    }
+    &.alian--block--active{
+      bottom:30vw;
+      transform-origin: center;
+      animation: pirat 0.5s linear infinite alternate;
+      @keyframes pirat {
+        0%{transform: translateY(20px)  }
+        100%{transform: translateY(-20px) }
+      }
+    }
+  }
+}

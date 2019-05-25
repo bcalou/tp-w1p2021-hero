@@ -1,0 +1,295 @@
+{ 
+
+"characters" : [
+  {
+    "1" : {   
+      "message" : "salut",
+      "src" : "/images/klopp.png",
+      "altSrc" : "img-klopp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate magni dignissimos! Ad voluptas fugit nihil adipisci distinctio minus debitis, dicta at odit ratione aut expedita inventore facilis cumque impedit.",
+      "closeSvg": "images/close.svg",
+      "title" : "Jurgen Klopp",
+      "text" : "BON",
+      "cta": "JOUER AVEC JURGEN KLOPP"
+          
+    },
+  
+    "2" : {
+      "message" : "pkay",
+      "src" : "/images/zidane.png",
+      "altSrc" : "img-zidane",
+      "description": "fan de foot",
+      "closeSvg": "images/close.svg",
+      "title" : "ZINEDINE ZIDANE",
+      "text" : "BON" ,
+      "cta": "JOUER AVEC ZINEDINE ZIDANE"
+           
+    },  
+    "3" : {
+      "message" : "good",
+      "src" : "/images/kombouare.png",
+      "altSrc" : "img-kombouare",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate magni dignissimos! Ad voluptas fugit nihil adipisci distinctio minus debitis, dicta at odit ratione aut expedita inventore facilis cumque impedit.",
+      "closeSvg": "images/close.svg",
+      "title" : "Antoine Kombouare",
+      "text" : "BON",
+      "cta": "JOUER AVEC ANTOINE KOMBOUARE"
+    
+
+  }
+
+}
+ 
+],
+
+"game" : {
+  "1" : {
+    "question" : "Le coach peut recruter un de ces joueurs. Faites le bon choix  car il est possible qu'il  soit decisif pour le reste de la partie  ",
+      "choices" : {
+        "answerOne" : {
+          "messageCtaKombouare" : "Recrtuez Gouiri",
+          "link" : "/game/2",
+          "srcZidane" : "/images/cardHazard.png",
+          "messageCtaZidane" : "Recruter Hazard",
+          "srcKlopp" : "/images/cardKompany.png",
+          "messageKlopp": "Recruter Kompany",
+          "messageCtaKlopp" : "Recruter Kompany",
+          "srcKombouare" : "/images/cardGouiri.png",
+          "altSrc" : "img-answer-one",
+          "choix" : "incrementSave"      
+        },
+        "answerTwo" : {
+          "message" : "No",
+          "link" : "/game/2",
+          "srcZidane" : "/images/cardIsco.png",
+          "messageCtaZidane" : "Recruter Isco",
+          "srcKlopp" : "/images/cardMbappe.png",
+          "messageCtaKlopp" : "Recruter Mbappe",
+          "srcKombouare" : "/images/cardPhilipouto.png",
+          "messageCtaKombouare" : "Recrtuez Philippoteaux",
+          "altSrc" : "img-answer-two",
+          "choix" : "incrementSave" 
+        },
+        "answerThree" : {
+          "message" : "Maybe",
+          "link" : "/game/2",
+          "srcZidane" : "/images/cardBalotelli.png",
+          "messageCtaZidane" : "Recruter Balotelli",
+          "srcKlopp" : "/images/cardVidal.png",
+          "messageCtaKlopp" : "Recruter Vidal",
+          "srcKombouare" : "/images/cardDelaplace.png",
+          "messageCtaKombouare" : "Recrtuez Delaplace",
+          "altSrc" : "img-answer-three",
+          "choix" : "incrementSave" 
+        }
+      }
+  },
+  "2" : {
+    "question" : "A present votre joueur recrute il faut lui attribuer un numero il se peut que le joueur ait une preferance",
+      "choices" : {
+        "answerOne" : {
+          "message" : "7",
+          "link" : "/game/3",
+   
+     
+          "messageCtaKombouare" : "Attribuez le numero 7",
+          "messageCtaZidane" : "Attribuez le numero 7",
+          "messageCtaKlopp" : "Attribuez le numero 7",
+          "choix" : "incrementSave" 
+        },
+        "answerTwo" : {
+          "message" : "10",
+          "link" : "/game/3",
+          "messageCtaKombouare" : "Attribuez le numero 10",
+          "messageCtaZidane" : "Attribuez le numero 10",
+          "messageCtaKlopp" : "Attribuez le numero 10",
+          "choix" : "addMenta" 
+        
+        }
+      }
+  },
+  "3" : {
+    "question" : "L'entraineur arrive en fin de combat la saison n'est pas encore jouer, tout dependera du resultat du dernier match, voulez vous prendre le risque de prolonger le contrat du coach au sein du club",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/4",
+          "messageCtaKombouare" : "Prolonger",
+          "messageCtaZidane" : "Prolonger",
+          "messageCtaKlopp" : "Prolonger",
+          "choix" : "incrementSave" 
+        },
+        "answerTwo" : {
+          "message" : "No",
+          "link" : "/game/4",
+          "messageCtaKombouare" : "Ne pas prolonger",
+          "messageCtaZidane" : "Ne pas prolonger",
+          "messageCtaKlopp" : "Ne pas prolonger",
+          "choix" : "decrementSave" 
+        
+        }
+      }
+  },
+  "4" : {
+    "question" : "Les rumeurs disent que le president accorderait une prime pour chaque joueur s'ils remportent le dernier match.  Souhaitez vous accorder cette prime ? Sachez que cela peut avoir de l'impact sur la mentalite du groupe",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/5",
+          "messageCtaKombouare" : "Accorder la prime",
+          "messageCtaZidane" : "Accorder la prime",
+          "messageCtaKlopp" : "Accorder la prime",
+          "choix" : "addMenta" 
+        },
+        "answerTwo" : {
+          "message" : "No",
+          "link" : "/game/5",
+          "messageCtaKombouare" : "Ne pas accorder la prime",
+          "messageCtaZidane" : "Ne pas accorder la prime",
+          "messageCtaKlopp" : "Ne pas accorder la prime",
+          "choix" : "removeMenta" 
+        
+        }
+      }
+  },
+  "5" : {
+    "question" : "Le president souhaiterais effectuer un entrainement a huis clos ce qui risque de deplaire fortement aux supporters ou bien au contraire faire du bien a l'equipe", 
+      "choices" : {
+        "answerOne" : {
+          "message" : "Faire cet entrainement a huis clo",
+          "link" : "/game/6",
+          "messageCtaKombouare" : "Maintenir le huis clo",
+          "messageCtaZidane" : "Maintenir le huis clo",
+          "messageCtaKlopp" : "Maintenir le huis clo",
+          "choix" : "addMenta" 
+        },
+        "answerTwo" : {
+          "message" : "Ne pas faire cet entrainement a huis clo",
+          "link" : "/game/6",
+          "messageCtaKombouare" : "Refuser",
+          "messageCtaZidane" : "Refuser",
+          "messageCtaKlopp" : "Refuser",
+          "choix" : "incrementSave" 
+        
+        }
+      }
+  },
+  "6" : {
+    "question" : "J-1 avant le grand match, il est temps de faire des choix tactiques, souhaitez-vous titulariser votre joueur recruté au debut de la partie",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/7",
+          "messageCtaKombouare" : "Titulaire",
+          "messageCtaZidane" : "Titulaire",
+          "messageCtaKlopp" : "Titulaire",
+          "choix" : "addStatuMental" 
+        },
+        "answerTwo" : {
+          "message" : "Non",
+          "link" : "/game/7",
+          "messageCtaKombouare" : "Remplacant",
+          "messageCtaZidane" : "Remplacant",
+          "messageCtaKlopp" : "Remplacant",
+          "choix" : "removeStatuMental" 
+        
+        }
+      }
+  },
+  "7" : {
+    "question" : "C'est le jour J, le match approche etes-vous pret ?",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/8",
+          "messageCtaKombouare" : "Commencer le match",
+          "messageCtaZidane" : "Commencer le match",
+          "messageCtaKlopp" : "Commencer le match",
+          "choix" : "addMenta"
+      }
+  }
+}
+  ,
+  "8" : {
+    "question" : "Le match est pour l'instant decevant passer les consignes a vos joueurs, faites attention a ne pas trop vous decouvrir il est encore tot dans le match ",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/9",
+          "messageCtaKombouare" : "Jouer plus defensif",
+          "messageCtaZidane" : "Jouer plus defensif",
+          "messageCtaKlopp" : "Jouer plus defensif",
+          "choix" : "addMenta" 
+        },
+        "answerTwo" : {
+          "message" : "No",
+          "link" : "/game/9",
+          "messageCtaKombouare" : "Jouer a fond les coups",
+          "messageCtaZidane" : "Jouer a fond les coups",
+          "messageCtaKlopp" : "Jouer a fond les coups",
+          "choix" : "decrementMax"        
+        },
+        "answerThree" : {
+          "message" : "No",
+          "link" : "/game/9",
+          "messageCtaKombouare" : "Gros pressing",
+          "messageCtaZidane" : "Gros pressing",
+          "messageCtaKlopp" : "Gros pressing",
+          "choix" : "removeMenta"        
+        }
+      }
+  },
+  "9" : {
+    "question" : "On arrive a la 60eme minute le match sest nettement equilibre, lequipe den face est en palce il est temps de faire un changement tactique",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/game/10",
+          "messageCtaKombouare" : "Passez en 4-4-2",
+          "messageCtaZidane" : "Passez en 4-4-2",
+          "messageCtaKlopp" : "Passez en 4-4-2",
+          "choix" : "addMenta" 
+        },
+        "answerTwo" : {
+          "message" : "No",
+          "link" : "/game/10",
+          "messageCtaKombouare" : "Passez en 5-4-1",
+          "messageCtaZidane" : "Passez en 5-4-1",
+          "messageCtaKlopp" : "Passez en 5-4-1",
+          "choix" : "removeMenta" 
+        
+        }
+      }
+  },
+  "10" : {
+    "question" : "LE JOUEUR VIENT DE RENTRER SUR LA PELOUSE SOUHAITEZ VOUS LE LAISSER TIRER LE PENALTY ??",
+      "choices" : {
+        "answerOne" : {
+          "message" : "Oui",
+          "link" : "/win",
+          "messageCtaKombouare" : "Tire le penlaty",
+          "messageCtaZidane" : "Tire le penlaty",
+          "messageCtaKlopp" : "Tire le penlaty",
+          "choix" : "incrementSave" 
+        },
+        "answerTwo" : {
+          "message" : "Aux joueur de choisir entre eux",
+          "link" : "/win",
+          "messageCtaKombouare" : "Ne tire pas le penalty",
+          "messageCtaZidane" : "Ne tire pas le penalty",
+          "messageCtaKlopp" : "Ne tire pas le penalty",
+          "choix" : "decrementMax" 
+        
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+  

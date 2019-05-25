@@ -1,0 +1,51 @@
+$timeAnimation : 0.5s;
+
+.game-leave-active,
+.game-enter-active {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100vh);
+    background: #484BA0;
+  }
+}
+
+.game-leave-active {
+  z-index: 999;
+  animation: fake $timeAnimation;
+
+  &::after {
+    animation: slideLeave $timeAnimation;
+    z-index: 999;
+  }
+}
+
+.game-enter-active {
+  z-index: 999;
+  animation: fake $timeAnimation $timeAnimation;
+
+  &::after {
+    z-index: 999;
+    animation: slideEnter $timeAnimation ease $timeAnimation;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}

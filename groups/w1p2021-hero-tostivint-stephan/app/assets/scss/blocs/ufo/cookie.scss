@@ -1,0 +1,82 @@
+.cookie{
+  opacity:0;
+  position: absolute;
+  background-color:#AE854E;
+  height:20%;
+  width:20%;
+  z-index: 6;
+  bottom:5%;
+  right:-3%;
+  border-radius:50%;
+  transform:rotate(-30deg);
+  .cookie__trache{
+    position: absolute;
+    width:25%;
+    height:25%;
+    border-radius:2vw;
+    background-color: #533C1D; 
+    &.cookie__trache--1{
+      top:35%;
+      right:20%;
+      transform:rotate(-10deg);
+    }
+    &.cookie__trache--2{
+      top:65%;
+      left:25%;
+      transform:rotate(50deg);
+    }
+    &.cookie__trache--3{
+      top:15%;
+      left:15%;
+      transform:rotate(30deg);
+    }
+  }
+  .cookie__bit{
+    position: absolute;
+    border-radius:50%;
+    background-color: #E8F0F9;
+    width:25%;
+    height:25%;
+    &.cookie__bit--brown{
+      background-color:#AE854E;
+      position: absolute;
+      right: 3%;
+      top:3%;
+      &:after,&:before{
+        background-color: #AE854E;
+        border-radius:50%;
+        content:"";
+        position: absolute;
+        height:50%;
+        width:50%;
+      }
+      &:after{
+        top:-80%;
+      }
+      &:before{
+        right:-70%;
+        top:-100%;
+      }
+    }
+    &.cookie__bit--1{
+      top:0;
+      right:25%;
+    }
+    &.cookie__bit--2{
+      top:0;
+      right:0;
+      width:45%;
+      height:45%;
+    }
+    &.cookie__bit--3{
+      top:25%;
+      right:0;
+    }
+  }
+  &--active{
+    opacity:1;
+  }
+  &.cookie--spend{
+    bottom:100%;
+  }
+}

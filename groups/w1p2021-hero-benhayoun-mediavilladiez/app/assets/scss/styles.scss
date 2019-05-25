@@ -1,0 +1,93 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@font-face {
+  font-family: 'Pirata One';
+  src: url('../font/PirataOne-Regular.woff2') format('woff2'),
+      url('../font/PirataOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+.big-header {
+
+  height: 100vh;
+  background-image: url('../img/fond.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+  font-family: 'Pirata One';
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 2%;
+}
+
+.button {
+  text-decoration: none;
+  background: rgb(255, 230, 0);
+  padding: 6px;
+  border-radius: 8px;
+  display: inline-block;
+  border: none;
+}
+
+
+.game {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fond_game.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  font-family: 'Pirata One';
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 2%;
+}
+
+h1{
+  font-size: 68px;
+  margin-bottom: 2em;
+  color: rgb(255, 230, 0);
+}
+
+
+h2{
+  text-align: center;
+}
+
+h3{
+  font-size: 35px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 300px);
+  flex-direction: column; 
+}
+
+.choice {
+  text-align: center;
+}
+

@@ -1,0 +1,171 @@
+@import 'reset';
+@font-face {
+  font-family: 'Almendra';
+  src: url('../font/Almendra-Regular.ttf'); 
+  
+}
+@font-face {
+  font-family: 'Almendra-Bold';
+  src: url('../font/Almendra-Bold.ttf'); 
+  
+}
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes slodeLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slodeEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+$hetic-green: #0de595;
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+p,
+.button {
+  
+  font-family: 'Almendra'; 
+}
+*{
+  cursor: url('../mouse-pointer/my-mouse-pointer.cur'), auto;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.button {
+  margin: 10px 0;
+  background-color: cyan;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Almendra-Bold";
+  border-radius: 5px;
+  border: 4px solid white;
+  cursor: url('../mouse-pointer/my-mouse-pointer-hover.cur'), auto;
+}
+
+.big-header {
+  background-color: $hetic-green;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
+.settings {
+  position: absolute;
+  left: 10px;
+  color: black;
+  cursor: url('../mouse-pointer/my-mouse-pointer-hover.cur'), auto;
+  ul {
+    display: none;
+  }
+}
+
+.home {
+  position: absolute;
+  right: 10px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.settings.is-open ul{
+  display: block;
+}
+
+
+.slide-leave-active,
+.slide-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+    z-index: 3;
+  }
+}
+
+.slide-leave-active {
+  animation: fake 1s;
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.slide-enter-active {
+  animation: fake 2s;
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
+.slode-leave-active,
+.slode-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+    z-index: 3;
+  }
+}
+
+.slode-leave-active {
+  animation: fake 1s;
+  &::after {
+    animation: slodeLeave 1s;
+  }
+}
+
+.slode-enter-active {
+  animation: fake 2s;
+  &::after {
+    animation: slodeEnter 1s ease 1s;
+  }
+}
+

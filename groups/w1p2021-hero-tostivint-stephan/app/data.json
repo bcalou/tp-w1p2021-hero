@@ -1,0 +1,2959 @@
+{
+  "UFO": {
+    "characters": {
+      "names": {
+        "man": null,
+        "woman": null
+      },
+      "animationsCharacters": [],
+      "jobSelect": null,
+
+      "items": {
+        "alcohol": false,
+        "oil": false,
+        "music": false,
+        "snack": null,
+        "route": null,
+        "money": null
+      }
+    }
+  },
+
+  "story": {
+    "jobs": {
+      "title": {
+        "accountant": {
+          "narrator": "Choisissez votre métier",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Choisissez votre métier",
+          "talk": null
+        }
+      },
+      "choices": {
+        "default": [
+          {
+            "text": "Expert-comptable",
+            "type": "accountant",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "names",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["accountant_Animation"],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Barman",
+            "type": "barman",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "names",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["barman_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "names": {
+      "title": {
+        "accountant": {
+          "narrator": "Quels sont les noms de vos Zinzins ?",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Quels sont les noms de vos Zinzins ?",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Valider",
+            "type": "submit",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "story",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Valider",
+            "type": "submit",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "story",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "form"
+    },
+
+    "story": {
+      "title": {
+        "accountant": {
+          "narrator": "Les deux collègues {{ manName }} et {{ missName }} experts-comptables d'une banque ont passé les deux derniers jours à faire des tableaux excel sur une planète déchirée. Vous êtes dans les derniers préparatifs !",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Le jeune couple {{ manName }} et {{ missName }} a passé un week-end romantique dans une convention de jeux vidéo, mais malheureusement, nous sommes au dernier jour et les amoureux doivent rentrer chez eux...",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "nothing",
+            "animation": ["speaking_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "snacks",
+                "binding": { "type": null, "value": true },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "nothing",
+            "animation": ["speaking_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "snacks",
+                "binding": { "type": null, "value": true },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "snacks": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "{{ manName }}, tu veux qu'on prenne quelque chose à manger pour le voyage ?"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Chérie, tu veux manger quoi pendant le voyage?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Rien",
+            "type": "nothing",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "snackRien",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Jus d'orange",
+            "type": "boisson",
+            "animation": ["drinkOrange_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "alkohol",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Gâteau",
+            "type": "gateau",
+            "animation": ["cookie_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": "cake" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Gâteau",
+            "type": "cake",
+            "animation": ["cookie_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": "cake" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Bière",
+            "type": "beer",
+            "animation": ["drinkAlcohol_Animation", "drivingDrunken_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": "alc" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Chewing-gums",
+            "type": "bubblegum",
+            "animation": ["bubbelgum_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": "bubblegum" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "snackRien": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Ah tu as raison ! Je ne sais pas s'il est autorisé de manger dans la voiture de la société"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "alkohol": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "On prendrait pas une petite bière ? Qu'en penses-tu ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Oh yes !",
+            "type": "yes",
+            "animation": ["drinkAlcohol_Animation", "drivingDrunken_Animation"],
+            "animationRemove": ["drinkOrange_Animation"],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": "alc" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Mais non",
+            "type": "non",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigation",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Tu es fou !",
+            "type": "/GameOver",
+            "animation": ["faceShockRight_Animation"],
+            "animationRemove": ["speaking_Animation"],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_alc",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_alc": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Tu es fou ma parole ! Tu veux casser ta pipe pendant le voyage en voiture ? Je ne ferai pas le voyage avec toi"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["speaking_Animation"],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "navigation": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "{{ missName }}, tu as peut-être envie de faire un petit stop sur la route pour visiter une autre planète ?"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Look {{ missName }} ! Dans le système de navigation on peut choisir « La route avec le plus d'action ». Ca te dit ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Oui",
+            "type": "yes",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "nav-oui",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "route", "value": "stop" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Non",
+            "type": "no",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "nav-non",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Mais non. J'ai mal à la tête, je voudrais juste rentrer",
+            "type": "no",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "nav-non",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Yeahhhhhh action",
+            "type": "yes",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "nav-oui",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "route", "value": "thrill" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "nav-oui": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Ah oui! Un petit stop pendant le voyage serait un idée formidable"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "C'est la raison pour laquelle je t'aime ! Avec toi on fait toujours des expériences super cools ❤"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "stationgas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "stationgas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "nav-non": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Mais non {{ manName }}, je voudrais juste rentrer le plus vite possible. Dès que je suis dans un vaisseau, j'ai envie de me vomir dessus !"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Ok Chérie alors on prend la route normale"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "stationgas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "peage",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "peage": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Il y a des stations de péage sur la route. On contourne les cochons capitalistes ?"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "On a pas le choix",
+            "type": "yes",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "stationgas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "route", "value": "peage" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Je ne donnerais aucuns centimes",
+            "type": "non",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "stationgas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "stationgas": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Ce serait bien de prendre un peu d'essence avant de partir. Tu en penses quoi ?"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Bébé, tu penses qu'on a encore besoin d'un peu d'essence ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Ah oui, bonne idée",
+            "type": "yes",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_gas1",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["faceShock_Animation", "gameoverBG_Animation"],
+                "animationRemove": ["speaking_Animation"]
+              }
+            ]
+          },
+          {
+            "text": "Non ça va aller",
+            "type": "non",
+            "animation": ["faceShockRight_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "gas-non",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Oui, mais j'ai pas un sou",
+            "type": "yes",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "chercheMoney",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "oil", "value": true }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "On va voir",
+            "type": "onVaVoir",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "gas-non",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "gas-non": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "{{ manName }}, honnêtement ? C'était vraiment une question stupide : on a un voiture électrique"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "On croise les doigts. No Risk No Fun"
+        }
+      },
+
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["faceShockRight_Animation"],
+            "nextFrame": [
+              {
+                "frame": "start",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "start",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_gas1": {
+      "title": {
+        "accountant": {
+          "narrator": "Votre voyage se termine ici. Vous avez fait le plein d'essence dans une voiture électrique. Le vaisseau est complètement cassé",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "chercheMoney": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Est-ce que tu peux aller chercher un peu d'argent dans la voiture ? Normalement, je trouve toujours quelque chose"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "L'espace entre les deux fauteuils",
+            "type": "chaise",
+            "animation": ["moneyFound_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "money",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "money", "value": "spend" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Boîte à gants",
+            "type": "non",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_money",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "gameoverBG_Animation",
+                  "faceShockRight_Animation"
+                ],
+                "animationRemove": ["speaking_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "money": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Yeahhh j'ai trouvé un peu d'argent. On peut acheter quelques petites choses !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["moneySpent_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "start",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_money": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Qu'est-ce que c'est que ça ? Un rouge à lèvres ? Ce n'est pas le mien. Tu m'as trompée ! Je te quitte"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["faceShock_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "start": {
+      "title": {
+        "accountant": {
+          "narrator": "Vous avez terminé les préparatifs du voyage. Bouclez votre ceinture, c'est parti 3, 2, 1",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Vous avez terminé les préparatifs du voyage. Bouclez votre ceinture, c'est parti 3, 2, 1",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Go !",
+            "type": "continuer",
+            "animation": [
+              "takeOff_Animation",
+              "driving_Animation",
+              "movingStars_Animation"
+            ],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "music",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Go !",
+            "type": "continuer",
+            "animation": [
+              "takeOff_Animation",
+              "driving_Animation",
+              "movingStars_Animation"
+            ],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "music",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "music": {
+      "title": {
+        "accountant": {
+          "narrator": "Quel genre de musique tu préfères ?",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "J'ai deux CDs dans mon vaisseau. Tu préfères lequel ?",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Pop",
+            "type": "pop",
+            "animation": ["music_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "pop",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Classique",
+            "type": "classic",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "pause",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Metal",
+            "type": "metall",
+            "animation": ["music_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigationThrill",
+                "binding": { "type": "route", "value": "thrill" },
+                "defineItems": [{ "type": "music", "value": "metall" }],
+                "animation": ["blockardDanger_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminPeage",
+                "binding": { "type": "route", "value": "peage" },
+                "defineItems": [{ "type": "music", "value": "metall" }],
+                "animation": ["peage_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminPeage_sans",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "music", "value": "metall" }],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Punk",
+            "type": "punk",
+            "animation": ["music_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "navigationThrill",
+                "binding": { "type": "route", "value": "thrill" },
+                "defineItems": [],
+                "animation": ["blockardDanger_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminPeage",
+                "binding": { "type": "route", "value": "peage" },
+                "defineItems": [],
+                "animation": ["peage_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminPeage_sans",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pause": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "{{ manName }}, tu as l'air très fatigué. Je pense que c'est l'heure de prendre une pause"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Mais non. Je peux encore faire 20000 km",
+            "type": "non",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_pause",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation", "dead_Animation","driving_Animation"],
+                "animationRemove": ["speaking_Animation"]
+              }
+            ]
+          },
+          {
+            "text": "Oui tu as raison",
+            "type": "oui",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "pauseTime",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "sleeping_Animation",
+                  "takeOff_Animation",
+                  "stopStars_Animation"
+                ],
+                "animationRemove": ["driving_Animation", "speaking_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_pause": {
+      "title": {
+        "accountant": {
+          "narrator": "A cause du fait que {{ manName }} n'ait pas écouté son collègue, 5 minutes après la suggestion de mettre en place une pause, les deux compères ont eu un accident mortel. Le microsommeil est également un danger sérieux dans l'espace bien qu'il n'y ait pas d'arbres",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pauseTime": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Oui, une pause serait formidable. Combien du temps puis-je dormir ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "10 min",
+            "type": "10min",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "pauseSmall",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["speaking_Animation"],
+                "animationRemove": ["sleeping_Animation"]
+              }
+            ]
+          },
+          {
+            "text": "1 h",
+            "type": "1h",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "pauseLong",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["policeAppear_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pauseSmall": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "C'était une bonne décision. Bien qu'aucune pause ne puisse faire des merveilles."
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Partir",
+            "type": "reveille",
+            "animation": [],
+            "animationRemove": [
+              "takeOff_Animation",
+              "driving_Animation",
+              "movingStars_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "reveiller",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pauseLong": {
+      "title": {
+        "accountant": {
+          "narrator": "Les deux compères sont maintenant au pays des rêves pendant quarante-cinq bonnes minutes et ne remarquent pas qu'un vaisseau de la police se rapproche d'eux.",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Les réveiller",
+            "type": "reveille",
+            "animation": [],
+            "animationRemove": ["sleeping_Animation"],
+            "nextFrame": [
+              {
+                "frame": "policeCamping_si_gateau",
+                "binding": { "type": "snack", "value": "cake" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "policeCamping_si_alc",
+                "binding": { "type": "snack", "value": "alc" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "policeCamping_sinon_gateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "policeCamping_si_gateau": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Savez-vous que camper ici est interdit entre 12h30 et 15h30 ? Mais si vous aviez un gâteau on pourrait oublier ce malheureux incident"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Vous savez certainement que vous avez largement dépassé la vitesse autorisée. Je pourrais oublier l'infraction si vous aviez une bonne excuse"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Donner le gâteau",
+            "type": "donnerGeateau",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "policeGateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": false }],
+                "animation": [],
+                "animationRemove": ["cookie_Animation"]
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Gâteau ?",
+            "type": "geateau",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "policeGateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [{ "type": "snack", "value": false }],
+                "animation": [],
+                "animationRemove": ["cookie_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "policeGateau": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Mmmh. C'est l'un des meilleurs biscuits que j'ai jamais extorqué. Je vous souhaite un très agréable voyage"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Cela me semble être une très bonne excuse. Je vous souhaite un très agréable voyage. Mais surveillez quand même votre vitesse"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["takeOff_Animation", "movingStars_Animation"],
+            "animationRemove": ["policeAppear_Animation"],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["waysign_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminStop",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [
+              "movingStars_Animation",
+              "policeAppear_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "checkGas_si_gas",
+                "binding": { "type": "oil", "value": true },
+                "defineItems": [],
+                "animation": ["takeOff_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "checkGas_sinon_gas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["stopStars_Animation"],
+                "animationRemove": ["driving_Animation", "music_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "policeCamping_si_alc": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Je sens l'alcool d'ici. Je vous arrête sur le champ !"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Je sens l'alcool d'ici. Je vous arrête sur le champ !"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "gameoverBG_Animation",
+                  "prison_Animation",
+                  "dead_Animation"
+                ],
+                "animationRemove": [
+                  "policeAppear_Animation",
+                  "driving_Animation",
+                  "music_Animation"
+                ]
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "gameoverBG_Animation",
+                  "prison_Animation",
+                  "dead_Animation"
+                ],
+                "animationRemove": [
+                  "policeAppear_Animation",
+                  "driving_Animation",
+                  "music_Animation"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "policeCamping_sinon_gateau": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Savez-vous que camper ici est interdit entre 12h30 et 15h30 ? Je vais devoir vous arrêter"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Bonjour monsieur dame. Vous savez certainement que vous avez largement dépassé la vitesse autorisée. Je dois vous arrêter parce que nous ne tolérons pas les criminels sur la route"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "gameoverBG_Animation",
+                  "policeAppear_Animation",
+                  "prison_Animation"
+                ],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation", "prison_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_camping": {
+      "title": {
+        "accountant": {
+          "narrator": "Les deux compères ont servis d'exemple pour leur comportement imprudent. Ils resteront en prison pour le reste de leur vie. (Une vie d'alien dure par ailleurs très longtemps...)",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Les deux compères ont servis d'exemple pour leur comportement imprudent. Ils resteront en prison pour le reste de leur vie. (Une vie d'alien dure par ailleurs très longtemps...)",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "reveiller": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "J’aime le power napping. Ca me donne une pêche d'enfer !"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer le voyage",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["waysign_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "cheminStop",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pop": {
+      "title": {
+        "accountant": {
+          "narrator": "🎼 I'm driving around in my car \n I'm driving too fast \n I'm driving too far \n I'd like to change my point of view \n I feel so lonely \n I'm waiting for you \n But nothing ever happens and I wonder 🎼",
+          "talk": "J'aime voyager avec de la musique, comme ça le temps passe plus vite"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "cheminStop",
+                "binding": { "type": "route", "value": "stop" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["waysign_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "cheminStop": {
+      "title": {
+        "accountant": {
+          "narrator": "1 heure plus tard...",
+          "talk": "Tu as encore envie de faire une petite pause ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Oui, avec plaisir",
+            "type": "oui",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["waysign_Animation"],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Non, je préfère rentrer rapidement",
+            "type": "non",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "presqueGagner",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["takeOff_Animation"],
+                "animationRemove": ["driving_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "sign": {
+      "title": {
+        "accountant": {
+          "narrator": "Après 3h sur la route... \n Maintenant tourner à gauche",
+          "talk": "La signalisation et l'annonce du système de navigation se contredisent. En qui avons-nous confiance ?"
+        },
+        "barman": {
+          "narrator": "Après 3h sur la route... \n Maintenant tourner à gauche",
+          "talk": "Ah regarde c'est bizarre le système de navigation dit de tourner à droite mais le signe indique la gauche. En qui avons-nous confiance ?"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Le panneau indicateur",
+            "type": "bouclier",
+            "animation": ["blockardStop_Animation", "alianblock_Animation"],
+            "animationRemove": [
+              "waysign_Animation",
+              "speaking_Animation",
+              "music_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "pirat_si_gateau",
+                "binding": { "type": "snack", "value": "cake" },
+                "defineItems": [],
+                "animation": ["eyesMoving_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "pirat_sinon_gateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["faceShock_Animation"],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Système de navigation",
+            "type": "system",
+            "animation": [],
+            "animationRemove": ["waysign_Animation"],
+            "nextFrame": [
+              {
+                "frame": "ecouterNnavigation_si_alc",
+                "binding": { "type": "snack", "value": "alc" },
+                "defineItems": [],
+                "animation": ["policeAppear_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "ecouterNnavigation_sinon_alc",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Le panneau indicateur",
+            "type": "bouclier",
+            "animation": ["blockardStop_Animation", "alianblock_Animation"],
+            "animationRemove": [
+              "waysign_Animation",
+              "speaking_Animation",
+              "music_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "pirat_si_gateau",
+                "binding": { "type": "snack", "value": "cake" },
+                "defineItems": [],
+                "animation": ["eyesMoving_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "pirat_sinon_gateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["faceShock_Animation"],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Système de navigation",
+            "type": "system",
+            "animation": [],
+            "animationRemove": ["waysign_Animation"],
+            "nextFrame": [
+              {
+                "frame": "ecouterNnavigation_si_alc",
+                "binding": { "type": "snack", "value": "alc" },
+                "defineItems": [],
+                "animation": ["faceShock_Animation", "policeAppear_Animation"],
+                "animationRemove": []
+              },
+              {
+                "frame": "ecouterNnavigation_sinon_alc",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "ecouterNnavigation_si_alc": {
+      "title": {
+        "accountant": {
+          "narrator": "Deux heures plus tard...",
+          "talk": "Ils ont un style de conduite particulier. Je les soupçonne d'avoir bu. Je vais les emmener au poste de police pour un test sanguin"
+        },
+        "barman": {
+          "narrator": "Deux heures plus tard...",
+          "talk": "Ils ont un style de conduite particulier. Je les soupçonne d'avoir bu. Je vais les emmener au poste de police pour un test sanguin"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["prison_Animation"],
+            "animationRemove": [
+              "policeAppear_Animation",
+              "speaking_Animation",
+              "dead_Animation",
+              "faceShock_Animation",
+              "driving_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["prison_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_camping",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": [
+                  "policeAppear_Animation",
+                  "speaking_Animation",
+                  "dead_Animation",
+                  "driving_Animation",
+                  "music_Animation",
+                  "faceShock_Animation"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "ecouterNnavigation_sinon_alc": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Nous y sommes presque. Je peux déjà voir la tour de télévision à côté du travail !"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Nous y sommes presque. Je sens d'ici mes chaussettes puantes"
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["takeOff_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "presqueGagner",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "checkGas_si_gas",
+                "binding": { "type": "oil", "value": true },
+                "defineItems": [],
+                "animation": [
+                  "takeOff_Animation",
+                  "driving_Animation",
+                  "stopStars_Animation"
+                ],
+                "animationRemove": ["eyesMoving_Animation"]
+              },
+              {
+                "frame": "checkGas_sinon_gas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["stopStars_Animation"],
+                "animationRemove": ["driving_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "presqueGagner": {
+      "title": {
+        "accountant": {
+          "narrator": "Les deux compères sur les nerfs arrivent après un long voyage éprouvant sur leur planète d'origine",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "End",
+            "type": "end",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/Victory",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pirat_si_gateau": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Zut. Il y a des pirates voleurs de gâteaux sur notre route. Ils ont dressé une barricade. Je pense ils ont tourne la bouclier. \n Heureusement on a choisi les gâteaux !"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Ah merde!!! Des pirates voleurs de gâteaux ont créé une barricade sur notre route. Des connards ont tourné lla bouclier. \n Donne moi les cookies! Heureusement que nous ne les avons pas encore mangé "
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Payer en gâteaux",
+            "type": "payer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "ecouterNnavigation_sinon_alc",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["speaking_Animation"],
+                "animationRemove": [
+                  "cookie_Animation",
+                  "blockardStop_Animation",
+                  "alianblock_Animation"
+                ]
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Payer en gâteaux",
+            "type": "payer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "ecouterNnavigation_sinon_alc",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": [
+                  "blockardStop_Animation",
+                  "alianblock_Animation",
+                  "cookie_Animation"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "pirat_sinon_gateau": {
+      "title": {
+        "accountant": {
+          "narrator": null,
+          "talk": "Zut. Il y a des pirates voleurs de gâteaux sur notre route. Ils ont dressé une barricade. Je pense ils ont changé le sens du panneau. \n Pourquoi n'avons-nous pas pris de gâteaux ?"
+        },
+        "barman": {
+          "narrator": null,
+          "talk": "Ah merde!!! Des pirates voleurs de gâteaux ont créé une barricade sur notre route. Des salauds ont changé le sens du panneau. \n Pourquoi n'avons-nous pas pris de gâteaux ? "
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["dead_Animation"],
+            "animationRemove": [
+              "driving_Animation",
+              "alianblock_Animation",
+              "blockardDanger_Animation",
+              "music_Animation",
+              "speaking_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER__pirate",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["dead_Animation"],
+            "animationRemove": [
+              "driving_Animation",
+              "alianblock_Animation",
+              "blockardDanger_Animation",
+              "music_Animation",
+              "speaking_Animation"
+            ],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER__pirate",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER__pirate": {
+      "title": {
+        "accountant": {
+          "narrator": "Deux semaines plus tard, les corps meurtris ont été retrouvés près d'une ceinture d'astèroïdes",
+          "talk": null
+        },
+        "barman": {
+          "narrator": "Deux semaines plus tard, les corps meurtris ont été retrouvés près d'une ceinture d'astèroïdes",
+          "talk": null
+        }
+      },
+      "choices": {
+        "accountant": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ],
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "chemin_si_peage_avec_largent": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Est-ce que tu peux chercher un peu dans la voiture ? Normalement je trouve toujours quelque chose"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "L'espace entre les deux chaises",
+            "type": "chaise",
+            "animation": ["moneyFound_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "money_peage",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Boîte à gants",
+            "type": "non",
+            "animation": [],
+            "animationRemove": ["music_Animation"],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_money",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "money_peage": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Yeahhh j'ai trouvé des sous ! On peut payer le péage."
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["moneySpent_Animation", "peageSchranke_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "speed_start",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "speed_start": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Ils prennent vraiment tout l'argent des honnêtes travailleurs !! A propos, avons-nous remis nos gilets jaunes dans la voiture ?"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["peage_Animation"],
+            "nextFrame": [
+              {
+                "frame": "speed",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "speed": {
+      "title": {
+        "barman": {
+          "narrator": "5 minutes plus tard...",
+          "talk": "Tu as envie de tester l'accélération de notre voiture ?"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Oui !",
+            "type": "oui",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "speed-oui",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Non",
+            "type": "non",
+            "animation": ["waysign_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "speed-oui": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Je me sens libre comme l'air. Je souhaite que ce moment ne finisse jamais"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["policeAppear_Animation"],
+            "animationRemove": ["speaking_Animation"],
+            "nextFrame": [
+              {
+                "frame": "policeCamping_si_gateau",
+                "binding": { "type": "snack", "value": "cake" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "policeCamping_si_alc",
+                "binding": { "type": "snack", "value": "alc" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "policeCamping_sinon_gateau",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "cheminPeage": {
+      "title": {
+        "barman": {
+          "narrator": "Après un long trajet, les deux zinzins arrivent sur le péage 'Stargate' pour payer l'autoroute spatial qu'ils ont utilisé au cours des derniers 200 000 km",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "chemin_si_peage_sans_largent",
+                "binding": { "type": "money", "value": "spend" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "chemin_si_peage_avec_largent",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "cheminPeage_sans": {
+      "title": {
+        "barman": {
+          "narrator": "🎼 Breaking the law, breaking the law \n Breaking the law, breaking the law \n Breaking the law, breaking the law \n Breaking the law, breaking the law 🎼",
+          "talk": "J'aime voyager avec de la musique comme ça le temps passe super vite !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["waysign_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "chemin_si_peage_sans_largent": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Ah merde on a déjà regardé dans le trou entre les chaises ! On peut pas payer"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER__peage",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [
+                  "gameoverBG_Animation",
+                  "dead_Animation",
+                  "driving_Animation"
+                ],
+                "animationRemove": ["peage_Animation", "music_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER__peage": {
+      "title": {
+        "barman": {
+          "narrator": "L'univers est malheureusement plus en retard que la Terre en matière de paiement par carte bancaire. Ce mode de paiement étant peu commun, les extraterrestres sont en effet très critiques vis-à-vis des nouvelles technologies. Par conséquent, il est toujours conseillé d'avoir suffisamment de liquidités sur vous, car sinon vous vous retrouvez rapidement dans une situation délicate",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "navigationThrill": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Regarde chérie on est maintenant arrivés dans la partie la plus drôle du voyage. Uiii \n mais on voit une pancarte « Passage interdit »"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Ca a l’air intéressant",
+            "type": "oui",
+            "animation": ["movingAstro_Animation"],
+            "animationRemove": ["blockardDanger_Animation"],
+            "nextFrame": [
+              {
+                "frame": "thrillYes",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Ca me fait peur",
+            "type": "no",
+            "animation": [],
+            "animationRemove": ["blockardDanger_Animation"],
+            "nextFrame": [
+              {
+                "frame": "thrillNon",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "thrillYes": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "C'est pour ça que je t'aime. On y va !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["brokenGlass_Animation"],
+            "animationRemove": ["music_Animation"],
+            "nextFrame": [
+              {
+                "frame": "caliou_si_bubblegum",
+                "binding": { "type": "snack", "value": "bubblegum" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "caliou_sinon_bubblegum",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["faceShock_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "caliou_si_bubblegum": {
+      "title": {
+        "barman": {
+          "narrator": "*Craaaaquuue*",
+          "talk": "Ahhh merde un caillou a cassé la fenêtre. Dieu merci, le chewing-gum permet de garder le vaisseau étanche"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "caliou_si_bubblegum_after",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "caliou_si_bubblegum_after": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "On a toujours de la chance ! Tu es mon porte-bonheur ❤"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["speaking_Animation"],
+            "nextFrame": [
+              {
+                "frame": "checkGas_si_gas",
+                "binding": { "type": "oil", "value": "true" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "checkGas_sinon_gas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["stopStars_Animation"],
+                "animationRemove": ["driving_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "caliou_sinon_bubblegum": {
+      "title": {
+        "barman": {
+          "narrator": "*Craaaaquuue*",
+          "talk": "Ahhh merde un caillou a cassé la fenêtre. Nous devons nous arrêter immédiatement pour garder la pression"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Stopper le vaisseau",
+            "type": "stop",
+            "animation": ["stopStars_Animation"],
+            "animationRemove": ["driving_Animation", "faceShock_Animation"],
+            "nextFrame": [
+              {
+                "frame": "caliou_stop",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "caliou_stop": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Et maintenant ? Que fait-on ?"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Attendre qu'on nous vienne en aide",
+            "type": "attendre",
+            "animation": ["dead_Animation"],
+            "animationRemove": ["speaking_Animation"],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_attendre",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          },
+          {
+            "text": "Appeller un dépanneur",
+            "type": "appeller",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "panneVoiture",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["panne_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_attendre": {
+      "title": {
+        "barman": {
+          "narrator": "Vous êtes morts. Personne n'est assez stupide pour prendre ce chemin",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Fin",
+            "type": "end",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "panneVoiture": {
+      "title": {
+        "barman": {
+          "narrator": "Après deux heures d'attente...",
+          "talk": "Regarde chérie ! Le dépanneur arrive enfin"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "panneVoiture_si_metall",
+                "binding": { "type": "music", "value": "metall" },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "panneVoiture_sinon_metall",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "panneVoiture_sinon_metall": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Bonjour, j’ai cru comprendre que vous aviez un problème. Ah je vois, je vais vite changer la fenêtre"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Réparer la voiture",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["brokenGlass_Animation"],
+            "nextFrame": [
+              {
+                "frame": "panneVoiture_sinon_metall__after",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["panne_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "panneVoiture_sinon_metall__after": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "C'était un mec super gentil. On va lui laisser une bonne note sur l'application !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["movingStars_Animation"],
+            "animationRemove": ["brokenGlass_Animation"],
+            "nextFrame": [
+              {
+                "frame": "checkGas_si_gas",
+                "binding": { "type": "oil", "value": true },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              },
+              {
+                "frame": "checkGas_sinon_gas",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["stopStars_Animation"],
+                "animationRemove": ["speaking_Animation"]
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "panneVoiture_si_metall": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "j’ai cru comprendre que vous aviez un problème... Mais qu'est-ce que c'est que cette musique. Des personne comme vous j'peux po les aider"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": ["panne_Animation"],
+            "nextFrame": [
+              {
+                "frame": "metall",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "metall": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Quel genre d'idiot était-ce ? Aucun goût. Une fois à la maison, nous lui mettrons une mauvaise note !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_metall",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_metall": {
+      "title": {
+        "barman": {
+          "narrator": "Cette note n'a jamais été envoyée car ils ne sont jamais arrivés à la maison. On pense qu'ils ont été kidnappés par les pirates voleurs de gâteaux",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "thrillNon": {
+      "title": {
+        "barman": {
+          "narrator": null,
+          "talk": "Tu es un trouble fête... Mais oui chéri, on va prendre un autre chemin"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": ["waysign_Animation"],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "sign",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "checkGas_si_gas": {
+      "title": {
+        "barman": {
+          "narrator": "Les deux zinzins arrivent sur les nerfs après un long voyage éprouvant sur leur planète d'origine",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Fin !",
+            "type": "end",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/Victory",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "checkGas_sinon_gas": {
+      "title": {
+        "barman": {
+          "narrator": "20 km avant la fin",
+          "talk": "Ahhhhh merde. C'est pas possible... Nous n'avons plus de jus !"
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "GAMEOVER_gass",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": ["gameoverBG_Animation", "dead_Animation"],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    },
+
+    "GAMEOVER_gass": {
+      "title": {
+        "barman": {
+          "narrator": "Et qu'apprenons-nous de cela, toujours faire le plein !",
+          "talk": null
+        }
+      },
+      "choices": {
+        "barman": [
+          {
+            "text": "Continuer",
+            "type": "continuer",
+            "animation": [],
+            "animationRemove": [],
+            "nextFrame": [
+              {
+                "frame": "/GameOver",
+                "binding": { "type": null, "value": false },
+                "defineItems": [],
+                "animation": [],
+                "animationRemove": []
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice"
+    }
+  }
+}

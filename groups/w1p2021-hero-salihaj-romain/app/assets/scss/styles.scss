@@ -1,0 +1,198 @@
+@import 'reset';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$dark: #262626;
+$light: #fcffe1;
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+
+.big-header {
+  // background-color: $dark;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  transition: background-color 1s ease-in-out;
+}
+
+.btn-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+   @include medium-screen {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+}
+
+.button {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-image: url('../images/button.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55px;
+  width: 186px;
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.in-button {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.msg-list {
+  // position: relative;
+  background-image: url('../images/ulBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 468px;
+  width: 274px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 2px;
+  transition: scroll 0.5s ease-in-out;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    display: block;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba($color: #000000, $alpha: 0.47);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 17, 2);
+    border-radius: 2px;
+  }
+
+  &::before {
+    content: '';
+    background-image: url('../images/listBorder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-14px, -14px);
+    width: 304px;
+    height: 495px;
+  }
+}
+
+.message {
+  background-image: url('../images/liBackground.png');
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  color: #78e0b9;
+  height: 99px;
+  width: 276px;
+  max-width: 276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 0 15px 0 15px;
+  white-space: normal;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+.dark-scene {
+ background-color: $dark;
+}
+.light-scene {
+ background-color: $light;
+}
+
+
+.user-choice {
+  color: white;
+  background-color: rgba($color: #377585, $alpha: 0.4)
+}
+
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+  // transition-delay: 4s;
+}
+
+.list-enter, .list-leave-to {
+  opacity: 0;
+}
+
+
+.sounds {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+
+  .cross-music {
+    display: none;
+
+  }
+
+  .isActive {
+    display: block;
+  }
+}
+
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+
+.home {
+  background-image: url('../images/space.jpg');
+  font-size: 30px;
+  
+  .home-content {
+
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+
+  }
+
+}

@@ -1,0 +1,72 @@
+.planet{
+  width:120vw;
+  height:10vw;
+  position: absolute;
+  bottom:0;
+  left:-10vw;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition:bottom .7s;
+  &--saturn{
+    background-color: #F66F6F;
+    overflow:hidden;
+    position: absolute;
+    &:after{
+      position: absolute;
+      content:"";
+      background-color: #C8373A;
+      height:40vw;
+      width:45vw;
+      border-radius:50%;
+      bottom:-5vw;
+      display: block;
+      right:0;
+    }
+     &:before{
+      position: absolute;
+      content:"";
+      background-color: #C8373A;
+      height:10vw;
+      width:20vw;
+      border-radius:50%;
+      bottom:3vw;
+      left:20vw;
+      display: block;
+    }
+  }
+  &--jupiter{
+    background-color: beige;
+  }
+  &--earth{
+    overflow:hidden;
+    background-color: beige;
+    position: absolute;
+    &:after{
+      position: absolute;
+      content:"";
+      background-color: lightgrey;
+      height:40vw;
+      width:45vw;
+      border-radius:50%;
+      bottom:-5vw;
+      display: block;
+    }
+     &:before{
+      position: absolute;
+      content:"";
+      background-color: lightgrey;
+      height:10vw;
+      width:20vw;
+      border-radius:50%;
+      bottom:3vw;
+      right:20vw;
+      display: block;
+    }
+    
+  }
+  &--flying{
+    bottom:-10vw;
+    transition:bottom .7s;
+  }
+}

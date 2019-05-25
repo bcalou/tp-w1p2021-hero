@@ -1,0 +1,307 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$hetic-green: #0de595;
+
+.terre {
+  background: url(../images/terre5.png);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.buttons-terre {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+
+}
+
+.buttonsboost{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 2px solid white;
+  cursor: pointer;
+  width: 20vh;
+  text-align: center;
+  height: 4vh;
+}
+
+.buttonsboost:hover{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 2px solid white;
+  cursor: pointer;
+  width: 20vh;
+  text-align: center;
+  height: 4vh;
+  background: white;
+  color: black;
+}
+
+.buttoncenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button2 {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  height: 34px;
+  width: 54px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2:hover {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 2px solid white;
+  cursor: pointer;
+  color: black;
+  height: 34px;
+  width: 54px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+
+}
+
+.button3 {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  height: 34px;
+  width: 224px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button3:hover {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 2px solid white;
+  cursor: pointer;
+  color: black;
+  height: 34px;
+  width: 224px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.personnage {
+  height: 74vh;
+}
+
+.bloc_texte {
+  height: 34vh;
+  width: 34vw;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.bloc_questions {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.garage {
+  background: url(../images/garage.jpg);
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  flex-direction: column;
+}
+
+.garage2g {
+  background: url(../images/garage.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  flex-direction: row;
+  padding: 45px;
+}
+
+.garage2 {
+  height: 33vh;
+}
+
+.garage3 {
+  height: 33vh;
+  border: 2px border white;
+}
+
+
+.articles_garages {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.blocs_garages {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  width: 120vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+.people_meca {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin : 0 auto;
+}
+
+.lightes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px;
+}
+.light {
+  height: 45vh;
+}
+
+.buttones {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 32px;
+}
+
+.meteorite {
+  height: 45vh;
+}
+
+// No boost
+
+.noboostbutton {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+// Transitions
+
+//<transition name="pane">
+//  <router-view />
+//</transition>
+  
+.pane-leave-active,
+.pane-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100vw);
+    background: black;
+  }
+}
+
+.pane-leave-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(-100vw);
+  }
+}
+
+

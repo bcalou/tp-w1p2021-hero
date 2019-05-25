@@ -1,0 +1,105 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import 'layout/base';
+@import 'pages/home';
+@import 'pages/characters';
+@import 'pages/game';
+@import 'pages/lose';
+@import 'pages/win';
+
+body {
+  user-select: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+.pane-leave-active,
+.pane-enter-active {
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    z-index: 999;
+    background: #1e1e1e;
+  }
+}
+
+.pane-leave-active {
+  animation: fake .5s;
+
+  &::after {
+    animation: slideLeave .5s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter .5s ease .5s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+
+.loader {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: come .5s forwards 5s;
+
+  @keyframes come {
+    100% {
+      transform: translateY(100vh)
+    }
+  }
+
+  &__item {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    animation: loader .5s infinite;
+
+    @keyframes loader {
+      50% {
+        transform: scale(2)
+      }
+
+      0%,
+      100% {
+        transform: scale(1.2)
+      }
+    }
+  }
+}

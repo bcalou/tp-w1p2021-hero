@@ -1,0 +1,233 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@font-face {
+  font-family: "Dreamwood";
+  src: url("../fonts/Dreamwood.ttf") format("truetype");
+}
+
+$main-color: #222;
+
+html, body {
+  background-color: black;
+}
+
+body {
+  overflow: hidden;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'PT Sans';
+}
+
+.big-header {
+  position: relative;
+  z-index: 5;
+  transition: opacity 0.7s;
+  opacity: 1;
+  background-color: $main-color;
+  height: 100vh;
+  background-position: cover;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+
+  & h1 {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  &.fade {
+    opacity: 0;
+  }
+}
+
+
+.characters, .choices {
+  display: flex;
+}
+
+.user-state {
+  font-size: 16px;
+  position: absolute;
+  z-index: 5;
+  top: 8px;
+  left: 16px;
+
+  .golds::before, .health::before {
+    transform: translateY(4px);
+    content: "";
+    margin-top: 12px;
+    margin-right: 6px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-position: cover;
+    background-size: cover;
+  }
+
+  .golds::before {
+    background-image: url(../img/coins.png);
+  }
+  .health::before {
+    background-image: url(../img/hp.png);
+  }
+}
+
+.user-stats {
+  position: absolute;
+  z-index: 5;
+  text-align: right;
+  top: 16px;
+  right: 16px;
+  line-height: 125%;
+
+  span {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+}
+
+.stat-change {
+  margin-top: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  & div {
+    margin-top: 10px;
+  }
+}
+
+.luck {
+  color: #27ae60;
+}
+.power {
+  color: orange;
+}
+.health {
+  color: #e74c3c;
+}
+.speed {
+  color: #D2B48C;
+}
+.gold {
+  color: yellow;
+}
+
+.Voleur, .Guerrier, .Mage {
+  background-position: cover;
+  background-size: cover;
+}
+
+.Voleur {
+  background-image: url(../img/rogue.jpg);
+}
+
+.Guerrier {
+  background-image: url(../img/warrior.jpg);
+}
+
+.Mage {
+  background-image: url(../img/wizard.jpg);
+}
+
+.button {
+  opacity: 0.7;
+  transition: transform 0.2s, opacity 0.2s;
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+  color: $main-color;
+  text-decoration: none;
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+
+  .tooltip {
+    transition: opacity 0.75s;
+    opacity: 0;
+    visibility: hidden;
+    width: 120px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+    width: 180px;
+    top: 130%;
+    left: 50%; 
+    padding: 5px;
+    margin-left: -94px;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(0.96);
+  }
+
+  &:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+}
+
+.game-background {
+  filter: brightness(50%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.soundManager {
+  transition: transform 0.3s;
+  cursor: pointer;
+  filter: invert(100%);
+  background-image: url("../img/on.svg");
+  background-position: cover;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 5;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.pow {
+  background-color: orange;
+}
+
+.lck {
+  background-color: #27ae60;
+}
+
+.agi {
+  background-color: #D2B48C;
+}
+

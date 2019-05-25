@@ -1,0 +1,801 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Les autres",
+      "signs": "གང་ཟག",
+      "levels": [
+        {
+          "id": 1,
+          "title": "Le crash",
+          "texts": [
+            "Au loin, vous repérez des traces de pas formant un petit chemin. Alors que vous vous mettez en route dans un élan desespéré, seul et gelé, vous entendez alors des gémissements. Un autre survivant est bloqué sous des décombres. Couvert de sang et à l'agonie, il vous prie pourtant de lui venir en aide. A ses côtés git un sac en tissu, devant contenir de l'équipement qui pourrait vous être utile."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Aider le survivant et laisser le sac",
+              "path": 2,
+              "social": 1,
+              "ruse": -1
+            },
+            {
+              "name": "Achever ses souffrances et prendre le sac",
+              "path": 3,
+              "social": -1,
+              "ruse": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Traditions",
+          "texts": [
+            "Vous dégagez difficilement l'homme des décombres, passez son bras sur vos épaules, et commencez à entamer la marche à deux, malgré ses gémissements de douleur. Quelques temps après, vous regagnez enfin le chemin. Mais l'homme s'effondre, à bout de souffle. L'effort lui a fait perdre beaucoup trop de sang, et le voilà prêt à rejoindre l'autre monde. Dans une ultime parole, il vous remercie, et vous demande de lui offrir la sépulture que sa famille aurait souhaité : l'enterrer. Pourtant, vous savez que les dieux de cette région n'acceptent qu'un seul type de funérailles : l'inhumation céleste."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Vous respectez la demande du défunt",
+              "path": 4,
+              "social": 1,
+              "piété": -1
+            },
+            {
+              "name": "Vous respectez les traditions de la région",
+              "path": 4,
+              "social": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Assassin",
+          "texts": [
+            "En le rassurant, vous achever l'homme en serrant sa gorge. Dès que ses paupières se ferment, vous vous munissez du contenu du sac. Il y a là plusieurs ressources allant pouvoir vous protéger du froid et de la faim. L'homme, lui, porte également plusieurs couches de vêtements. Le déshabiller serait plus déshonorant pour sa mémoire, mais pourrait vous offrir une protection supplémentaire contre ce climat difficile."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Prendre ses vêtements",
+              "path": 4,
+              "social": -1,
+              "ruse": 1
+            },
+            {
+              "name": "Laisser ses vêtements",
+              "path": 4,
+              "social": 1,
+              "ruse": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Le sherpa",
+          "texts": [
+            "Sans plus attendre, vous rejoignez le chemin. Vous marchez sur quelques kilomètres, avant de croiser par miracle un homme, accompagné de deux yacks. Il s'agit d'un sherpa, il connaît bien ses montagnes. Vous vous empressez de lui demander secours. Il vous indique la direction à prendre pour rejoindre la ville la plus proche. Laquelle ? ' Celle où le Karma vous guidera ', répondit-il. Il est en pèlerinage, et n'a pas beaucoup de choses à vous offrir, hormis du thé au beurre ' pour clarifier votre esprit perturbé ', ou un momo à la viande, ' pour recouvrer votre énergie '."
+          ],
+          "actions": [
+            {
+              "name": "Thé au beurre",
+              "path": 5,
+              "ruse": 1
+            },
+            {
+              "name": "Momo à la viande",
+              "path": 5,
+              "force": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Stupa",
+          "texts": [
+            "Suivant les indications, vous vous mettez en route. Alors qu'une tempête de neige se lève, vous glaçant les membres, vous tomber sur un stupa, un édifice religieux. Les stupas sont sacrés, et il est interdit de les toucher. Or, le blizzard gronde, et il pourrait vous servir d'abris."
+          ],
+          "actions": [
+            {
+              "name": "Affronter la tempête",
+              "path": "6"
+            },
+            {
+              "name": "S'abriter contre le stupa",
+              "path": "6"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Le village",
+          "texts": [
+            "Vous arrivez dans un petit village de nomades. Les gens sont étonnés de vous voir et vous fixent du regard. Un peu plus loin, vous remarquez une petite famille modeste, qui vous fait signe de venir. A l'écart, vous voyez un groupe de parias assez louches, mais semblant transporter beaucoup d'équipement avec eux."
+          ],
+          "actions": [
+            {
+              "name": "Rejoindre la famille",
+              "path": 7,
+              "social": 1,
+              "ruse": -1,
+              "condition": {
+                "skill": "social",
+                "condition": "< -3",
+                "true": "/lose",
+                "endmessage": "Les habitants du village voient dans vos yeux qu'il manque une lueur de bienveillance, et vous jugent dangereux. Sans que vous ne puissiez rien faire, une foule s'organise autour de vous. Vous recevez alors un violent coup à la tête, puis vous sombrez dans le noir complet."
+              }
+            },
+            {
+              "name": "Rejoindre les parias",
+              "path": 8,
+              "social": -1,
+              "ruse": 1,
+              "condition": {
+                "skill": "social",
+                "condition": "< -3",
+                "true": "/lose",
+                "endmessage": "Les habitants du village voient dans vos yeux qu'il manque une lueur de bienveillance, et vous jugent dangereux. Sans que vous ne puissiez rien faire, une foule s'organise autour de vous. Vous recevez alors un violent coup à la tête, puis vous sombrez dans le noir complet."
+              }
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "La famille",
+          "texts": [
+            "La famille écoute votre histoire d'un air intéressé. Elle possède peu de moyens, mais vous inviteà dormir dans leur tente pour la nuit. Le lendemain, le village entier vous adresse des sourires. Vous vous préparez à reprendre la route, constatant qu'il vous manque encore quelques ressources pour votre voyage. Avant de partir, la famille vous demande de leur rendre service, en les aidant à réparer une tente défectueuse."
+          ],
+          "actions": [
+            {
+              "name": "Accepter et les aider",
+              "path": 9,
+              "social": 1,
+              "force": -1
+            },
+            {
+              "name": "Refuser et partir immédiatement",
+              "path": 9,
+              "social": -1,
+              "force": 1
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Les voyageurs",
+          "texts": [
+            "Les parias vous racontent qu’ils vivent de petites rapines, et ont alors plusieurs ressources sur eux, qu'ils vous offrent volontiers en échange de vos histoires. Le lendemain, après une nuit sous leur tente, vous êtes satisfait de vos provisions pour le voyage, mais les habitants du village vous regardent d'un mauvais oeil. Avant de partir, les parias proposent de vous enseigner une technique de défense au corps à corps... contre un vieillard."
+          ],
+          "actions": [
+            {
+              "name": "Refuser l'entraînement déloyal",
+              "path": 9,
+              "social": 1,
+              "force": -1
+            },
+            {
+              "name": "Accepter l'entraînement",
+              "path": 9,
+              "social": -1,
+              "force": 1
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Le pélerin",
+          "texts": [
+            "Vous quittez le village et continuez de suivre la route indiquée par le sherpa. Vous marchez pendant plusieurs heures, à travers le froid et la faim qui persiste encore. Au bout de plusieurs heures, vous repérez un pèlerin, endormi au bord du chemin. Il semble transporter énormément de choses avec lui."
+          ],
+          "actions": [
+            {
+              "name": "Voler ses affaires",
+              "path": 10,
+              "social": -1,
+              "ruse": 1
+            },
+            {
+              "name": "Le laisser dormir",
+              "path": 10,
+              "social": 1,
+              "ruse": -1
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Le deuxième stupa",
+          "texts": [
+            "Vous êtes arrivé au second stupa, marquant le passage vers les terres sauvages. Vous vous souvenez que la tradition exige une offrande à ce passage, afin d’obtenir la bénédiction des dieux."
+          ],
+          "actions": [
+            {
+              "name": "Faire une offrande",
+              "chapter": 2,
+              "path": 1,
+              "piété": 1,
+              "ruse": -1,
+              "condition": {
+                "skill": "ruse",
+                "condition": "< -4",
+                "true": "/lose",
+                "endmessage": "Vous ne possédez pas assez d'équipement pour pouvoir affronter les terres sauvages. Des heures de marche plus tard, vous mourrez de faim et de froid."
+              }
+            },
+            {
+              "name": "Ne pas faire d'offrande",
+              "chapter": 2,
+              "path": 1,
+              "piété": -1,
+              "ruse": 1,
+              "condition": {
+                "skill": "ruse",
+                "condition": "< -4",
+                "true": "/lose",
+                "endmessage": "Vous ne possédez pas assez d'équipement pour pouvoir affronter les terres sauvages. Des heures de marche plus tard, vous mourrez de faim et de froid."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Les montagnes",
+      "signs": "རི",
+      "levels": [
+        {
+          "id": 1,
+          "title": "Le Phurba",
+          "texts": [
+            "Vous marchez pendant des heures à travers le chemin de montagne, traversant les terres sauvages. Vous êtes heureux d’être arrivés jusqu’ici, mais vous vous demandez encore si vous aviez fait les bons choix. Plus loin, sur le bord de la route, vous remarquez au sol, abandonné dans la neige, une dague de Phurba. Sa lame, pourtant censée être sacrée, est encore entachée de quelques gouttes de sang, ayant sûrement dû servir à un acte malveillant ou blasphématoire."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Vous prenez la dague",
+              "path": 2,
+              "force": 1,
+              "piété": -1
+            },
+            {
+              "name": "Vous enterrer la dague",
+              "path": 3,
+              "piété": -1,
+              "force": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Le vol",
+          "texts": [
+            "Votre nouvelle arme vous donnera un avantage s’il advenait pour vous le moment d’utiliser votre force. Vous entendez quelqu’un arriver, un grand homme habillé de noir, qui tente de cacher ses mains. Ce dernier réclame sa dague, d’un air menaçant. Par ailleurs, vous remarquez qu'il a l’air chargé en possessions."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Vous lui enfoncez la dague dans le coeur",
+              "path": 4,
+              "ruse": 1,
+              "piété": -1
+            },
+            {
+              "name": "Vous l'échanger contre une partie de votre équipement.",
+              "path": 4,
+              "piété": -1,
+              "ruse": 1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Le larçin",
+          "texts": [
+            "Alors que vous venez d’enfouir l’arme, vous entendez quelqu’un arriver derrière vous. il s'agit d'un grand homme habillé de noir, qui tente de cacher ses mains. Il vous demande si vous aviez vu son arme."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Vous lui rendez la dague",
+              "path": 4,
+              "social": 1,
+              "piété": -1
+            },
+            {
+              "name": "Vous mentez et ne lui donnez pas",
+              "path": 4,
+              "social": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "L'escalade",
+          "texts": [
+            "Vous continuez votre route à travers les arrêtes enneignées balayées par le vent. Plusieurs heures plus tard, alors que la pente se raidit de plus en plus, vous arrivez à un passage extrêmement glissant. Vous pourriez utiliser une partie de votre équiepment pour vous fabriquer une corde, ou bien économiser ce dernier et compter sur la force de vos bras pour escalader."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Escalader à mains nues",
+              "path": 5,
+              "ruse": 1,
+              "force": -1
+            },
+            {
+              "name": "Fabriquer une corde",
+              "path": 5,
+              "ruse": -1,
+              "social": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Le lac sacré",
+          "texts": [
+            "Vous traversez le col, non sans prendre une pause pour contempler l'immensité montagneuse qui se dresse devant vous. Au loin, des bâtiments semblent briller au soleil, sûrement la fameuse ville qui guide votre voyage. En redescendant le flanc de la montagne, vous arrivez à un lac sacré, entouré d'autels et de drapeaux de prières. Ses eaux sont magnifiques et, comme dans un rêve, une barque est attachée sur la berge. Vous savez que traverser ce serait considéré comme un blasphème. Vous pouvez contourner le lac par un chemin rocailleux, mais cela vous affaiblira grandement."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Traverser le lac",
+              "path": 6,
+              "force": 1,
+              "piété": -1,
+              "condition": {
+                "skill": "piété",
+                "condition": "< -5",
+                "true": "/lose",
+                "endmessage": "Votre manque de piété n'a fait que déclencher votre perte : Alors que vous êtes arrivés au milieu du lac, votre barque se brise et vous sombrez dans les flots, et vous yeux se ferment tandis que votre corps touche le fond des eaux."
+              }
+            },
+            {
+              "name": "Contourner le lac",
+              "path": 6,
+              "force": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Drapeaux de prières",
+          "texts": [
+            "En approchant d'un nouveau col, vous apercevez le troisième stupa, lui-même orné de dizaines de drapeaux de prières, accrochés à des câbles fixés dans la roche. Votre énergie manque en cette fin de journée. Vous pourriez vous aider en vous accrochant aux drapeaux sacrés dessus pour économiser vos forces, mais ceci reste, encore une fois, interdit par les traditions de la région."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "S'accrocher",
+              "path": 7,
+              "force": 1,
+              "piété": -1
+            },
+            {
+              "name": "Continuer de marcher",
+              "path": 7,
+              "force": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Avalanche",
+          "texts": [
+            "Malheureusement, le bruit crée par les quelques pierres que vous faites tomber déclenche, juste au-dessus de votre tête, une petite avalanche. Vous devez courir le plus vite possible hors du chemin, hors d’atteinte de l'écoulement, mais votre sac, trop lourd pour votre état de fatigue vous ralenti."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Vider une partie de votre sac",
+              "path": 8,
+              "force": 1,
+              "ruse": -1
+            },
+            {
+              "name": "Puiser vos dernières forces et garder le sac",
+              "path": 8,
+              "force": -1,
+              "ruse": 1
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "La cabane",
+          "texts": [
+            "Vous êtes enfin arrivé au col, tandis que la nuit tombe et que vous sentez un vent glacial se lever. Par chance, vous repérez une cabane abandonnée où il ferait bon de s’y abriter pour le nuit. L’intérieur regorge de belles choses, supposant que l'endroit est fréquemment visité par des pèlerins, ou bergers."
+          ],
+          "question": "Que faites-vous ?",
+          "actions": [
+            {
+              "name": "Voler du matérial qui pourrait vous être utile",
+              "path": 9,
+              "ruse": 1,
+              "social": -1
+            },
+            {
+              "name": "Respecter le refuge et aller directement vous coucher",
+              "path": 9,
+              "social": 1,
+              "ruse": -1
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "L'attaque nocturne'",
+          "texts": [
+            "La nuit complète tombe sur la montagne. Durant votre sommeil bien mérité, vous entendez subitement un grand bruit. Face à vous, un ours s'avance en rugissant. Vous devez au plus vite prendre un décision."
+          ],
+          "actions": [
+            {
+              "name": "Attaquer frontalement l'animal",
+              "chapter": 3,
+              "path": 1,
+              "ruse": 1,
+              "force": -1,
+              "condition": {
+                "skill": "force",
+                "condition": "< -8",
+                "true": "/lose",
+                "endmessage": "Vous avez sur-estimé vos forces. L'ours repousse chacune de vos attaques, et finit par vous tuer d'un coup de griffe à la gorge."
+              }
+            },
+            {
+              "name": "Tenter de fuir",
+              "chapter": 3,
+              "path": 1,
+              "ruse": -1,
+              "force": 1,
+              "condition": {
+                "skill": "force",
+                "condition": "> -15",
+                "true": "/lose",
+                "endmessage": "L'animal ne vous laisse aucune chance d'échappatoire. Il vous saute dessus, et la dernière chose que vous voyez est sa gueule béante, se refermant sur votre visage."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Les dieux",
+      "signs": "ཆོས་ལུགས།",
+      "levels": [
+        {
+          "id": 1,
+          "title": "L'entrée de la grotte",
+          "texts": [
+            "Votre combat contre l'ours a été remporté, par miracle, non sans vous laisser de profondes blessures. Vous sentez cependant que vos réflexes ont été accrus. Suspicieux, vous recherchez d’où est-ce que l’animal a bien pu venir pour pénétrer dans la cabane. Au fond de la pièce, vous repérez un grand dans la roche, menant à une grotte. Vous vous engagez à l'intérieur. Les parois rocheuses sont recouvertes de glace, renfermant les visages de divinités locales, perdues à jamais. Plus loin, vous tomber sur un énorme gouffre s'ouvrant en un trou béant surplombant un magnifique temple abandonné. Vous pourriez descendre en comptant sur vos aptitudes en escalade, ou bien économiser vos forces et sacrifier encore un peu d'équipement pour descendre en rappel."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Descendre en rappel",
+              "path": 2,
+              "force": 1,
+              "ruse": -1
+            },
+            {
+              "name": "Descendre avec la force de vos bras",
+              "path": 3,
+              "force": -1,
+              "ruse": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Le temple perdu",
+          "texts": [
+            "Vous avez découvert un mystérieux temple enterré. Il regorge de colonnes de pierres, de statues souriantes, et d'anciennes inscriptions, sans doute des mantras sacrés. Au fond de ce qui reste du grand hall, vous trouver également des reliques recouvertes d'or."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Prendre les trésors",
+              "path": 3,
+              "ruse": 1,
+              "piété": -1
+            },
+            {
+              "name": "Étudier les inscriptions",
+              "path": 3,
+              "ruse": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "La seule issue",
+          "texts": [
+            "Malheureusement, vus n'avez plus assez d'énergie pour remonter la paroi du gouffre. Il ne vous reste qu’une seule issue, une minuscule faille dans la roche, qui vous forcerait à abandonner votre équipement."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Tenter de passer par la faille",
+              "path": 4,
+              "ruse": -1,
+              "piété": 1,
+              "condition": {
+                "skill": "ruse",
+                "condition": "< -2",
+                "true": "/lose",
+                "endmessage": "Vous arrivez à passer par la faille, sacrifiant le peu de biens qu'il vous restait. Vous n'avez plus aucun équipement. Votre survie ne durera plus que quelques jours, avant de mourir seul, de faim et de froid."
+              }
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Le monastère",
+          "texts": [
+            "Vous arrivez à passer par la faille, et ressorter de l'autre côté de la grotte. Au loin, s'étend un immense plateau désert, que vous allez traverser pendant plusieurs jours. Finalement, vous parvenez à rejoindre un monastère qui se dresse fièrement en haut d'une petite colline. Au contraire de la région, l'entourant, il est très fréquenté par plusieurs groupes de moines. Votre arrivée est chalereusement accueillie, vous êtes nourri, soigné et reposé. Après votre courte convalescence, vous décider d'iinteragir un peu avec les résidents du monastères. Vous avez le choix entre aller voir les nouveaux étudiants, assis ensembles dans le cour, ou au culot, aller directement interpeler le chef spirituel des lieux, le grand Lama."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Aller parler au grand Lama",
+              "path": 5,
+              "force": 1,
+              "social": -1
+            },
+            {
+              "name": "Aller parler aux étudiants",
+              "path": 6,
+              "force": -1,
+              "social": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Le grand Lama",
+          "texts": [
+            "Il est étonné et assez choqué de votre insolence, mais salue néanmoins votre courage. A vos questions concernant le chemin que vous êtes en train de suivre, il répond que ‘Le chemin s’ouvrira en fonction du regard que tu as porté, et que tu décides de porter sur le monde."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Vous le remerciez",
+              "path": 7,
+              "piété": 1,
+              "social": 1
+            },
+            {
+              "name": "Vous exigez une meilleure explication",
+              "path": 7,
+              "piété": -1,
+              "social": -1
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Les moines",
+          "texts": [
+            "Vous rejoignez les étudiants et les questionnez concernant le chemin que vous êtes en train de suivre. Ceux-ci vous rétorquent qu'ils ne peuvent vous apporter des réponses. Ils sont de plus en plein rituel spirituel : la confection d'un mandala de sable. Ils vous proposent de participer à cette pratique."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Vous participez de bon coeur",
+              "path": 7,
+              "piété": 1,
+              "social": 1
+            },
+            {
+              "name": "Vous refusez et exigez des réponses",
+              "path": 7,
+              "piété": -1,
+              "social": -1
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "La grande salle",
+          "texts": [
+            "Personne ne semble aptes à vous donner des réponses explicites sur votre destin. Vous décidez d'aller faire un tour dans la grande salle du monastère, vide à cette heure de la journée. Celle-ci est incroyablement décorée, surtout pour une école religieuse prônant le détachement. Il y a d'ailleurs, plusieurs artefacts qui pourraient vous être réellement utiles à vous, voyageur."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Prendre de quoi regonfler votre équipement",
+              "path": 8,
+              "social": -1,
+              "force": 1
+            },
+            {
+              "name": "Laisser les artefacts",
+              "path": 9,
+              "force": -1,
+              "social": 1
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Interrogation",
+          "texts": [
+            "Une voix derrière vous vous fait sursauter. Un moine vient d'arriver, juste derrière vous. D'un air suspicieux, il demande pourquoi vous semblez autant sur vos gardes, et qu'est-ce que vous cachez sous vos vêtements."
+          ],
+          "question": "Que choisissez-vous ?",
+          "actions": [
+            {
+              "name": "Mentir et dire qu'il n'y a rien",
+              "path": 9,
+              "social": -1,
+              "force": 1
+            },
+            {
+              "name": "Avouer avoir volé et s'excuser",
+              "path": 9,
+              "force": -1,
+              "social": 1
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Interrogation",
+          "texts": [
+            "Le jour de votre départ, le grand Lama du monastère déclare que vous devez être soumis à un rituel exorciste, afin de déterminer si votre âme est dangereuse ou non, et si elle peut donc librement continuer sa route.",
+          ],
+          "actions": [
+            {
+              "name": "Accepter de passer le rituel",
+              "path": 10,
+              "social": -1,
+              "piété": 1,
+              "condition": {
+                "skill": "social",
+                "condition": "< -4",
+                "true": "/lose",
+                "endmessage": "Le chaman chargé du rituel décele en vous une trop grande malveillance. Vous êtes alors encerclés par les moines, et enfermés à jamais dans les souterrains du monastère."
+              }
+            },
+            {
+              "name": "Refuser",
+              "path": 10,
+              "piété": -1,
+              "social": 1,
+              "condition": {
+                "skill": "social",
+                "condition": "> -15",
+                "true": "/lose",
+                "endmessage": "Votre refus de vous soumettre au rituel conforte les moines dans l'idée que votre âme ne peut continuer sa route. Vous êtes alors encerclés par les moines, et enfermés à jamais dans les souterrains du monastère."
+              }
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Les bandits",
+          "texts": [
+            "Vous continuez votre route et arrivez au bout du plateau. Vous savez que la montagne qu'il vous reste à franchir est la dernière, et que la ville qui a guidé votre voyage est maintenant toute proche. Malheureusement, vous tombez dans une embuscade : vous faites encercler par un groupe de bandits. Ils sont richement vêtus, trophés sans doute obtenu par les menaces qu'ils ont dû proférer aux malheureux ayant croisés leur route. Ces derniers n’ont pas vraiment l’air enclin à discuter, mais ne sont pas pour autant armés. Vous remarquez qu'à votre droite se tient le membre le plus jeune, qui est largement plus petit que vous.",
+          ],
+          "actions": [
+            {
+              "name": "Attaquer le plus faible",
+              "path": 11,
+              "force": -1,
+              "piété": -1
+            },
+            {
+              "name": "Tenter de négocier votre passage",
+              "path": 11,
+              "force": 1,
+              "social": 1,
+              "condition": {
+                "skill": "social",
+                "condition": "> -15",
+                "true": "/lose",
+                "endmessage": "Les bandits refusent toute tentative de négociation. Face à votre refus de vous battre, il se jettent sur vous, vous plaquent au sol, et vous sombrez sous les coups."
+              }
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Vivre ou mourir",
+          "texts": [
+            "Vous réussissez à maîtriser le premier d'entre eux en lui assénant un énorme coup sur le crâne, le faisant tomber à la renverse. Effrayé par votre agressivité, les autres bandits s'enfuient et vont se réfugier autour du le quatrième stupa, situé un peu plus haut. Verser du sang au pied de cet édifice religieux serait une grande disgrâce. Mais rien ne vous dit que ces derniers ne tenteront pas de vous assassiner dans le dos plus tard, donc les laisser en vie représenterait également un grand risque.",
+          ],
+          "actions": [
+            {
+              "name": "Les assassiner et prendre leurs richesses",
+              "path": 12,
+              "force": 1,
+              "piété": -1
+            },
+            {
+              "name": "Les laisser vivre et continuer votre chemin",
+              "path": 12,
+              "force": -1,
+              "piété": 1
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Les grandes portes",
+          "texts": [
+            "Après des heures de marches, vous arrivez enfin au sommet du dernier col. Vous avez achevé la dernière ascension avant d'arriver à la ville, qui s'étend dans la vallée en contrebas. Au centre du col se dresse des immenses portes circulaires, dont une étrange lueur émane de leur centre. Des dizaines de pèlerins sont assis autour, concentrés dans leur prière, ou partis en transe. Ceux encore conscients vous expliquent l'importance de ce lieu : il s'agit des Portes du Jugement. Seuls les personnes ayant été assez pieuse durant leur vie sur ces terres peuvent les franchir. Votre voyage touche presque à sa fin.",
+          ],
+          "actions": [
+            {
+              "name": "Passer l'épreuve",
+              "path": "win",
+              "piété": 0,
+              "ruse": 0,
+              "condition": {
+                "skill": "piété",
+                "condition": "< -1",
+                "true": "/lose",
+                "endmessage": "Votre piété a souffert durant le long de votre voyage. Peut-être l'aviez-vous oublié ? Ou était-ce volontaire ? Vous ne vous en souvenez plus. Vous sentez votre corps entier partir, comme aspiré par la lumière des portes qui à votre passage, explose comme une énergie furieuse. Vous vous dématérialiser, sous les yeux impassibles des pèlerins et des croyants."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "Pèlerin",
+      "id": "good",
+      "description": "Votre empathie naturelle vous donne un avantage en relationnel, tandis que votre piété vous assurera bonne fortune.",
+      "skills": [
+        {
+          "name": "piété",
+          "value": 1
+        },
+        {
+          "name": "social",
+          "value": 1
+        },
+        {
+          "name": "force",
+          "value": -1
+        },
+        {
+          "name": "ruse",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "name": "Ancien soldat",
+      "id": "bad",
+      "description": "Votre passé vous a transmis force et courage, ainsi que des compétences basiques en survie.",
+      "skills": [
+        {
+          "name": "force",
+          "value": 1
+        },
+        {
+          "name": "ruse",
+          "value": 1
+        },
+        {
+          "name": "piété",
+          "value": -1
+        },
+        {
+          "name": "social",
+          "value": -1
+        }
+      ]
+    }
+  ]
+}

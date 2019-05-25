@@ -1,0 +1,584 @@
+{
+    "steps": [
+    {
+      "id": 1,
+      "title": "Choose your fish",
+      "actions": [
+        {
+          "title": "Zed",
+          "to": 2
+        },
+
+        {
+          "title": "Zefor",
+          "to": 11
+        },
+
+        {
+            "title": "Stavo",
+            "to": 26
+          }
+
+      ]
+    },
+
+    {
+        "id": 2,
+        "title": "Jump into the sink to get in the sewer system",
+        "actions": [
+          {
+            "title": "Left side",
+            "to": 3
+          },
+  
+          {
+            "title": "Right side",
+            "to": 4
+          }
+
+        ]
+    },
+
+      {
+        "id": 3,
+        "title": "You are now in the sewer system continue making your way",
+        "actions": [
+          {
+            "title": "this way leads to more piping",
+            "to": 5
+          },
+  
+          {
+            "title": "Pass through the grilling",
+            "to": 6
+          }
+
+        ]
+      },
+
+      {
+        "id": 4,
+        "title": "You died, the water was dirty",
+        "picture": "../",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 2
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+
+      {
+        "id": 5,
+        "title": "You got eaten by hungry rats",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 2
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 6,
+        "title": "You made your way through the grilling and found yourself thrown in the river",
+        "actions": [
+          {
+            "title": "This way leads to the rapids",
+            "to": 7
+          },
+  
+          {
+            "title": "This way the water is calm",
+            "to": 8
+          }
+
+        ]
+      },
+
+      {
+        "id": 7,
+        "title": "Your fish is too weak to survive the rapids",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 2
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 8,
+        "title": "Well done you are now in the ocean!",
+        "actions": [
+          {
+            "title": "Pass through the coral",
+            "to": 9
+          },
+  
+          {
+            "title": "Swim through the open water",
+            "to": 10
+          }
+
+        ]
+      },
+
+      {
+        "id": 9,
+        "title": "The corals protected you from predators you found your fish Bank well done!",
+        "actions": [
+          {
+            "title": "Choose your fish",
+            "to": 1
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 10,
+        "title": "You got snapped by a seagull",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 2
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+
+
+      
+
+  
+      {
+        "id": 11,
+        "title": "Whats your next move?",
+        "actions": [
+          {
+            "title": "Jump in the sink",
+            "to": 12
+          },
+
+          {
+            "title": "Jump out the window",
+            "to": 13
+          }
+
+        ]
+      },
+
+      {
+        "id": 12,
+        "title": "Choose which side of the sink to jump in",
+        "actions": [
+          {
+            "title": "Left side of the sink",
+            "to": 14
+          },
+
+          {
+            "title": "Right side of the sink",
+            "to": 15
+          }
+
+        ]
+      },
+
+      {
+        "id": 13,
+        "title": "Choose which bucket you want to land in",
+        "actions": [
+          {
+            "title": "Bleu bucket",
+            "to": 16
+          },
+
+          {
+            "title": "Red bucket",
+            "to": 17
+          }
+
+        ]
+      },
+
+      {
+        "id": 14,
+        "title": "You were able to get in the piping, now make your way through the sewer system",
+        "actions": [
+          {
+            "title": "Continue your way",
+            "to": 18
+          },
+
+          {
+            "title": "Pass through the grilling",
+            "to": 19
+          }
+
+        ]
+      },
+
+      {
+        "id": 15,
+        "title": "You died in the dirty water of the sink",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 18,
+        "title": "You got eaten by the rats",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 19,
+        "title": "Your fish is to big to go through the grilling",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 16,
+        "title": "the bucket gets thrown out in the grass",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 17,
+        "title": "Your bucket is now in the back of the truck, choose which side you want to jump off to land in the rive",
+        "actions": [
+          {
+            "title": "Jump left",
+            "to": 20
+          },
+
+          {
+            "title": "Jump right",
+            "to": 25
+          }
+
+        ]
+      },
+
+      {
+        "id": 25,
+        "title": "You land on the road and die!",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 20,
+        "title": "Good job you landed in the river",
+        "actions": [
+          {
+            "title": "This way leads to the rapids",
+            "to": 21
+          },
+
+          {
+            "title": "This way leads to the calm water",
+            "to": 22
+          }
+
+        ]
+      },
+
+      {
+        "id": 21,
+        "title": "Your fish survived the rapids, you are now in the ocean",
+        "actions": [
+          {
+            "title": "Go trough the corals",
+            "to": 23
+          },
+
+          {
+            "title": "Swim straight ahead",
+            "to": 24
+          }
+
+        ]
+      },
+
+      {
+        "id": 22,
+        "title": "Your fish got caught in the fishermen's net",
+        "actions": [
+          {
+            "title": "try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+
+        ]
+      },
+
+      {
+        "id": 23,
+        "title": "Your are too big the corals you get crushed against the rocks",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 11
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 24,
+        "title": "You make it through the open water and find your fish bank! well done",
+        "actions": [
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+
+
+
+
+      {
+        "id": 26,
+        "title": "Choose which bucket you want to jump in",
+        "actions": [
+        
+          {
+            "title": "Jump out the window in the left bucket",
+            "to": 27
+          },
+
+          {
+            "title": "Jump out the window in the right bucket",
+            "to": 28
+          }
+
+        ]
+      },
+
+      {
+        "id": 27,
+        "title": "The bucket gets thrown out the window!",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 26
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 28,
+        "title": "The bucket is now in the back of the truck driving near the river",
+        "actions": [
+          {
+            "title": "Jump right",
+            "to": 29
+          },
+
+          {
+            "title": "Jump left",
+            "to": 30
+          }
+        ]
+      },
+
+      {
+        "id": 29,
+        "title": "You landed on the road and died!",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 26
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 30,
+        "title": "You succesfully landed in the river! What's your next move?",
+        "actions": [
+          {
+            "title": "Choose the rapids",
+            "to": 31
+          },
+
+          {
+            "title": "Go through the calm water  ",
+            "to": 32
+          }
+        ]
+      },
+
+      {
+        "id": 31,
+        "title": "You passed the rapid you are now in the ocean!",
+        "actions": [
+          {
+            "title": "Go straight ahead",
+            "to": 33
+          },
+
+          {
+            "title": "Swim through the corals",
+            "to": 34
+          }
+        ]
+      },
+
+      {
+        "id": 32,
+        "title": "You go caught by the fishermen!",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 26
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 33,
+        "title": "You successfully joined your fish bank!",
+        "actions": [
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      },
+
+      {
+        "id": 34,
+        "title": "The rapids crushed you against the corals",
+        "actions": [
+          {
+            "title": "Try again",
+            "to": 26
+          },
+
+          {
+            "title": "Choose an other fish",
+            "to": 1
+          }
+        ]
+      }
+          
+          
+
+      
+
+
+
+
+]
+}

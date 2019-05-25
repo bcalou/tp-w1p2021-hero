@@ -1,0 +1,90 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body {
+    background: #111111;
+    overflow: hidden;
+}
+
+.big-header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    z-index: -2;
+}
+
+.background {
+    position: absolute;
+    width: auto;
+    width: 100vw;
+    z-index: -1;
+}
+
+.wrapper {
+    position: absolute;
+    bottom: 100px;
+}
+
+.message {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 30px;
+    min-width: 500px;
+    max-width: 700px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background: #333333;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper--buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+    position: relative;
+    font-size: 24px;
+}
+
+.menu-popover-enter {
+    opacity: 0;
+    transform: rotateY(50deg);
+}
+
+.title--win {
+    font-size: 45px;
+    color: yellow;
+}
+.title--lose {
+    font-size: 45px;
+    color: white;
+}
+
+.big-header--losewin {
+    justify-content: space-around;
+}

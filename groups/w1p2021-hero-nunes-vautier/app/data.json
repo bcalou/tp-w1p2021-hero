@@ -1,0 +1,1261 @@
+{
+    "characters":[
+        {
+            "name": "Reine",
+            "image": "/images/reine.png",
+            "description": "Vous êtes la maîtresse du chateau. Tout le monde est sous vos ordres !"
+        },
+        {
+            "name": "Chevalier",
+            "image": "/images/chevalier.png",
+            "description": "Brave et aguerri, vous faites partie de l'élite combattante et noble de la place forte."
+        },
+        {
+            "name": "Serf",
+            "image": "/images/serf.png",
+            "description": "Vous travaillez dur pour pouvoir payer les taxes du roi, paysan de métier, votre vie va être boulversée."
+        }
+    ],
+    "character": {
+        "image": "/images/home-photo.jpg"
+    },
+    "home": {
+        "image": "/images/home-photo.jpg", 
+        "music": {
+            "src": "/sounds/home-theme.mp3",
+            "volume": 0.5,
+            "loop": true
+        }
+    },
+    "game": {
+        "1":[
+            {
+                "character": "Reine",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/throne-room2-photo.jpg",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller se réfugier dans le donjon.",
+                        "link": "/game/2"
+                    },
+                    {
+                        "message": "Aller dans les souterrains.",
+                        "link": "/game/3"
+                    },
+                    {
+                        "message": "Fermer les portes du chateau.",
+                        "link": "/game/4"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire sire ?",
+                "image": "/images/castle-wall.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "S'armer et défendre la place forte.",
+                        "link": "/game/2"
+                    },
+                    {
+                        "message": "Rejoindre la reine !",
+                        "link": "/game/3"
+                    },
+                    {
+                        "message": "S'enfuir à cheval.",
+                        "link": "/game/4"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Les cloches sonnent ! Tous aux abris le chateau est attaqué !",
+                "image": "/images/fields-photo.jpg",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller se réfugier au chateau.",
+                        "link": "/game/2"
+                    },
+                    {
+                        "message": "Rentrer à la maison chercher la famille.",
+                        "link": "/game/3"
+                    }
+                ]
+            }
+        ],
+        "2":[
+            {
+                "character": "Reine",
+                "lose": "Vous ne savez pas nager, vous avez coulé à pic.",
+                "message": "L'ennemi vient de franchir nos portes ! Le donjon est menacé !Que faisons nous altesse ?",
+                "image": "/images/throne-room.png",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Sauter dans les douves.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "S'enfuir par une porte secrète.",
+                        "link": "/game/6"
+                    },
+                    {
+                        "message": "Prendre les armes.",
+                        "link": "/game/7"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Où voulez vous vous poster ?",
+                "image": "/images/prison.png",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Défendre le donjon.",
+                        "link": "/game/6"
+                    },
+                    {
+                        "message": "Défendre les remparts",
+                        "link": "/game/7"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Nous sommes arrivés au chateau !",
+                "image": "/images/farmerhouse.jpg",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller se cacher dans l'église.",
+                        "link": "/game/6"
+                    },
+                    {
+                        "message": "S'armer pour la défense.",
+                        "link": "/game/7"
+                    }
+                ]
+            }
+        ],
+        "3":[
+            {
+                "character": "Reine",
+                "message": "Nos éclaireurs ont trouvé deux passages ! Lequel prendre ?",
+                "image": "/images/underground.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Prendre le chemin de gauche.",
+                        "link": "/game/8"
+                    },
+                    {
+                        "message": "Prendre le chemin de droite",
+                        "link": "/game/9"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Nous avons rejoint la reine !",
+                "image": "/images/throne-room2-photo.jpg",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": false
+                },
+                "answers": [
+                    {
+                        "message": "S'enfermer dans le donjon et défendre.",
+                        "link": "/game/10"
+                    },
+                    {
+                        "message": "Défendre la cour.",
+                        "link": "/game/11"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Votre famille est là ! Vous êtes tous réunis !",
+                "lose": "L'armée ennemie est arrivée au chateau avant vous, vous mourrez sous une pluie de flèches.",
+                "image": "/images/farmerhouse.jpg",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller s'abriter à l'intérieur des fortifications du chateau.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Partir dans la forêt.",
+                        "link": "/game/9"
+                    }
+                ]
+            }
+        ],
+        "4":[
+            {
+                "character": "Reine",
+                "message": "Les portes du chateau n'ont pas tenu ! Que devons nous faire ?",
+                "lose": "Trop peu de monde a défendu la cour, vous vous faites encercler et mourrez.",
+                "image": "/images/throne-room.png",
+                "music": {
+                    "src":"/sounds/gate-close.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Défendre le donjon.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Défendre la cour.",
+                        "link": "/game/10"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Vous avez réussi à vous enfuir, quelle direction prendre ?",
+                "lose": "La ville la plus proche à déjà été rayée de la carte, vous êtes tué sur place par des brigands attirés par votre belle armure de plaques.",
+                "image": "/images/fields.jpg",
+                "music": {
+                    "src":"/sounds/horse.wav",
+                    "volume": 0.2,
+                    "loop": false
+                },
+                "answers": [
+                    {
+                        "message": "Aller vers la forêt.",
+                        "link": "/game/15"
+                    },
+                    {
+                        "message": "Partir pour la ville la plus proche.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "lose": "Voyant la reine s'échapper par le souterrain, l'ennemi était présent en nombre à l'intérieur, vous êtes mort.",
+                "image": "/images/forest.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "6":[
+            {
+                "character": "Reine",
+                "lose": "Une embuscade a été tendue par l'arrière garde ennemie.",
+                "message": "Enfin ! Nous sommes sortis !",
+                "image": "/images/cavern.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Partir dans la forêt.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Retourner au chateau attaquer l'ennemi par derrière.",
+                        "link": "/game/11"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "lose": "Vous vous êtes retrouvé encerclés dans le donjon. L'ennemi a mis le feu en bas, vous êtes morts étouffé par la fumée.",
+                "message": "La reine est ici ! Que faire ?",
+                "image": "/images/throne-room.png",
+                "music": {
+                    "src":"/sounds/",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Emmener la reine au chemin souterrain.",
+                        "link": "/game/8"
+                    },
+                    {
+                        "message": "Rester dans le donjon.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Nous voilà arrivés à l'église. Les portes du chateau sont tombées, la reine donne l'ordre d'attaquer l'ennemi.",
+                "lose": "Vous êtes intercepté par un chevalier allié qui vous exécute pour votre couardise.",
+                "image": "/images/church.jpg",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Attaquer l'ennemi",
+                        "link": "/game/7"
+                    },
+                    {
+                        "message": "Fuir dans la forêt.",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "7":[
+            {
+                "character": "Reine",
+                "lose": "L'ennemi était présent en trop grand nombre, vous n'avez rien pu faire.",
+                "message": "Le donjon est sauvé ! Que faire majesté ?",
+                "image": "/images/farmerhouse.jpg",
+                "music": {
+                    "src":"/sounds/",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Défendre l'église.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Se déguiser en soldats ennemis.",
+                        "link": "/game/12"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "lose": "Les souterrains sont pleins de mauvaises surprises, vous périssez sous un éboulement.",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle-wall.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "lose": "Alors que vous courez, une flèche vous rattrape. Vous êtes mort.",
+                "message": "Le combat semble tendre vers une défaite de votre camp.",
+                "image": "/images/fight2.jpg",
+                "music": {
+                    "src":"/sounds/battle2.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Tuer le commandant ennemi.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Se replier",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "8":[
+            {
+                "character": "Reine",
+                "lose": "La ville a subi un raid avant la votre, vous mourrez lors d'une violente embuscade sur place.",
+                "message": "Nous sommes presques sortis ! Quelle direction prendre ?",
+                "image": "/images/cavern.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Partir se cacher dans la forêt.",
+                        "link": "/win"
+                    },
+                    {
+                    "message": "Aller demander de l'aide dans la ville la plus proche.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "lose": "Vous mourrez dans une embuscade tendue par les ennemis.",
+                "message": "Nous sommes presque sortis !",
+                "image": "/images/cavern.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans la forêt.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Cacher la reine et retourner combattre.",
+                        "link": "/win"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "lose": "Les ennemis sont arrivé aux souterrains avant vous, vous êtes mort.",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "9":[
+            {
+                "character": "Reine",
+                "lose": "Vous ne savez pas bien vous cacher majesté, vous êtes morte.",
+                "message": "Des ennemis !",
+                "image": "/images/underground2.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Combattre !",
+                        "link": "/game/13"
+                    },
+                    {
+                        "message": "Se cacher.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "lose": "Une troupe ennemie s'est interposée devant vous. Vous n'avez pas fait le poids.",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Nous sommes dans la forêt. Que faire ?",
+                "image": "/images/forest.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Se cacher et attendre la fin de l'assault.",
+                        "link": "/game/10"
+                    },
+                    {
+                        "message": "Tenter de retrouver d'autres personnes dans la forêt.",
+                        "link": "/game/11"
+                    }
+                ]
+            }
+        ],
+        "10":[
+            {
+                "character": "Reine",
+                "message": "La cour est tombée !",
+                "image": "/images/farmerhouse.jpg",
+                "music": {
+                    "src":"/sounds/battle2.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Se défendre dans le donjon.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Courir au souterrain.",
+                        "link": "/game/16"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "lose": "En temps que membre de la population combattante du chateau, vous êtes exécuté.",
+                "message": "Le donjon ne va pas tenir !",
+                "image": "/images/throne-room.png",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "S'enfuir par la porte secrète.",
+                        "link": "/game/12"
+                    },
+                    {
+                        "message": "Se rendre",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "lose": "Un soldat vous a marché sur le pied, vous n'auriez pas du crier.",
+                "message": "Les soldats ennemis arrivent !",
+                "image": "/images/forest2.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Se cacher dans la végétation.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Courir",
+                        "link": "/game/12"
+                    }
+                ]
+            }
+        ],
+        "11":[
+            {
+                "character": "Reine",
+                "lose": "Vous n'auriez pas pu trouver pire arme, vous êtes désormais dans un autre monde.",
+                "message": "Quelles armes prendre ma reine ? ",
+                "image": "/images/home.jpg",
+                "music": {
+                    "src":"/sounds/",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Une Épée.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Une arbalète.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Un arc.",
+                        "link": "/win"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Sire nous les avons eu ! Devons nous poursuivre les survivants?",
+                "lose": "L'arrière garde de l'ennemi à malheureusement assuré le repli de ses hommes, vous êtes victime d'une embuscade.",
+                "image": "/images/fight.jpg",
+                "music": {
+                    "src":"/sounds/",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Poursuivre la petite troupe.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Rester vider le chateau de ses intrus.",
+                        "link": "/win"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Nous voilà avec les autres ! Ils comptent faire une attaque !",
+                "lose": "L'ennemi vous a retrouvé dans la forêt, vous avez bien défendu mais êtes mort.",
+                "image": "/images/groupForest.jpg",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Protéger la famille",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Attaquer le chateau",
+                        "link": "/win"
+                    }
+                ]
+            }
+        ],
+        "12":[
+            {
+                "character": "Reine",
+                "message": "Nous voilà déguisés ! Devons nous essayer d'approcher leur roi ou plutôt de nous enfuir ?",
+                "lose": "Le roi vous a reconnu, vous êtes capturée et exécutée sur la place publique.",
+                "image": "/images/farmerHouse.jpg",
+                "music": {
+                    "src":"/sounds/battle2.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Fuir.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Attaquer le roi.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Des soldats nous barrent le passage !",
+                "lose": "Alors que vous courez, une flèche vous rattrape. Vous êtes mort.",
+                "image": "/images/secret-door.jpg",
+                "music": {
+                    "src":"/sounds/",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Les affronter",
+                        "link": "/game/13"
+                    },
+                    {
+                        "message": "Rebrousser chemin",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Vous avez réussi à échapper aux soldats, et rencontré des soldats alliés.",
+                "lose": "Vous avez abandonné votre famille et êtes exécuté comme le lâche que vous êtes.",
+                "image": "/images/groupForest.jpg",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Les rejoindre",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Faire chemin seul vers la ville la plus proche.",
+                        "link": "/win"
+                    }
+                ]
+            }
+        ],
+        "13":[
+            {
+                "character": "Reine",
+                "lose": "L'ennemi est passé avant vous, vous ne trouvez que des ruines et des brigands qui vous dépouillent.",
+                "message": "Nous avons réussi à les vaincre, où allons nous ?",
+                "image": "/images/cavern.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Partir pour la ville la plus proche.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Aller vers la forêt.",
+                        "link": "/game/14"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Nous les avons vaincu et avons réussi à atteindre la forêt.",
+                "lose": "Malheureusement vous ne vous réveillerez pas cette fois, des soldats ennemis sont passés pendant la nuit.",
+                "image": "/images/forest.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Chercher des survivants dans la forêt.",
+                        "link": "/game/14"
+                    },
+                    {
+                        "message": "Etablir un campement pour la nuit.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "14":[
+            {
+                "character": "Reine",
+                "message": "Nous voilà dans la forêt ! Des soldats ont été repérés, voulez vous les rejoindre ?",
+                "lose": "Vous êtes encerclée par une battue organisée par l'ennemi. Adieu.",
+                "image": "/images/forest2.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Rejoindre les soldats.",
+                        "link": "/game/15"
+                    },
+                    {
+                        "message": "Se cacher dans la forêt.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Voilà des survivants !",
+                "lose": "Vous tombez dans une embuscade alors que vous n'avez toujours pas trouvé votre emplacement de bivouac.",
+                "image": "/images/groupForest.jpg",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Rejoindre les survivants",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Préférer partir monter un campement ailleurs.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "15":[
+            {
+                "character": "Reine",
+                "message": "Heureusement ces soldats sont nos alliés ! Que faire ?",
+                "image": "/images/groupForest.jpg",
+                "lose": "Vous êtes malheureusement pris en tenaille par l'arrière garde qui vous a vu approcher du chateau.",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Tendre une embuscade aux troupes ennemies.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Reprendre le chateau.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "J'entends du bruit sire.",
+                "lose": "Vous n'auriez pas du continuer à avancer, vous êtes tombé sur un groupe de brigands qui vous a tué et dépouillé pour votre magnifique armure.",
+                "image": "/images/forest2.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Continuer la route.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Aller vers le bruit.",
+                        "link": "/game/16"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "16":[
+            {
+                "character": "Reine",
+                "message": "La cour est tombée ! Replions nous !",
+                "image": "/images/fight.jpg",
+                "music": {
+                    "src":"/sounds/battle.mp3",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller se réfugier dans le donjon.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Courir aux souterrains.",
+                        "link": "/game/17"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Ce sont des amis je les reconnais. Montons une attaque.",
+                "lose": "Il aurait mieux valu attaquer l'ennemi encore fatigué du chemin et de l'attaque.",
+                "image": "/images/groupForest.jpg",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Attaquer maintenant.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Attaquer à l'aube.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "17":[
+            {
+                "character": "Reine",
+                "message": "Nous voilà sortis du souterrain ! Regardez ! Des soldats !",
+                "lose": "Ces soldats sont des alliés retrouvés bloqué dehors quand vous avez fermé les portes, ils se sont vengés.",
+                "image": "/images/cavern.png",
+                "music": {
+                    "src":"/sounds/underground.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Se cacher dans la forêt.",
+                        "link": "/game/18"
+                    },
+                    {
+                        "message": "Rejoindre les soldats.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "18":[
+            {
+                "character": "Reine",
+                "message": "Il y a du bruit !",
+                "lose": "Vous avez passé une très bonne nuit. Peut-être trop bonne d'ailleurs, vous ne vous réveillerez pas, le froid, ça tue.",
+                "image": "/images/forest2.png",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Dormir.",
+                        "link": "/lose"
+                    },
+                    {
+                        "message": "Trouver la source du bruit.",
+                        "link": "/game/19"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "19":[
+            {
+                "character": "Reine",
+                "message": "Des amis !",
+                "image": "/images/groupForest.jpg",
+                "lose": "Vous tombez dans une embuscade, les flèches ça pique.",
+                "music": {
+                    "src":"/sounds/forest.wav",
+                    "volume": 0.7,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Retourner au chateau effectuer une contre-attaque.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Partir pour la ville la plus proche.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ],
+        "20":[
+            {
+                "character": "Reine",
+                "message": "Les portes du chateau n'ont pas tenu ! Que devons nous faire ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Défendre le donjon.",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Défendre la cour.",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Chevalier",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            },
+            {
+                "character": "Serf",
+                "message": "Le chateau est attaqué, que faire majesté ?",
+                "image": "/images/castle.png",
+                "music": {
+                    "src":"/sounds/bells.wav",
+                    "volume": 0.2,
+                    "loop": true
+                },
+                "answers": [
+                    {
+                        "message": "Aller dans le donjon",
+                        "link": "/win"
+                    },
+                    {
+                        "message": "Aller dans les souterrains",
+                        "link": "/lose"
+                    }
+                ]
+            }
+        ]
+        
+    }
+}

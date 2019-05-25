@@ -1,0 +1,414 @@
+{
+    "steps": [ 
+      {
+        "id": 1,
+        "title": "La mare au crocodile se trouve face à toi, que vas tu décider de faire ? Fait le bon choix ou les crocodiles te choisiront comme proie !",
+        "img": "../assets/images/bg.png",
+        "actions": [
+          {
+            "label": "Barque",
+            "to": 2      
+          },
+          {
+            "label": "Couteau",
+            "to": 2,
+            "onlyWoman": true
+          },
+          {
+            "label": "Viande",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Les crocodiles vous ont dévoré avec la viande."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Bravo, tu as réussi ! Grimpe le chêne sacré sans chuter afin de te repérer !",
+        "img": "../assets/images/bg2.png",
+        "actions": [
+          {
+            "label": "Corde",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. La corde a laché à cause d'une branche instable.",
+            "item": "../assets/images/corde.png"
+          },
+          {
+            "label": "Crochets",
+            "to": 3
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Un essaim d'abeille se trouve dans l'arbre.",
+        "img": "../assets/images/bg2.png",
+        "actions": [
+          {
+            "label": "Redescendre",
+            "to": 4
+          },
+          {
+            "label": "Tuer",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Des centaines d'abeilles vous ont piqué."
+          }
+        ]  
+      },
+      {
+        "id": 4,
+        "title": "La meute des Singes te lancent des rafales de peaux de bananes.",
+        "img": "../assets/images/singe.png",
+        "actions": [
+          {
+            "label": "Bouclier",
+            "to": 5
+          },
+          {
+            "label": "Relancer",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Vous avez glissé sur des bananes et êtes tomber dans un ravin."
+          }
+        ]  
+      },
+      {
+        "id": 5,
+        "title": "La nuit tombe, il est temps pour toi de reprendre des forces. À demain !",
+        "img": "../assets/images/bg3.png",
+        "actions": [
+          {  
+            "to": 6,
+            "label": "Suivant"
+          }
+        ]  
+      },
+      {
+        "id": 6,
+        "title": "Te voici face à un pommier gigantesque, c'est l'occasion de reprendre des forces.",
+        "img": "../assets/images/bg7.png",
+        "actions": [
+          {  
+            "label": "Tu manges",
+            "to": 7
+          },
+          {  
+            "label": "Tu mange pas",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort de faim."
+          }
+        ]  
+      },
+      {
+        "id": 7,
+        "title": "Elles sont empoisonnés. Tu tombes et t'enfonces lentement dans un sable mouvant.",
+        "img": "../assets/images/bg2.png",
+        "actions": [
+          {  
+            "label": "Attrape la lianne",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. La lianne a fait tomber l'arbre sur votre tête."
+          },
+          {  
+            "label": "Tu t'enfonces",
+            "to": 8
+          }
+        ]  
+      },
+      {
+        "id": 8,
+        "title": "Te voilà dans l'Upside Down, tue les zombies pour délivrer ceux qui n'ont pas survécu le Dome.",
+        "img": "../assets/images/bg1.png",
+        "actions": [
+          {  
+            "label": "Arbalète",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Vous n'aviez pas assez de flèches, ils vous ont dévoré."
+          },
+          {  
+            "label": "Lance flammes",
+            "to": 9
+          }
+        ]  
+      },
+      {
+        "id": 9,
+        "title": "Ils sont trop nombreux. Tue le chef des zombies pour éradiquer l'espèce.",
+        "img": "../assets/images/bg1.png",
+        "actions": [
+          {  
+            "label": "Marteau géant",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Seul l'épée peut le tuer."
+          },
+          {  
+            "label": "Épée Damoclès",
+            "video": "Challenge Suivant"
+          }
+        ]  
+      },
+      {
+        "id": 11,
+        "title": "Il fait froid et ton corps s'affaiblit. Tue un animal pour survivre.",
+        "img":"../assets/images/tigre.png",
+        "actions": [
+          {  
+            "label": "Tigre",
+            "to": 12,
+            "after": "Arriver"
+          },
+          {  
+            "label": "Hippopotame",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort de froid."
+          }
+        ]  
+      },
+      {
+        "id": 12,
+        "title": "Tu montes le volcan et une avalanche de pierres se dirige vers toi.",
+        "img":"../assets/images/volcan.jpg",
+        "actions": [
+          {  
+            "label": "Bouclier",
+            "to": 13
+          },
+          {  
+            "label": "Escquiver",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Un rocher vous êtes tomber sur la tête."
+          }
+        ]  
+      },
+      {
+        "id": 13,
+        "title": "Tu es arrivé au sommet de la montagne et tu t'aperçois que l'avalanche a été provoqué par le géant. À toi de le combattre.",
+        "img":"../assets/images/géant.png",
+        "actions": [
+          {  
+            "label": "Marteau Géant",
+            "to": 14
+          },
+          {  
+            "label": "Épée de Damoclès",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Seul le Marteau Géant peut le tuer."
+          }
+        ]  
+      },
+      {
+        "id": 14,
+        "title": "La bataille fût rude, tu es donc gravement bléssé. Vas trouver grand-mère feuillage au temple, elle te guérira.",
+        "img": "../assets/images/bg3.png",
+        "actions": [
+          {  
+            "label": "Continuer",
+            "to": 15
+          }
+        ]  
+      },
+      {
+        "id": 15,
+        "title": "Tu es arrivé au temple et face à toi se trouve 2 coffres, l'un est rempli de trésors et l'autre de fumée toxique. Fait le bon choix et grand-mère feuillage te guérira.",
+        "img": "../assets/images/temple.png",
+        "actions": [
+          {  
+            "label": "Coffre de gauche",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. La fumée toxique vous a empoisonné."
+          },
+          {  
+            "label": "Coffre de droite",
+            "to": 16
+          }
+        ]  
+      },
+      {
+        "id": 16,
+        "title": "Bravo, tu es guéri ! En sortant du temple la tribu des Ancas veulent ton coffre de trésors.",
+        "img": "../assets/images/temple.png",
+        "actions": [
+          {  
+            "label": "Donne le coffre",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Grand-mère feuillage vous a maudit pour trahison."
+          },
+          {  
+            "label": "Attaque",
+            "to": 17
+          }
+        ]  
+      },
+      {
+        "id": 17,
+        "title": "Tu as perdu beaucoup de trésors, continue d'avancer et tu trouveras de quoi te rattraper.",
+        "img": "../assets/images/bg3.png",
+        "actions": [
+          {  
+            "label": "Continuer",
+            "to": 18
+          }
+        ]  
+      },
+      {
+        "id": 18,
+        "title": "Te voilà face au Lac des Sirènes enchantées, survie à leurs voix envoutantes.",
+        "img": "../assets/images/bg.png",
+        "actions": [
+          {  
+            "label": "Pas écouter",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Vous devez survivre à chaque phase."
+          },
+          {  
+            "label": "Écouter",
+            "video": "Challenge Suivant second"
+          }
+        ]  
+      },
+      {
+        "id": 20,
+        "title": "Dans cette partie de la jungle rôde la Sorcière, elle veux tes précieuses récompenses pour se rajeunir. Protège toi !",
+        "img": "../assets/images/sorciere.png",
+        "actions": [
+          {  
+            "label": "Un talisman",
+            "to": 21,
+            "weapon": "Un talisman"
+          },
+          {  
+            "label": "Un pentacle",
+            "to": 21,
+            "weapon": "Un pentacle"
+          }
+        ]  
+      },
+      {
+        "id": 21,
+        "title": "L'obscurité et le danger grandissent, vas chez les enfants perdus pour te protéger de la nuit ensorcelée.",
+        "img":"../assets/images/bg3.png",
+        "actions": [
+          {  
+            "label": "Continuer",
+            "to": 22
+          }
+        ]  
+      },
+      {
+        "id": 22,
+        "title": "Les enfants perdus te proposent un peu de viande pour reprendre des forces.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Accepter",
+            "to": 23
+          },
+          {  
+            "label": "Ne pas accepter",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort de faim."
+          }
+        ]  
+      },
+      {
+        "id": 23,
+        "title": "Tu décide de dormir chez les enfants perdus. Il faut que tu protèges tes trésors.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Sac invisible",
+            "to": 24
+          },
+          {  
+            "label": "Sous l'oreiller",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Les enfants perdus vous ont dépouillé et tuer."
+          }
+        ]  
+      },
+      {
+        "id": 24,
+        "title": "Tu es réveillé dans la nuit par l'un des enfants perdus, il veut ton coffre de trésors.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Attaque",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. L'enfant vous a tuer dans votre sommeil."
+          },
+          {  
+            "label": "50 pièces d'or",
+            "to": 25
+          }
+        ]  
+      },
+      {
+        "id": 25,
+        "title": "Tu es attiré par les sortilèges de la Sorcière. À tu pris le bon objet pour te défendre ?",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Se protéger"  
+          }
+        ]  
+      },
+      {
+        "id": 26,
+        "title": "La Sorcière a éveillé les liannes sauvages, elles t'attaquent et t'étouffent.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Couteau",
+            "to": 27
+          },
+          {  
+            "label": "Lance flammes",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort étouffé. Les liannes sauvages survivent au feu et les rendent plus fortes."
+          }
+        ]  
+      },
+      {
+        "id": 27,
+        "title": "Tu as réussi à t'en débarrasser. Prend ton pentacle en main pour l'a tuer.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {  
+            "label": "Attaquer",
+            "video": "Challenge Suivant autre"
+          }
+        ]  
+      },
+      {
+        "id": 29,
+        "title": "Tu peux à présent détruire le Dome avec les coeurs de la jungle.",
+        "img": "../assets/images/bg8.png",
+        "actions": [
+          {
+            "label": "Unifier",
+            "to": 30
+          },
+          {  
+            "label": "Briser",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Briser les coeurs de la jungle engendre la fin de la vie"
+          }
+        ]
+      },
+          
+      {
+        "id": 30,
+        "title": "Tu as réveillé le dieu des éclairs, la foudre est puissante ! Fait le bon choix, tu es près de la fin.",
+        "img": "../assets/images/magic.png",
+        "actions": [
+          {  
+            "label": "Lever les coeurs",
+            "win": "You Won"
+          },
+          {  
+            "label": "Protéger",
+            "lose": "Game Over",
+            "reason": "Vous êtes mort. Les éclairs ont brulé l'arbre qui se trouve au dessus de toi."
+          }
+        ]  
+      }
+    ]
+  }
